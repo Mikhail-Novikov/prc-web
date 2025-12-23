@@ -1,0 +1,367 @@
+.header {
+  font-size: 0.875rem;
+  background: #214288;
+  color: #FFFFFF;
+  padding: 0;
+  position: relative;
+}
+
+.header .submenu-one li a {
+  color: #214288;
+}
+
+.header-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 6.25rem;
+}
+
+.top-menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 1.25rem;
+  height: 100%;
+}
+
+.top-menu .main-top {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 1.25rem;
+}
+
+.top-menu .main-top a.main-link {
+  color: #FFFFFF;
+  line-height: initial;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.3125rem 0;
+  font-weight: 400;
+  text-underline-offset: 0.25rem;
+  text-decoration-thickness: 0.0625rem;
+}
+
+.top-menu .main-top .submenu-container {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3.75rem 0;
+  background: #FFFFFF;
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.top-menu .main-top .submenu-container.no-children {
+  padding: 2.5rem;
+  width: auto;
+}
+
+.top-menu .main-top.active .submenu-container {
+  display: -ms-flexbox;
+  display: flex;
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  visibility: visible;
+  box-shadow: 0 0.0625rem 0.3125rem 0.0625rem rgba(0, 0, 0, 0.1);
+}
+
+.top-menu-wrapper {
+  height: 100%;
+}
+
+.top-menu-icons {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-menu-icons li {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.top-menu-icons li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.top-menu-icons li#world {
+  background: url("https://www.perco.ru/images/2023/world.svg") no-repeat center center/contain;
+  cursor: pointer;
+}
+
+.top-menu-icons li#search {
+  background: url("https://www.perco.ru/images/2023/search.svg") no-repeat center center/contain;
+  cursor: pointer;
+  display: block;
+}
+
+.top-menu-icons li#search.hidden {
+  display: none;
+}
+
+.top-menu-icons li#close {
+  display: none;
+  background: url("https://www.perco.ru/images/2023/close.svg") no-repeat center center/contain;
+  cursor: pointer;
+}
+
+.top-menu-icons li#close.active {
+  display: block;
+}
+
+.main-logo {
+  max-width: 6.1875rem;
+}
+
+.lang-panel {
+  background: #FFFFFF;
+  color: #214288;
+  visibility: hidden;
+  padding: 1.25rem;
+  position: absolute;
+  left: -625rem;
+  z-index: -1;
+  bottom: 62.5rem;
+}
+
+.lang-panel.active {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  bottom: 0;
+  z-index: 100000;
+}
+
+.lang-switch {
+  margin: 0;
+  padding: 0;
+}
+
+.lang-switch li {
+  font-weight: 600;
+  line-height: 150%;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.lang-switch li:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.lang-switch li::before {
+  content: '';
+  width: 1.5rem;
+  height: 1.5rem;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  background: url("https://www.perco.ru/images/2023/icons/lang-icon.svg") no-repeat center center/contain;
+  margin-right: 0.75rem;
+}
+
+.lang-switch li.active::before {
+  background: url("https://www.perco.ru/images/2023/icons/lang-icon-active.svg") no-repeat center center/contain;
+}
+
+.submenu-container.no-children .submenu-one li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.submenu-container.no-children .submenu-one li a:hover {
+  color: #214288;
+  text-decoration: none;
+}
+
+.submenu-container.no-children .submenu-two {
+  margin-top: 0;
+}
+
+.submenu-container.no-children .submenu-two:not(:last-child) {
+  margin-right: 5rem;
+}
+
+.submenu-container.no-children .submenu-two li {
+  white-space: nowrap;
+}
+
+.submenu-container.no-children .submenu-one li a,
+.submenu-container.no-children .submenu-two li a {
+  color: #6D7885;
+}
+
+.submenu-one.full {
+  width: 100%;
+  max-width: 79.375rem;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.submenu-one.full.solutions {
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.submenu-one.full.products .main-width:not(:last-child) {
+  margin-right: 5rem;
+}
+
+.submenu-one.full.partners .main-width:not(:last-child) {
+  margin-right: 5rem;
+}
+
+.submenu-one.full li.has-children a {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 125%;
+  color: #2C2D2E;
+}
+
+.submenu-one.full li.has-children a:hover {
+  text-decoration: none;
+}
+
+.submenu-one.full li.has-children .second-level {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 125%;
+  color: #2C2D2E;
+}
+
+.submenu-one.full li.no-children {
+  padding-right: 0.3125rem;
+}
+
+.submenu-one.full li.no-children .submenu-two {
+  margin-top: 0;
+}
+
+.submenu-one.full li.no-children a {
+  font-weight: 500;
+  color: #6D7885;
+}
+
+.submenu-one.full li.no-children a:hover {
+  color: #214288;
+  text-decoration: none;
+}
+
+.submenu-one.full li.no-children a.menu-btn.dso {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 100%;
+  color: #FFFFFF;
+  width: 100%;
+  max-width: 12.5rem;
+  padding: 0.625rem 0.625rem;
+  text-align: center;
+  background: #214288;
+  margin-top: 2.25rem;
+  border-radius: 0;
+  font-weight: 400;
+}
+
+.submenu-one.full .main-width {
+  width: auto;
+}
+
+.submenu-one.full .half-width {
+  width: auto;
+}
+
+.submenu-one li.has-children .submenu-two li a {
+  font-weight: 500;
+  text-transform: none;
+  font-size: 0.875rem;
+  line-height: 125%;
+  color: #6D7885;
+}
+
+.submenu-one li.has-children .submenu-two li a:hover {
+  font-weight: 600;
+  color: #214288;
+  text-decoration: none;
+}
+
+.submenu-one li.ext-menu ul li a {
+  font-weight: 600;
+  color: #6D7885;
+  line-height: 145%;
+}
+
+.submenu-one li.ext-menu ul li a span {
+  display: block;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.submenu-one li.ext-menu ul li a:hover {
+  color: #214288;
+}
+
+.submenu-one.full.products,
+.submenu-one.full.partners {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.submenu-two-wrapper {
+  width: 100%;
+  max-width: 79.375rem;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.submenu-two {
+  width: auto;
+  margin-top: 1rem;
+}
+
+.submenu-two:not(:last-child) {
+  margin-right: 1.25rem;
+}
+
+.submenu-two li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.only-mob {
+  display: none;
+}
+
+.menu-btn {
+  font-size: 0.875rem;
+  line-height: 100%;
+  color: #FFFFFF;
+  width: 100%;
+  max-width: 12.5rem;
+  padding: 0.625rem 1rem;
+  text-align: center;
+  background: #214288;
+  margin-top: 2.25rem;
+  border-radius: 0;
+}
+
+.menu-btn.dso {
+  padding: 0.625rem 0.625rem;
+}
+
+/*# sourceMappingURL=header.css.map */

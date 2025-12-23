@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'Manrope-Regular';
+  src: url("../fonts/Manrope/Manrope-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope-Regular';
+  src: url("../fonts/Manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope-Medium';
+  src: url("../fonts/Manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope-SemiBold';
+  src: url("../fonts/Manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope-Bold';
+  src: url("../fonts/Manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+#body {
+  position: relative;
+}
+
+.scroll-off {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+body.not-scroll {
+  height: 100%;
+  overflow-y: hidden;
+  padding: 0 calc(1.125rem - (100vw - 100%)) 0 0;
+}
+
+footer ul, header ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*h1,h2,h3,h4,p,li {margin: 0;}*/
+.mb20 {
+  margin-bottom: 1.25rem;
+}
+
+.mb10 {
+  margin-bottom: 0.625rem;
+}
+
+.mb50 {
+  margin-bottom: 3.125rem;
+}
+
+.mb60 {
+  margin-bottom: 3.75rem;
+}
+
+.mt80 {
+  margin-top: 5rem;
+}
+
+.mt60 {
+  margin-top: 3.75rem;
+}
+
+.center {
+  text-align: center;
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  margin: 0 0 0 0;
+  font: 400 1rem/130% 'Manrope', sans-serif;
+  color: #2C2D2E;
+  background: #FFFFFF;
+  line-height: 120%;
+}
+
+#main {
+  color: red;
+}
+
+h1, h2, h3 {
+  font-family: 'Manrope';
+  color: #2C2D2E;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 120%;
+  color: #2C2D2E;
+  margin: 0 0 2rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 125%;
+  color: #2C2D2E;
+  margin: 0 0 1.5rem 0;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 140%;
+}
+
+.container, #content {
+  max-width: 91.75rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer a:not([class]), .header a:not([class]) {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-underline-offset: 0.25rem;
+}
+
+.footer a:not([class]):hover, .header a:not([class]):hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=app.css.map */
