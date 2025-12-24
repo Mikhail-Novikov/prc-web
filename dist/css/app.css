@@ -103,14 +103,6 @@ figure {
   gap: 0.75rem;
 }
 
-.pr-12 {
-  padding-right: 0.75rem;
-}
-
-.pb-12 {
-  padding-bottom: 0.75rem;
-}
-
 .center {
   text-align: center;
 }
