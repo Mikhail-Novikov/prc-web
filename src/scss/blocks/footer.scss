@@ -1,0 +1,130 @@
+
+@import '../lib/flexbox.scss';
+@import '../lib/variables';
+
+.footer {
+	background: $main-blue;
+	color: $white;
+	font-weight: 300;
+	font-size: 14px;
+	padding: 80px 0 60px 0;
+	line-height: 145%;
+	p {
+		margin: 0;
+	}
+	.menu-title {
+		text-transform: uppercase;
+		margin-bottom: 16px;
+		font-weight: 600;
+	}
+	&.eng {
+		color: #DCE1E6;
+		.footer-wrapper {
+		}
+	}
+}
+.adress-wrapper {
+	margin-bottom: 20px;
+}
+.footer-adress {
+	p {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+}
+.footer-phone {
+	p {
+		margin-bottom: 12px;
+	}
+	&.tab {
+		display: none;
+	}
+}
+.footer-icons {
+	margin-top: 55px;
+	li {
+		width: 24px;
+		height: 24px;
+		margin-right: 28px;
+		flex-shrink: 0;
+		a {
+			height: 100%;
+		}
+	}
+	li#dzen {
+		background: url('/images/2023/icon-yandex-zen.svg') no-repeat center center / contain;
+	}
+	li#youtube {
+		background: url('/images/2023/youtube.svg') no-repeat center center / contain;
+	}
+	li#vk {
+		background: url('/images/2023/icon-vk.svg') no-repeat center center / contain;
+	}
+	li#vk-video {
+		background: url('/images/2023/icon-vk-video.svg') no-repeat center center / contain;
+	}
+	li#telegram {
+		background: url('/images/2023/telegram.svg') no-repeat center center / contain;
+	}
+	li#fb {
+		background: url('/images/2023/eng/icons/fb.svg') no-repeat center center / contain;
+	}
+	li#linkedin {
+		background: url('/images/2023/eng/icons/linkedin.svg') no-repeat center center / contain;
+	}
+}
+.footer-menu {
+	li {
+		&:not(:last-child) {
+			margin-bottom: 12px;
+		}
+	}
+}
+.footer-logo {
+	display: block;
+	max-width: 129px;
+	margin: 0 0 32px 0;
+}
+.footer-brand {
+	width: 100%;
+	max-width: 228px;
+}
+.eng-contacts {
+	margin-bottom: 12px;
+	p {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+		margin: 0;
+		&:not(:last-child) {
+			margin: 0 0 4px 0;
+		}
+	}
+}
+.eng-bottom-nav {
+	li {
+		padding: 8px 0;
+		margin-right: 60px;
+		font-weight: 600;
+		color: $white;
+	}
+}
+.eng {
+	.footer-icons {
+		margin-top: auto;
+	}
+}
+.in-touch {
+	font-size: 16px;
+	line-height: 150%;
+	font-weight: 600;
+	margin: 0 0 16px 0;
+}
+.eng-address {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	max-width: 228px;
+	margin: 0 0 40px 0;
+}

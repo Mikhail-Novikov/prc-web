@@ -1,5 +1,5 @@
-@import '../lib/flexbox.scss';
-@import '../lib/variables';
+@import './lib/flexbox.scss';
+@import './lib/variables';
 
 // adaptive
 @media screen and (max-width: 1548px) {
@@ -17,9 +17,6 @@
         padding: 60px 0;
     }
 
-    /*.top-menu .main-top:not(:last-child) {
-    margin-right:20px;
-  }*/
     .top-menu .main-top {
         padding: 0 10px;
     }
@@ -724,14 +721,7 @@
     .header-wrapper {
         height: 60px;
     }
-
-    /*
-  .footer-wrapper .footer-phone {
-    @include flexbox;
-    @include flex-direction(column);
-    width:calc(50%);
-    @include order(1);
-  }*/
+    
     .footer .footer-wrapper {
         @include flex-direction(column);
         gap: 50px;

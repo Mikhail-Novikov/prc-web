@@ -1,0 +1,68 @@
+.profitably__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.profitably__item-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.profitably__item-title {
+  color: #2C2D2E;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.profitably__item-card {
+  color: #2C2D2E;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  border: 0.09375rem solid #CBCBCB;
+  padding: 2.5rem 2.5rem 2.5rem 3rem;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.profitably__item-subtitle {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.profitably__item-desc {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.profitably__item-desc-bottom {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.profitably__item-desc--right figcaption {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.profitably__item-desc--left figcaption {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 46.375rem) {
+  .profitably__item-wrap, .profitably__item-desc-bottom {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=profitable.css.map */

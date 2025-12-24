@@ -1,0 +1,140 @@
+.footer {
+  background: #214288;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 0.875rem;
+  padding: 5rem 0 3.75rem 0;
+  line-height: 145%;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer .menu-title {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer.eng {
+  color: #DCE1E6;
+}
+
+.adress-wrapper {
+  margin-bottom: 1.25rem;
+}
+
+.footer-adress p:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+.footer-phone p {
+  margin-bottom: 0.75rem;
+}
+
+.footer-phone.tab {
+  display: none;
+}
+
+.footer-icons {
+  margin-top: 3.4375rem;
+}
+
+.footer-icons li {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1.75rem;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.footer-icons li a {
+  height: 100%;
+}
+
+.footer-icons li#dzen {
+  background: url("/images/2023/icon-yandex-zen.svg") no-repeat center center/contain;
+}
+
+.footer-icons li#youtube {
+  background: url("/images/2023/youtube.svg") no-repeat center center/contain;
+}
+
+.footer-icons li#vk {
+  background: url("/images/2023/icon-vk.svg") no-repeat center center/contain;
+}
+
+.footer-icons li#vk-video {
+  background: url("/images/2023/icon-vk-video.svg") no-repeat center center/contain;
+}
+
+.footer-icons li#telegram {
+  background: url("/images/2023/telegram.svg") no-repeat center center/contain;
+}
+
+.footer-icons li#fb {
+  background: url("/images/2023/eng/icons/fb.svg") no-repeat center center/contain;
+}
+
+.footer-icons li#linkedin {
+  background: url("/images/2023/eng/icons/linkedin.svg") no-repeat center center/contain;
+}
+
+.footer-menu li:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.footer-logo {
+  display: block;
+  max-width: 8.0625rem;
+  margin: 0 0 2rem 0;
+}
+
+.footer-brand {
+  width: 100%;
+  max-width: 14.25rem;
+}
+
+.eng-contacts {
+  margin-bottom: 0.75rem;
+}
+
+.eng-contacts p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  margin: 0;
+}
+
+.eng-contacts p:not(:last-child) {
+  margin: 0 0 0.25rem 0;
+}
+
+.eng-bottom-nav li {
+  padding: 0.5rem 0;
+  margin-right: 3.75rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.eng .footer-icons {
+  margin-top: auto;
+}
+
+.in-touch {
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.eng-address {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  max-width: 14.25rem;
+  margin: 0 0 2.5rem 0;
+}
+
+/*# sourceMappingURL=footer.css.map */

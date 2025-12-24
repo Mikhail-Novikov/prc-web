@@ -56,7 +56,8 @@ body.not-scroll {
   padding: 0 calc(1.125rem - (100vw - 100%)) 0 0;
 }
 
-footer ul, header ul {
+footer ul,
+header ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -66,6 +67,11 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+blockquote,
+figure {
+  margin: 0;
 }
 
 /*h1,h2,h3,h4,p,li {margin: 0;}*/
@@ -93,8 +99,30 @@ ol {
   margin-top: 3.75rem;
 }
 
+.gap-12 {
+  gap: 0.75rem;
+}
+
+.pr-12 {
+  padding-right: 0.75rem;
+}
+
+.pb-12 {
+  padding-bottom: 0.75rem;
+}
+
 .center {
   text-align: center;
+}
+
+.flex {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-column {
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 body {
@@ -124,7 +152,10 @@ img {
   object-fit: cover;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
   padding: 0;
   background-color: transparent;
@@ -148,7 +179,9 @@ body {
   color: red;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Manrope';
   color: #2C2D2E;
 }
@@ -174,20 +207,42 @@ h3 {
   line-height: 140%;
 }
 
-.container, #content {
+.container,
+#content {
   max-width: 91.75rem;
   width: 100%;
   margin: 0 auto;
 }
 
-.footer a:not([class]), .header a:not([class]) {
+.footer a:not([class]),
+.header a:not([class]) {
   color: #FFFFFF;
   text-decoration: none;
   text-underline-offset: 0.25rem;
 }
 
-.footer a:not([class]):hover, .header a:not([class]):hover {
+.footer a:not([class]):hover,
+.header a:not([class]):hover {
   text-decoration: underline;
+}
+
+.circle-with-number {
+  border: 0.09375rem solid #CBCBCB;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.rounded-60 {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=app.css.map */

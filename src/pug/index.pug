@@ -4,3 +4,41 @@ include blocks/page
 
 +page(pagesList.index.title)
   include ./blocks/header/_
+  main#container.Site-content.main(itemprop="mainContentOfPage")
+    section
+      div.container
+        h2 Почему стоит перейти на PERCo-Web?
+
+        div.profitably
+          div.profitably__item
+            .circle-with-number.rounded-60 1
+            h3.profitably__item-title Во-первых, это выгодно
+          div.profitably__item-wrap
+            figure.profitably__item-card.col-desk-6.col-mid-12.pr-12
+              blockquote.profitably__item-subtitle
+                | Бесплатный базовый модуль и пробный доступ на 60 дней
+
+              div.profitably__item-desc.profitably__item-desc--right
+                p Бесплатный модуль PERCo-Web «Базовый пакет ПО» позволяет организовать контроль доступа на предприятии со штатом до 100 сотрудников.
+                div.profitably__item-desc-bottom
+                  p
+                    | Пробный доступ на 60 дней дает возможность принять решение о необходимости перехода на функционал системы PERCo-Web.
+                  figcaption
+                    img(src="./img/illustration-men.svg")
+
+            div.flex.flex-column.col-desk-6.col-mid-12.gap-12
+              figure.profitably__item-card
+                blockquote.profitably__item-subtitle
+                  | Рабочие места без ограничений
+                div.profitably__item-desc
+                  p
+                    | Безлимитное количество рабочих мест для операторов, подключаемых устройств и идентификаторов
+
+              figure.profitably__item-card
+                blockquote.profitably__item-subtitle
+                  | Бесплатное обучение сотрудников до 100 сотрудников
+                div.profitably__item-desc
+                  p
+                    | Мы проводим бесплатное обучение. Семинары PERCo (очные и онлайн) хранятся в открытом доступе.
+
+  include ./blocks/footer/_

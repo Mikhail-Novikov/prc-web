@@ -1,0 +1,59 @@
+@import "../lib/_grid";
+
+// CLASSES
+.grid {
+  @include grid-base(100%);
+  @media screen and (max-width: $grid-tablet-breakpoint) {
+    width: 100%;//$tab-grid-width;
+  }
+  @media screen and (max-width: $grid-mobile-breakpoint) {
+    width: 100%; //$mob-grid-width;
+  }
+  &-0 {
+    @include grid-base(100%);
+  }
+}
+
+.col {
+  @include columns-loop(desk, $grid-desktop-columns, $desk-gutter);
+  @media screen and (max-width: $grid-desktop-breakpoint) { // 1280px
+    @include columns-loop(desk-sm, $grid-desktop-columns, $desk-gutter);
+  }
+  @media screen and (max-width: 1036px) { // 1036px
+    @include columns-loop(mid, $grid-desktop-columns, $desk-gutter);
+  }
+  @media screen and (max-width: $grid-tablet-breakpoint) { // 742px
+    @include columns-loop(tab, $grid-tablet-columns, $tab-gutter);
+  }
+  @media screen and (max-width: $grid-mobile-breakpoint) {
+    @include columns-loop(mob, $grid-mobile-columns, $mob-gutter);
+  }
+}
+.cat-col {
+  $grid-custom-desktop-columns:3;
+  $grid-custom-tablet-columns:2;
+  $grid-custom-mobile-columns:1;
+  $cat_desktop_between_cols:24; // px - между колонками
+  $cat_tablet_between_cols:16; // px - между колонками
+  $cat_mobile_between_cols:0; // px - между колонками
+  @include custom-columns-loop(desk, $grid-custom-desktop-columns, $cat_desktop_between_cols, $grid-desktop-breakpoint-value);
+  //@include desk-margin (desk, $cat_desktop_between_cols, $grid-custom-desktop-columns);
+  @media screen and (max-width: $grid-tablet-breakpoint-value + 'px') {
+    @include custom-columns-loop(tab, $grid-custom-tablet-columns, $cat_tablet_between_cols, $grid-tablet-breakpoint-value);
+    //@include tablet-margin (tab, $grid-custom-desktop-columns, $grid-custom-tablet-columns);
+  }
+  @media screen and (max-width: $grid-mobile-breakpoint-value + 'px') {
+    @include custom-columns-loop(mob, $grid-custom-mobile-columns, $cat_mobile_between_cols, $grid-mobile-breakpoint-value);
+    //@include mobile-margin (mob, $grid-custom-desktop-columns, $grid-custom-tablet-columns, $grid-custom-mobile-columns);
+  }
+}
+
+//$news_between_cols=16;
+/*.container {
+  max-width: $grid-desktop-breakpoint;
+  width: 100%;
+  margin: 0 auto;
+  @media screen and (max-width: $grid-desktop-breakpoint) {
+    max-width:$grid-tablet-breakpoint - 40px;
+  }
+}*/

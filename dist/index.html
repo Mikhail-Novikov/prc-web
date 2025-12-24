@@ -25,20 +25,23 @@
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/lib/_flexbox.css" />
+    <link rel="stylesheet" href="css/lib/_grid.css" />
     <link rel="stylesheet" href="css/lib/_variables.css" />
     <link rel="stylesheet" href="css/lib/manrope.css" />
-    <link rel="stylesheet" href="css/blocks/adaptive.css" />
+    <link rel="stylesheet" href="css/blocks/footer.css" />
+    <link rel="stylesheet" href="css/blocks/grid.css" />
     <link rel="stylesheet" href="css/blocks/header.css" />
+    <link rel="stylesheet" href="css/blocks/profitable.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
   </head>
   <body class="rs-body">
     <main role="main">
       <header class="header">
         <div class="container header-wrapper"><a href="/"><img class="main-logo" src="https://www.perco.ru/images/2023/logo.svg" /></a>
           <div class="top-menu-wrapper">
-            <!-- <nav role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">-->
             <ul class="top-menu">
-              <li class="main-top has-children"><a class="main-link" href="/resheniya/">&Rcy; &iecy; &shcy; &iecy; &ncy; &icy; &yacy;</a>
+              <li class="main-top has-children"><a class="main-link" href="/resheniya/">Решения</a>
                 <div class="arrow-sub"></div>
                 <div class="submenu-container">
                   <div class="container">
@@ -92,8 +95,8 @@
                   </div>
                 </div>
               </li>
-              <li class="main-top"><a class="main-link" href="/novosti/">&Ncy; &ocy; &vcy; &ocy; &scy; &tcy; &icy;</a></li>
-              <li class="main-top has-children"><a class="main-link" href="/products/">&Kcy; &acy; &tcy; &acy; &lcy; &ocy; &gcy;</a>
+              <li class="main-top"><a class="main-link" href="/novosti/">Новости</a></li>
+              <li class="main-top has-children"><a class="main-link" href="/products/">Продукты</a>
                 <div class="arrow-sub"></div>
                 <div class="submenu-container">
                   <div class="container">
@@ -103,10 +106,10 @@
                         <div class="second-level">&Ocy; &bcy; &ocy; &rcy; &ucy; &dcy; &ocy; &vcy; &acy; &ncy; &icy; &iecy;</div>
                         <div class="arrow-sub second-level"></div>
                         <ul class="submenu-two">
-                          <li><a href="/products/turnikety/">&Tcy; &ucy; &rcy; &ncy; &icy; &kcy; &iecy; &tcy; &ycy; &icy; &kcy; &acy; &lcy; &icy; &tcy; &kcy; &icy;</a></li>
-                          <li><a href="/products/ograzhdeniya/">&Ocy; &gcy; &rcy; &acy; &zhcy; &dcy; &iecy; &ncy; &icy; &yacy;</a></li>
-                          <li><a href="/products/shlagbaum/">&SHcy; &lcy; &acy; &gcy; &bcy; &acy; &ucy; &mcy; &ycy;</a></li>
-                          <li><a href="/products/elektromekhanicheskie-zamki/">&Ecy; &lcy; &iecy; &kcy; &tcy; &rcy; &ocy; &mcy; &iecy; &khcy; &acy; &ncy; &icy; &chcy; &iecy; &scy; &kcy; &icy; &iecy; &zcy; &acy; &mcy; &kcy; &icy;</a></li>
+                          <li><a href="/products/turnikety/">Турникеты</a></li>
+                          <li><a href="/products/ograzhdeniya/">Организация</a></li>
+                          <li><a href="/products/shlagbaum/">Шлагбаум</a></li>
+                          <li><a href="/products/elektromekhanicheskie-zamki/">Электромеханические замки</a></li>
                           <li><a href="/products/kontrollery-schityvateli/">&Kcy; &ocy; &ncy; &tcy; &rcy; &ocy; &lcy; &lcy; &iecy; &rcy; &ycy; &icy; &scy; &chcy; &icy; &tcy; &ycy; &vcy; &acy; &tcy; &iecy; &lcy; &icy;</a></li>
                           <li><a href="/products/sistemy-platnogo-dostupa/">&Tcy; &ucy; &rcy; &ncy; &icy; &kcy; &iecy; &tcy; &ycy; &pcy; &lcy; &acy; &tcy; &ncy; &ocy; &gcy; &ocy; &dcy; &ocy; &scy; &tcy; &ucy; &pcy; &acy;</a></li>
                           <li><a href="/products/koren-dopolnitelnoe-oborudovanie/">&Dcy; &ocy; &pcy; &ocy; &lcy; &ncy; &icy; &tcy; &iecy; &lcy; &softcy; &ncy; &ocy; &iecy; &ocy; &bcy; &ocy; &rcy; &ucy; &dcy; &ocy; &vcy; &acy; &ncy; &icy; &iecy;</a></li>
@@ -136,9 +139,9 @@
                   </div>
                 </div>
               </li>
-              <li class="main-top"><a class="main-link" href="/products/prays-list.php">&Pcy; &rcy; &acy; &jcy; &scy; -&lcy; &icy; &scy; &tcy;</a></li>
-              <li class="main-top"><a class="main-link" href="/fotogalereya/">&Fcy; &ocy; &tcy; &ocy; &gcy; &acy; &lcy; &iecy; &rcy; &iecy; &yacy;</a></li>
-              <li class="main-top has-children"><a class="main-link" href="/partneram/kak-stat-partnerom.php">&Pcy; &acy; &rcy; &tcy; &ncy; &iecy; &rcy; &acy; &mcy;</a>
+              <li class="main-top"><a class="main-link" href="/products/prays-list.php">Прайс лист</a></li>
+              <li class="main-top"><a class="main-link" href="/fotogalereya/">Фотогалерея</a></li>
+              <li class="main-top has-children"><a class="main-link" href="/partneram/kak-stat-partnerom.php">Как стать партнёром</a>
                 <div class="arrow-sub"></div>
                 <div class="submenu-container">
                   <div class="container">
@@ -146,12 +149,10 @@
                     <ul class="submenu-one partners full">
                       <li class="main-width no-children">
                         <ul class="submenu-two">
-                          <li><a href="/partneram/kak-stat-partnerom.php">&Kcy; &acy; &kcy; &scy; &tcy; &acy; &tcy; &softcy; &pcy; &acy; &rcy; &tcy; &ncy; &iocy; &rcy; &ocy; &mcy;</a></li>
-                          <li><a href="/partneram/novoe.php">&Ncy; &ocy; &vcy; &ocy; &iecy; &vcy; &tcy; &ocy; &vcy; &acy; &rcy; &acy; &khcy;</a></li>
-                          <li class="only-mob"><a href="/partneram/biblioteka-modelei.php">&Bcy; &icy; &bcy; &lcy; &icy; &ocy; &tcy; &iecy; &kcy; &icy; &mcy; &ocy; &dcy; &iecy; &lcy; &iecy; &jcy; &icy; &scy; &khcy; &iecy; &mcy; &ycy; &pcy; &ocy; &dcy; &kcy; &lcy; &yucy; &chcy; &iecy; &ncy; &icy; &yacy;</a></li>
-                          <li class="mob-hidden"><a href="/partneram/tehnicheskiy-katalog.php">&Kcy; &acy; &tcy; &acy; &lcy; &ocy; &gcy; &icy; &ocy; &bcy; &ocy; &rcy; &ucy; &dcy; &ocy; &vcy; &acy; &ncy; &icy; &yacy; &icy; &zcy; &acy; &pcy; &chcy; &acy; &scy; &tcy; &iecy; &jcy;</a></li>
-                          <li><a href="/partneram/programmnoe-obespechenie.php">&Pcy; &rcy; &ocy; &gcy; &rcy; &acy; &mcy; &mcy; &ncy; &ocy; &iecy; &ocy; &bcy; &iecy; &scy; &pcy; &iecy; &chcy; &iecy; &ncy; &icy; &iecy;</a></li>
-                          <li><a href="/partneram/dokumentatsiya.php">&Dcy; &ocy; &kcy; &ucy; &mcy; &iecy; &ncy; &tcy; &acy; &tscy; &icy; &yacy;</a></li>
+                          <li><a href="/partneram/kak-stat-partnerom.php"> </a></li>
+                          <li><a href="/partneram/novoe.php"> </a></li>
+                          <li><a href="/partneram/programmnoe-obespechenie.php"> </a></li>
+                          <li><a href="/partneram/dokumentatsiya.php"> </a></li>
                           <li><a href="/partneram/video/">&Vcy; &icy; &dcy; &iecy; &ocy; &icy; &ncy; &scy; &tcy; &rcy; &ucy; &kcy; &tscy; &icy; &icy;</a></li>
                         </ul><a class="menu-btn dso" href="/partneram/dso.php">&Scy; &tcy; &acy; &tcy; &ucy; &scy; &ocy; &bcy; &rcy; &acy; &shchcy; &iecy; &ncy; &icy; &yacy; &vcy; &Dcy; &Scy; &Ocy;</a>
                       </li>
@@ -179,7 +180,7 @@
                   </div>
                 </div>
               </li>
-              <li class="main-top has-children"><a class="main-link" href="/gde-kupit/">&Pcy; &ocy; &kcy; &ucy; &pcy; &acy; &tcy; &iecy; &lcy; &yacy; &mcy;</a>
+              <li class="main-top has-children"><a class="main-link" href="/gde-kupit/">Где купить</a>
                 <div class="arrow-sub"></div>
                 <div class="submenu-container no-children">
                   <div class="container">
@@ -200,8 +201,8 @@
                   </div>
                 </div>
               </li>
-              <li class="main-top"><a class="main-link" href="/obuchenie/">&Ocy; &bcy; &ucy; &chcy; &iecy; &ncy; &icy; &iecy;</a></li>
-              <li class="main-top has-children"><a class="main-link" href="/o-kompanii/">&Ocy; &kcy; &ocy; &mcy; &pcy; &acy; &ncy; &icy; &icy;</a>
+              <li class="main-top"><a class="main-link" href="/obuchenie/">Обучение</a></li>
+              <li class="main-top has-children"><a class="main-link" href="/o-kompanii/">О компании</a>
                 <div class="arrow-sub"></div>
                 <div class="submenu-container no-children">
                   <div class="container">
@@ -217,7 +218,7 @@
                   </div>
                 </div>
               </li>
-              <li class="main-top"><a class="main-link" href="/kontakty/">&Kcy; &ocy; &ncy; &tcy; &acy; &kcy; &tcy; &ycy;</a></li>
+              <li class="main-top"><a class="main-link" href="/kontakty/">Контакты</a></li>
             </ul>
           </div>
           <ul class="top-menu-icons">
@@ -234,6 +235,115 @@
           </ul>
         </div>
       </header>
+      <main class="Site-content main" id="container" itemprop="mainContentOfPage">
+        <section>
+          <div class="container">
+            <h2>Почему стоит перейти на PERCo-Web?</h2>
+            <div class="profitably">
+              <div class="profitably__item">
+                <div class="circle-with-number rounded-60">1</div>
+                <h3 class="profitably__item-title">Во-первых, это выгодно</h3>
+              </div>
+              <div class="profitably__item-wrap">
+                <figure class="profitably__item-card col-desk-6 col-mid-12 pr-12">
+                  <blockquote class="profitably__item-subtitle">Бесплатный базовый модуль и пробный доступ на 60 дней</blockquote>
+                  <div class="profitably__item-desc profitably__item-desc--right">
+                    <p>Бесплатный модуль PERCo-Web «Базовый пакет ПО» позволяет организовать контроль доступа на предприятии со штатом до 100 сотрудников.</p>
+                    <div class="profitably__item-desc-bottom">
+                      <p>Пробный доступ на 60 дней дает возможность принять решение о необходимости перехода на функционал системы PERCo-Web.</p>
+                      <figcaption><img src="./img/illustration-men.svg" /></figcaption>
+                    </div>
+                  </div>
+                </figure>
+                <div class="flex flex-column col-desk-6 col-mid-12 gap-12">
+                  <figure class="profitably__item-card">
+                    <blockquote class="profitably__item-subtitle">Рабочие места без ограничений</blockquote>
+                    <div class="profitably__item-desc">
+                      <p>Безлимитное количество рабочих мест для операторов, подключаемых устройств и идентификаторов</p>
+                    </div>
+                  </figure>
+                  <figure class="profitably__item-card">
+                    <blockquote class="profitably__item-subtitle">Бесплатное обучение сотрудников до 100 сотрудников</blockquote>
+                    <div class="profitably__item-desc">
+                      <p>Мы проводим бесплатное обучение. Семинары PERCo (очные и онлайн) хранятся в открытом доступе.</p>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer flex-middle" itemscope="" itemtype="https://schema.org/WPFooter">
+        <div class="container">
+          <div class="footer-wrapper grid">
+            <div class="col-desk-2 footer-adress">
+              <div class="adress-wrapper">
+                <p>Санкт-Петербург,<br />Политехническая, 4, к. 2</p>
+                <p>Псков,<br />Леона Поземского, 123В</p>
+              </div>
+              <div class="footer-phone tab">
+                <p><a href="tel:+78003335253">8 (800) 333-52-53</a></p>
+                <p><a href="tel:+78122470457">+7 (812) 247-04-57</a></p>
+                <p><a href="mailto:mail@perco.ru">mail@perco.ru</a></p>
+                <p><a href="/kontakty/#recv">Реквизиты</a></p>
+              </div>
+              <p class="footer-policy"><a href="/politika-konfidentsialnosti/">Политика <br />конфиденциальности</a></p>
+              <ul class="footer-icons">
+                <li id="telegram"><a href="//perco.des/redirect.php?site=https://t.me/perco_com&amp;amp;hash=219225b1fc49c96ef687d5a072cecc20"></a></li>
+                <li id="youtube"><a href="//perco.des/redirect.php?site=https://www.youtube.com/percoru&amp;amp;hash=d912d78aec7cd43c7e8e4cc8eb27b6b7"></a></li>
+                <li id="vk"><a href="//perco.des/redirect.php?site=https://vk.com/percoru&amp;amp;hash=c4c60536963b52cc5e8d64d2b7ff80ec"></a></li>
+                <li id="vk-video"><a href="//perco.des/redirect.php?site=https://vk.com/video/@percoru&amp;amp;hash=84e4b6a0780802b09e88f7b1eda9381f"></a></li>
+                <li id="dzen"><a href="//perco.des/redirect.php?site=https://zen.yandex.ru/id/5dd3ece3f5a25e6c5ca78bf8&amp;amp;hash=44c8c914793d6865a26f92eb3b684337"></a></li>
+              </ul>
+            </div>
+            <div class="col-desk-2 footer-phone">
+              <p><a href="tel:+78003335253">8 (800) 333-52-53</a></p>
+              <p><a href="tel:+78122470457">+7 (812) 247-04-57</a></p>
+              <p><a href="mailto:mail@perco.ru">mail@perco.ru</a></p>
+              <p><a href="/kontakty/#recv">Реквизиты</a></p>
+            </div>
+            <div class="col-desk-8 grid right-container">
+              <div class="col-desk-3 col-mid-6 right-blocks">
+                <p class="menu-title">Продукция</p>
+                <ul class="footer-menu">
+                  <li><a href="/resheniya/">Решения</a></li>
+                  <li><a href="/products/">Каталог</a></li>
+                  <li><a href="/products/prays-list.php">Прайс-лист</a></li>
+                  <li><a href="/partneram/novoe.php">Новое в товарах</a></li>
+                </ul>
+              </div>
+              <div class="col-desk-3 col-mid-6 right-blocks">
+                <p class="menu-title">Партнерам</p>
+                <ul class="footer-menu">
+                  <li><a href="/partneram/biblioteka-modelei.php">BIM-модели</a></li>
+                  <li><a href="/partneram/tehnicheskiy-katalog.php">Технический каталог</a></li>
+                  <li><a href="/obuchenie/">Обучение</a></li>
+                  <li><a href="/partneram/video/">Видеоинструкции</a></li>
+                </ul>
+              </div>
+              <div class="col-desk-3 col-mid-6 right-blocks">
+                <p class="menu-title">Покупателям</p>
+                <ul class="footer-menu">
+                  <li><a href="/gde-kupit/servisnoe-obsluzhivanie.php">Сервисные центры</a></li>
+                  <li><a href="/gde-kupit/">Где купить</a></li>
+                  <li><a href="/fotogalereya/">Примеры установок</a></li>
+                  <li><a href="/kontakty/">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="col-desk-3 col-mid-6 right-blocks">
+                <p class="menu-title">Техническая поддержка</p>
+                <ul class="footer-menu">
+                  <li><a href="tel:+78007753705">8 (800) 775 37 05</a></li>
+                  <li><a href="tel:+78122470455">+7 (812) 247-04-55</a></li>
+                  <li><a href="https://t.me/PERCo_Service_Bot">@PERCo_Service_Bot</a></li>
+                  <li><a href="/partneram/dokumentatsiya.php">Документация</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/app.js"> </script>

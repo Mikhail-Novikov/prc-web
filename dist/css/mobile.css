@@ -9,9 +9,6 @@
   section {
     padding: 3.75rem 0;
   }
-  /*.top-menu .main-top:not(:last-child) {
-    margin-right:20px;
-  }*/
   .top-menu .main-top {
     padding: 0 0.625rem;
   }
@@ -596,13 +593,6 @@
   .header-wrapper {
     height: 3.75rem;
   }
-  /*
-  .footer-wrapper .footer-phone {
-    @include flexbox;
-    @include flex-direction(column);
-    width:calc(50%);
-    @include order(1);
-  }*/
   .footer .footer-wrapper {
     -ms-flex-direction: column;
     flex-direction: column;
@@ -766,4 +756,4 @@
   }
 }
 
-/*# sourceMappingURL=adaptive.css.map */
+/*# sourceMappingURL=mobile.css.map */
