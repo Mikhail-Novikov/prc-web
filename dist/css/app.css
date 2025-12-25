@@ -218,23 +218,53 @@ h3 {
   text-decoration: underline;
 }
 
-.circle-with-number {
-  border: 0.09375rem solid #CBCBCB;
+.download-link {
+  font-weight: 600;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
   -ms-flex-align: center;
   align-items: center;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 2.5rem;
 }
 
-.rounded-60 {
-  width: 3.75rem;
-  height: 3.75rem;
-  border-radius: 50%;
+.download-link::before {
+  content: '';
+  width: 1.5rem;
+  height: 1.5rem;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 0.5rem;
+  background: url("https://www.perco.des/images/2023/icons/download-link.svg") no-repeat center center/contain;
+}
+
+.btn-open-block {
+  border: none;
+  color: #214288;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-open-block:after {
+  content: '';
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-right: 0.125rem solid #214288;
+  border-top: 0.125rem solid #214288;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  margin: 0 0 0.125rem 0.9375rem;
+  vertical-align: middle;
+}
+
+.prod-desc-info.active .prod-dop-info {
+  transition: all 0.5s ease;
+}
+
+.prod-dop-info {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
 }
 
 /*# sourceMappingURL=app.css.map */

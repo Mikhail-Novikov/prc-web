@@ -1,14 +1,16 @@
-.profitably {
+@charset "UTF-8";
+.skd-web .profitably {
   background: #F5F5F5;
   padding-top: 5rem;
   padding-bottom: 7.5rem;
+  /* Начиная с 10-го пункта убрали ведущий ноль */
 }
 
-.profitably__item {
+.skd-web .profitably__item {
   margin-bottom: 3.75rem;
 }
 
-.profitably__item-title {
+.skd-web .profitably__item-title {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -17,7 +19,7 @@
   margin-bottom: 1.25rem;
 }
 
-.profitably__item-title h3 {
+.skd-web .profitably__item-title h3 {
   color: #2C2D2E;
   font-size: 1.5rem;
   font-weight: 600;
@@ -25,13 +27,13 @@
   margin: 0;
 }
 
-.profitably__item-wrap {
+.skd-web .profitably__item-wrap {
   display: -ms-flexbox;
   display: flex;
   gap: 0.75rem;
 }
 
-.profitably__item-card {
+.skd-web .profitably__item-card {
   color: #2C2D2E;
   font-size: 1.125rem;
   font-weight: 600;
@@ -42,22 +44,22 @@
   flex-grow: 1;
 }
 
-.profitably__item-subtitle {
+.skd-web .profitably__item-subtitle {
   margin-bottom: 0.75rem;
   font-weight: 600;
   font-size: 1.125rem;
 }
 
-.profitably__item-desc {
+.skd-web .profitably__item-desc {
   font-weight: 400;
   font-size: 1.125rem;
 }
 
-.profitably__item-desc p {
+.skd-web .profitably__item-desc p {
   margin: 0.75rem 0 1rem 0;
 }
 
-.profitably__item-desc-bottom {
+.skd-web .profitably__item-desc-bottom {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -66,7 +68,7 @@
   gap: 2.5rem;
 }
 
-.profitably__item-desc-bottom p {
+.skd-web .profitably__item-desc-bottom p {
   margin: 0;
   display: -ms-flexbox;
   display: flex;
@@ -75,38 +77,135 @@
   gap: 0.5rem;
 }
 
-.profitably__item-desc--right figcaption {
+.skd-web .profitably__item-desc--right figcaption {
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-.profitably__item-desc--right figcaption {
+.skd-web .profitably__item-desc--right figcaption {
   -ms-flex-order: 1;
   order: 1;
 }
 
-.profitably__item-desc--right p {
+.skd-web .profitably__item-desc--right p {
   -ms-flex-order: 0;
   order: 0;
 }
 
-.profitably__item-desc--left p {
+.skd-web .profitably__item-desc--left p {
   -ms-flex-order: 1;
   order: 1;
 }
 
-.profitably__item-desc--left figcaption {
+.skd-web .profitably__item-desc--left figcaption {
   -ms-flex-order: 0;
   order: 0;
 }
 
-.profitably__item-desc--left figcaption {
+.skd-web .profitably__item-desc--left figcaption {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+}
+
+.skd-web .profitably__users {
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.75rem;
+}
+
+.skd-web .profitably__users-item {
+  border: 0.09375rem solid #CBCBCB;
+  padding: 2.5rem;
+  width: 50%;
+}
+
+.skd-web .profitably__users-title {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+.skd-web .profitably__users-title p {
+  margin: 0;
+}
+
+.skd-web .profitably__users-subtitle {
+  margin: 0 0 0.25rem 0;
+  color: #2c2d2e;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+}
+
+.skd-web .profitably__users-list {
+  margin-top: 1.75rem;
+}
+
+.skd-web .profitably__users-list li:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.skd-web .profitably__users-list p {
+  margin: 0;
+}
+
+.skd-web .profitably ol {
+  list-style-type: none;
+  counter-reset: num;
+  margin-left: 3.5rem;
+  padding: 0.9375rem 0 0.3125rem 0;
+}
+
+.skd-web .profitably ol > li {
+  position: relative;
+  margin: 0 0 0 0;
+  padding: 0 0 1rem 0;
+}
+
+.skd-web .profitably ol > li:before {
+  content: "0" counter(num);
+  counter-increment: num;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -3rem;
+  width: 2.375rem;
+  text-align: center;
+  color: #6D7885;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.skd-web .profitably ol > li:nth-child(n+10)::before {
+  content: counter(num);
+  /* Без ведущего нуля */
+}
+
+.skd-web .profitably .circle-with-number {
+  border: 0.09375rem solid #CBCBCB;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.skd-web .profitably .rounded-60 {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 46.375rem) {
-  .profitably__item-wrap, .profitably__item-desc-bottom {
+  .skd-web .profitably__item-wrap, .skd-web .profitably__item-desc-bottom {
     -ms-flex-direction: column;
     flex-direction: column;
   }

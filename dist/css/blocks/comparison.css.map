@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/comparison.scss"],"names":[],"mappings":"AAAA;EAEQ,oBAAmB;CACtB","file":"comparison.css","sourcesContent":[".skd-web {\r\n    .comparision {\r\n        padding: 80px 100px;\r\n    }\r\n}"]}

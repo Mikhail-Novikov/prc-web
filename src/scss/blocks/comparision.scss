@@ -1,0 +1,51 @@
+@import '../lib/variables';
+
+.skd-web {
+    .comparision {
+        padding: 80px 100px;
+
+        &__table {
+            margin-bottom: 20px;
+            padding: 0 8px;
+            border: 1px solid $stroke-primary;
+            max-width: 805px;
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                
+                .comparision__table-head th, td {
+                    padding: 12px 8px;
+                    text-align: left;
+                }
+
+                .comparision__table-head th, 
+                td:nth-child(1) {
+                    color: $primary;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+
+            .comparision__table-item.prod-desc-info {
+                display: none;
+
+                &.active {
+                    display: table-row;
+                }
+            }
+
+            /* Анимация для плавного скрытия/показа строк */
+            tr {
+                transition: height 0.5s ease;
+            }
+
+            tr.hidden {
+                height: 0;
+                overflow: hidden;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}

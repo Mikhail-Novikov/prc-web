@@ -1,0 +1,50 @@
+@charset "UTF-8";
+.skd-web .supported {
+  padding: 5rem 6.25rem;
+}
+
+.skd-web .supported__desc {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: first baseline;
+  align-items: first baseline;
+  width: 100%;
+  max-width: 50rem;
+}
+
+.skd-web .supported__desc > p {
+  margin: 0 0 2rem;
+  max-width: 31.25rem;
+}
+
+.skd-web .supported__table {
+  margin-bottom: 1.25rem;
+  padding: 0 0.5rem;
+  border: 0.0625rem solid #CBCBCB;
+  max-width: 50.3125rem;
+  /* Анимация для плавного скрытия/показа строк */
+}
+
+.skd-web .supported__table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.skd-web .supported__table table td {
+  padding: 0.75rem 0.5rem;
+}
+
+.skd-web .supported__table tr {
+  transition: height 0.5s ease;
+}
+
+.skd-web .supported__table tr.hidden {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/*# sourceMappingURL=supported.css.map */

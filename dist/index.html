@@ -28,10 +28,16 @@
     <link rel="stylesheet" href="css/lib/_grid.css" />
     <link rel="stylesheet" href="css/lib/_variables.css" />
     <link rel="stylesheet" href="css/lib/manrope.css" />
+    <link rel="stylesheet" href="css/blocks/comparision.css" />
+    <link rel="stylesheet" href="css/blocks/content-video.css" />
+    <link rel="stylesheet" href="css/blocks/converter.css" />
+    <link rel="stylesheet" href="css/blocks/features.css" />
     <link rel="stylesheet" href="css/blocks/footer.css" />
     <link rel="stylesheet" href="css/blocks/grid.css" />
     <link rel="stylesheet" href="css/blocks/header.css" />
+    <link rel="stylesheet" href="css/blocks/migration.css" />
     <link rel="stylesheet" href="css/blocks/profitable.css" />
+    <link rel="stylesheet" href="css/blocks/supported.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/mobile.css" />
   </head>
@@ -236,80 +242,324 @@
         </div>
       </header>
       <main class="Site-content main" id="container" itemprop="mainContentOfPage">
-        <section class="profitably">
-          <div class="container">
-            <h2>Почему стоит перейти на PERCo-Web?</h2>
-            <div class="profitably__item">
-              <div class="profitably__item-title">
-                <div class="circle-with-number rounded-60">1</div>
-                <h3>Во-первых, это выгодно</h3>
-              </div>
-              <div class="profitably__item-wrap">
-                <figure class="profitably__item-card col-desk-6 col-mid-12">
-                  <blockquote class="profitably__item-subtitle">Бесплатный базовый модуль и пробный доступ на 60 дней</blockquote>
-                  <div class="profitably__item-desc">
-                    <p>Бесплатный модуль PERCo-Web «Базовый пакет ПО» позволяет организовать контроль доступа на предприятии со штатом до 100 сотрудников.</p>
-                    <div class="profitably__item-desc-bottom profitably__item-desc--right">
-                      <p><span>Пробный доступ на 60 дней дает возможность принять решение о необходимости перехода на функционал системы PERCo-Web.</span></p>
-                      <figcaption><img src="./img/illustration-men.svg" /></figcaption>
+        <div class="skd-web" id="skd-web">
+          <section class="profitably">
+            <div class="container">
+              <h2>Почему стоит перейти на PERCo-Web?</h2>
+              <div class="profitably__item">
+                <div class="profitably__item-title">
+                  <div class="circle-with-number rounded-60">1</div>
+                  <h3>Во-первых, это выгодно</h3>
+                </div>
+                <div class="profitably__item-wrap">
+                  <figure class="profitably__item-card col-desk-6 col-mid-12">
+                    <blockquote class="profitably__item-subtitle">Бесплатный базовый модуль и пробный доступ на 60 дней</blockquote>
+                    <div class="profitably__item-desc">
+                      <p>Бесплатный модуль PERCo-Web «Базовый пакет ПО» позволяет организовать контроль доступа на предприятии со штатом до 100 сотрудников.</p>
+                      <div class="profitably__item-desc-bottom profitably__item-desc--right">
+                        <p><span>Пробный доступ на 60 дней дает возможность принять решение о необходимости перехода на функционал системы PERCo-Web.</span></p>
+                        <figcaption><img src="./img/illustration-men.svg" /></figcaption>
+                      </div>
                     </div>
+                  </figure>
+                  <div class="flex flex-column col-desk-6 col-mid-12 gap-12">
+                    <figure class="profitably__item-card">
+                      <blockquote class="profitably__item-subtitle">Рабочие места без ограничений</blockquote>
+                      <div class="profitably__item-desc">
+                        <p><span>Безлимитное количество рабочих мест для операторов, подключаемых устройств и идентификаторов</span></p>
+                      </div>
+                    </figure>
+                    <figure class="profitably__item-card">
+                      <blockquote class="profitably__item-subtitle">Бесплатное обучение сотрудников до 100 сотрудников</blockquote>
+                      <div class="profitably__item-desc">
+                        <p><span>Мы проводим бесплатное обучение. Семинары PERCo (очные и онлайн) хранятся в открытом доступе.</span></p>
+                      </div>
+                    </figure>
                   </div>
-                </figure>
-                <div class="flex flex-column col-desk-6 col-mid-12 gap-12">
-                  <figure class="profitably__item-card">
-                    <blockquote class="profitably__item-subtitle">Рабочие места без ограничений</blockquote>
+                </div>
+              </div>
+              <div class="profitably__item">
+                <div class="profitably__item-title">
+                  <div class="circle-with-number rounded-60">2</div>
+                  <h3>Простое решение для быстрого перехода</h3>
+                </div>
+                <div class="profitably__item-wrap">
+                  <figure class="profitably__item-card col-desk-6 col-mid-12">
+                    <blockquote class="profitably__item-subtitle">Специальный конвертер базы данных</blockquote>
                     <div class="profitably__item-desc">
-                      <p><span>Безлимитное количество рабочих мест для операторов, подключаемых устройств и идентификаторов</span></p>
+                      <p>Вся информация о настройках оборудования, сотрудниках и их доступе автоматически передается из системы S-20 с помощью специального конвертера базы данных.</p>
+                      <div class="profitably__item-desc-bottom profitably__item-desc--left">
+                        <p><span>Данные импортируются одним массивом, при этом в PERCo-Web автоматически активируется ознакомительный режим лицензий «Стандартный пакет ПО» и «Учет рабочего времени». </span><span>Список импортируемых данных представлен в документации на Конвертер.</span></p>
+                        <figcaption><img src="./img/illustration-women.svg" /></figcaption>
+                      </div>
                     </div>
                   </figure>
-                  <figure class="profitably__item-card">
-                    <blockquote class="profitably__item-subtitle">Бесплатное обучение сотрудников до 100 сотрудников</blockquote>
-                    <div class="profitably__item-desc">
-                      <p><span>Мы проводим бесплатное обучение. Семинары PERCo (очные и онлайн) хранятся в открытом доступе.</span></p>
-                    </div>
-                  </figure>
+                  <div class="flex flex-column col-desk-6 col-mid-12 gap-12">
+                    <figure class="profitably__item-card">
+                      <blockquote class="profitably__item-subtitle">Поддержка новых линеек оборудования PERCo</blockquote>
+                      <div class="profitably__item-desc">
+                        <p>Программное обеспечение обеспечивает поддержку оборудования с улучшенными характеристиками.</p>
+                      </div>
+                    </figure>
+                    <figure class="profitably__item-card">
+                      <blockquote class="profitably__item-subtitle">Множество вариантов идентификации</blockquote>
+                      <div class="profitably__item-desc">
+                        <p><span>Различные способы идентификации (биометрические данные, карты доступа, штрихкоды, номера или сочетания ГРНЗ и др.)</span></p>
+                      </div>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="profitably__item">
+                <div class="profitably__item-title">
+                  <div class="circle-with-number rounded-60">3</div>
+                  <h3>Удобно для разных пользователей</h3>
+                </div>
+                <div class="profitably__users">
+                  <div class="profitably__users-item">
+                    <h3 class="profitably__users-title"><img src="./img/icon-admin.svg" />
+                      <p>Администратору системы</p>
+                    </h3>
+                    <ol class="profitably__users-list">
+                      <li>
+                        <h5 class="profitably__users-subtitle">Соответствие стандартам</h5>
+                        <p>Программное обеспечение входит в реестр отечественного ПО и работает на ОС, входящих в этот реестр.</p>
+                      </li>
+                      <li>
+                        <h5 class="profitably__users-subtitle">Совместимость с Linux</h5>
+                        <p>Установка сервера на Linux и работа с 1С на Linux системах.</p>
+                      </li>
+                      <li>
+                        <h5 class="profitably__users-subtitle">Бесплатный открытый API</h5>
+                        <p>За счет поддержки API-интерфейса система контроля доступа легко интегрируется со сторонними приложениями, в том числе с системами управления предприятием — CRM- и ERP-системами.</p>
+                      </li>
+                      <li>
+                        <h5 class="profitably__users-subtitle">Больше возможностей с помощью Keycloak</h5>
+                        <p>Синхронизация операторов через Keycloak дает больше преимуществ чем AD.</p>
+                      </li>
+                      <li>
+                        <h5 class="profitably__users-subtitle">Защита персональных данных</h5>
+                        <p>Возможность запрета передачи персональных данных (ФИО) в контроллер для обеспечения безопасности информации.</p>
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="profitably__users-item">
+                    <h3 class="profitably__users-title"><img src="./img/icon-beza.svg" />
+                      <p>Службе безопасности</p>
+                    </h3>
+                    <ol class="profitably__users-list">
+                      <li>
+                        <h5 class="profitably__users-subtitle">Оперативный мониторинг</h5>
+                        <p>Организация рабочего места на базе планшета или смартфона.</p>
+                      </li>
+                      <li>
+                        <h5 class="profitably__users-subtitle">Гибкая система реакций на события</h5>
+                        <p>Сообщения можно получать через Telegram, СМС и e-mail, в том числе о возникновении нештатных ситуаций.</p>
+                      </li>
+                      <li>
+                        <h5 class="profitably__users-subtitle">Дополнительные способы идентификации</h5>
+                        <p>Настройка дополнительной идентификации по графическим и текстовым данным в модуле «Верификация».</p>
+                      </li>
+                      <li>
+                        <h5 class="profitably__users-subtitle">Подключение к системам видеонаблюдения и охранно-пожарной сигнализации</h5>
+                        <p>Интеграция с ОПС «Рубеж» и «Интеллект Х» помимо TRASSIR и АРМ «Орион Про».</p>
+                      </li>
+                      <li>
+                        <h5 class="profitably__users-subtitle">Интеграции с алкотестерами</h5>
+                        <p>Подключение к системам «Алкорамка» и «Алкобарьер».</p>
+                      </li>
+                      <li>
+                        <h5 class="profitably__users-subtitle">Интеграция с металлодетектером</h5>
+                        <p>В случае превышения пороговых значений включается автоматическая блокировка считывателя.</p>
+                      </li>
+                    </ol>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="profitably__item">
-              <div class="profitably__item-title">
-                <div class="circle-with-number rounded-60">2</div>
-                <h3>Простое решение для быстрого перехода</h3>
+          </section>
+          <section class="features">
+            <div class="container">
+              <h2>Возможности системы</h2>
+              <div class="comparision__wrapper">
+                <div class="comparision__table">
+                  <table>
+                    <colgroup>
+                      <col style="width: 390px" />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <thead>
+                      <tr class="comparision__table-head">
+                        <th>Функционал</th>
+                        <th>PERCO-WEB</th>
+                        <th>S-20</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="comparision__table-item">
+                        <td>Распределенные серверы</td>
+                        <td>+</td>
+                        <td>+</td>
+                      </tr>
+                      <tr class="comparision__table-item">
+                        <td>Удаленный доступ</td>
+                        <td>+</td>
+                        <td>+</td>
+                      </tr>
+                      <tr class="comparision__table-item">
+                        <td>Установка ПО на рабочие места</td>
+                        <td>не требуется</td>
+                        <td>требуется</td>
+                      </tr>
+                      <tr class="comparision__table-item">
+                        <td>Рабочие места пользователей</td>
+                        <td>не требуется</td>
+                        <td>требуется</td>
+                      </tr>
+                      <tr class="comparision__table-item">
+                        <td>Лицензии на комплекты и модули</td>
+                        <td>не требуется</td>
+                        <td>требуется</td>
+                      </tr>
+                      <tr class="comparision__table-item active">
+                        <td>Дополнительный функционал </td>
+                        <td>+</td>
+                        <td>+</td>
+                      </tr>
+                      <tr class="comparision__table-item active">
+                        <td>Дополнительный функционал 2</td>
+                        <td>+</td>
+                        <td>+</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="btn-open-block" id="toggleButton" data-open="Развернуть таблицу" data-close="Свернуть таблицу">Развернуть таблицу</div>
               </div>
-              <div class="profitably__item-wrap">
-                <figure class="profitably__item-card col-desk-6 col-mid-12">
-                  <blockquote class="profitably__item-subtitle">Специальный конвертер базы данных</blockquote>
-                  <div class="profitably__item-desc">
-                    <p>Вся информация о настройках оборудования, сотрудниках и их доступе автоматически передается из системы S-20 с помощью специального конвертера базы данных.</p>
-                    <div class="profitably__item-desc-bottom profitably__item-desc--left">
-                      <p><span>Данные импортируются одним массивом, при этом в PERCo-Web автоматически активируется ознакомительный режим лицензий «Стандартный пакет ПО» и «Учет рабочего времени». </span><span>Список импортируемых данных представлен в документации на Конвертер.</span></p>
-                      <figcaption><img src="./img/illustration-women.svg" /></figcaption>
-                    </div>
-                  </div>
-                </figure>
-                <div class="flex flex-column col-desk-6 col-mid-12 gap-12">
-                  <figure class="profitably__item-card">
-                    <blockquote class="profitably__item-subtitle">Поддержка новых линеек оборудования PERCo</blockquote>
-                    <div class="profitably__item-desc">
-                      <p>Программное обеспечение обеспечивает поддержку оборудования с улучшенными характеристиками.</p>
-                    </div>
-                  </figure>
-                  <figure class="profitably__item-card">
-                    <blockquote class="profitably__item-subtitle">Множество вариантов идентификации</blockquote>
-                    <div class="profitably__item-desc">
-                      <p><span>Различные способы идентификации (биометрические данные, карты доступа, штрихкоды, номера или сочетания ГРНЗ и др.)</span></p>
-                    </div>
-                  </figure>
+            </div>
+          </section>
+          <section class="supported">
+            <div class="container">
+              <h2>Поддерживаемое оборудование</h2>
+              <div class="supported__wrapper">
+                <div class="supported__desc">
+                  <p> Воспользуйтесь таблицей неподдерживаемого оборудования в PW с указанием поддерживаемого аналога или элемента под замену или воспользуейтесь программой для проверки совместимости оборудования</p><a class="download-link" href="/download/documentation/rus/blank-reklamatsiy-1.docx">Скачать программу</a>
+                </div>
+                <div class="supported__table">
+                  <table>
+                    <colgroup>
+                      <col style="width: 390px" />
+                      <col />
+                    </colgroup>
+                    <tbody>
+                      <tr class="supported__table-item">
+                        <td>Не поддерживается в PERCo-WEb</td>
+                        <td>Поддерживаемый аналог</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="btn-open-block" id="toggleButton" data-open="Развернуть таблицу" data-close="Свернуть таблицу">Развернуть таблицу</div>
+              </div>
+            </div>
+          </section>
+          <section class="comparision">
+            <div class="container">
+              <h2>Сравнение модулей систем</h2>
+              <div class="comparision__wrapper">
+                <div class="comparision__table">
+                  <table>
+                    <colgroup>
+                      <col style="width: 390px" />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <thead>
+                      <tr class="comparision__table-head">
+                        <th>Функционал</th>
+                        <th>PERCO-WEB</th>
+                        <th>S-20</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="comparision__table-item">
+                        <td>Распределенные серверы</td>
+                        <td>+</td>
+                        <td>+</td>
+                      </tr>
+                      <tr class="comparision__table-item">
+                        <td>Удаленный доступ</td>
+                        <td>+</td>
+                        <td>+</td>
+                      </tr>
+                      <tr class="comparision__table-item">
+                        <td>Установка ПО на рабочие места</td>
+                        <td>не требуется</td>
+                        <td>требуется</td>
+                      </tr>
+                      <tr class="comparision__table-item">
+                        <td>Рабочие места пользователей</td>
+                        <td>не требуется</td>
+                        <td>требуется</td>
+                      </tr>
+                      <tr class="comparision__table-item">
+                        <td>Лицензии на комплекты и модули</td>
+                        <td>не требуется</td>
+                        <td>требуется</td>
+                      </tr>
+                      <tr class="comparision__table-item active">
+                        <td>Дополнительный функционал </td>
+                        <td>+</td>
+                        <td>+</td>
+                      </tr>
+                      <tr class="comparision__table-item active">
+                        <td>Дополнительный функционал 2</td>
+                        <td>+</td>
+                        <td>+</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="btn-open-block" id="toggleButton" data-open="Развернуть таблицу" data-close="Свернуть таблицу">Развернуть таблицу</div>
+              </div>
+            </div>
+          </section>
+          <section class="migration">
+            <div class="container">
+              <div class="block-video-wrapper">
+                <div class="iframe youtube-video-container" data-video="456239241" data-vk-video="456239241" data-thumb="https://sun9-60.userapi.com/impg/CoPi7s2tDU9d-qJP0ZgzXlPSswTElcQLOV-yMg/EBKwhynL87k.jpg?size=1280x720&amp;quality=95&amp;sign=89463f0459c538876649bf8f295cc6b2&amp;c_uniq_tag=r5by7K0GAlE7x9hSFXaLC0eAlzO5AROIfpzGPzbaQYs&amp;type=video_thumb" data-host="vk" style="height: 343.125px;"><img class="youtube-screenshot" src="./img/migration-preview.svg" />
+                  <div class="video-btn-container"><img class="youtube-btn" src="https://www.perco.des/images/2023/youtube-btn.svg" /></div>
+                </div>
+                <div class="video-description">
+                  <h2>Процедура миграции</h2>
+                  <ol>
+                    <li>Проверяете совместимость оборудования с системой PERCo-Web. </li>
+                    <li>Обновите прошивку оборудования на всех совместимых устройствах до актуальной версии. Если ваше устройство отсутствует, то проверьте архив.</li>
+                    <li>Установите систему PERCo-Web.</li>
+                    <li>Перенесите информацию из базы данных PERCo-S-20 в базу данных PERCo-Web с помощью Конвертера базы данных.</li>
+                    <li>В течение 60-ти дневного периода оцените функционал и состав модулей для приобретения лицензии.</li>
+                  </ol>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section class="features"></section>
-        <section class="supported"></section>
-        <section class="comparison"></section>
-        <section class="migration"></section>
-        <section class="converter"></section>
+          </section>
+          <section class="converter">
+            <div class="container">
+              <h2>Конвертер базы данных</h2>
+              <p class="converter__desc">При переносе данных из PERCo-S-20 в PERCo-Web автоматически активируется ознакомительный режим лицензий «Стандартный пакет ПО» и «Учет рабочего времени». Вся информация импортируются одним файлом, который включает в себя:</p>
+              <ul class="converter__list">
+                <li class="converter__list-item">Список устройств с параметрами;</li>
+                <li class="converter__list-item">Общие настройки системы, в том числе конфигурация MIFARE;</li>
+                <li class="converter__list-item">Структура помещений с привязанными устройствами</li>
+                <li class="converter__list-item">Списки сотрудников и посетителей с учетными данными;</li>
+                <li class="converter__list-item">Справочник оправдательных документов;</li>
+                <li class="converter__list-item">Список уволенных сотрудников и события за последние 12 месяцев.</li>
+              </ul>
+              <div><a class="download-link" href="/download/documentation/rus/blank-reklamatsiy-1.docx">Скачать программу</a></div>
+            </div>
+          </section>
+        </div>
       </main>
       <footer class="footer flex-middle" itemscope="" itemtype="https://schema.org/WPFooter">
         <div class="container">

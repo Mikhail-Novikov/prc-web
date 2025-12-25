@@ -1,0 +1,49 @@
+@import '../lib/variables';
+
+.skd-web {
+    .supported {
+        padding: 80px 100px;
+
+        &__desc {
+            display: flex;
+            justify-content: space-between;
+            align-items: first baseline;
+            width: 100%;
+            max-width: 800px;
+
+            > p {
+                margin: 0 0 32px;
+                max-width: 500px;
+            }
+        }
+
+        &__table {
+            margin-bottom: 20px;
+            padding: 0 8px;
+            border: 1px solid $stroke-primary;
+            max-width: 805px;
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+
+                td {
+                    padding: 12px 8px;
+                }
+            }
+
+            /* Анимация для плавного скрытия/показа строк */
+            tr {
+                transition: height 0.5s ease;
+            }
+
+            tr.hidden {
+                height: 0;
+                overflow: hidden;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+    }
+}

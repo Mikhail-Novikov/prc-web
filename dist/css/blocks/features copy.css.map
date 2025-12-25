@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/features copy.scss"],"names":[],"mappings":"AAAA;EAEQ,oBAAmB;CACtB","file":"features copy.css","sourcesContent":[".skd-web {\r\n    .features {\r\n        padding: 80px 100px;\r\n    }\r\n}"]}

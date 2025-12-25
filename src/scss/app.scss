@@ -1,4 +1,5 @@
 @import './lib/variables';
+@import './lib/flexbox.scss';
 
 @font-face {
   font-family: 'Manrope-Regular';
@@ -219,18 +220,47 @@ h3 {
   text-decoration: underline;
 }
 
-.circle-with-number {
-  border: 1.5px solid $stroke-primary;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
+.download-link {
+  font-weight:600;
+  @include flexbox;
+  @include align-items(center);
 }
 
-.rounded-60 {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+.download-link::before {
+  content:'';
+  width:24px;
+  height:24px;
+  display:inline-flex;
+  margin-right:8px;
+  background:url('https://www.perco.des/images/2023/icons/download-link.svg') no-repeat center center / contain;
+}
+
+.btn-open-block {
+    border: none;
+    color: #214288;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-open-block:after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #214288;
+    border-top: 2px solid #214288;
+    transform: rotate(135deg);
+    margin: 0 0 2px 15px;
+    vertical-align: middle;
+}
+
+.prod-desc-info.active .prod-dop-info {
+  transition: all 0.5s ease;
+}
+
+.prod-dop-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
 }

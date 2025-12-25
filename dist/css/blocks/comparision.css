@@ -1,0 +1,50 @@
+@charset "UTF-8";
+.skd-web .comparision {
+  padding: 5rem 6.25rem;
+}
+
+.skd-web .comparision__table {
+  margin-bottom: 1.25rem;
+  padding: 0 0.5rem;
+  border: 0.0625rem solid #CBCBCB;
+  max-width: 50.3125rem;
+  /* Анимация для плавного скрытия/показа строк */
+}
+
+.skd-web .comparision__table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.skd-web .comparision__table table .comparision__table-head th, .skd-web .comparision__table table td {
+  padding: 0.75rem 0.5rem;
+  text-align: left;
+}
+
+.skd-web .comparision__table table .comparision__table-head th,
+.skd-web .comparision__table table td:nth-child(1) {
+  color: #2C2D2E;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.skd-web .comparision__table .comparision__table-item.prod-desc-info {
+  display: none;
+}
+
+.skd-web .comparision__table .comparision__table-item.prod-desc-info.active {
+  display: table-row;
+}
+
+.skd-web .comparision__table tr {
+  transition: height 0.5s ease;
+}
+
+.skd-web .comparision__table tr.hidden {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/*# sourceMappingURL=comparision.css.map */

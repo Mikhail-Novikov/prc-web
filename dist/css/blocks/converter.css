@@ -1,0 +1,36 @@
+.skd-web .converter {
+  padding: 5rem 6.25rem;
+}
+
+.skd-web .converter__desc {
+  color: #2C2D2E;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 42.5rem;
+}
+
+.skd-web .converter__list {
+  padding: 0 0 1.5rem 0.75rem;
+  list-style-type: none;
+  position: relative;
+}
+
+.skd-web .converter__list-item::before {
+  content: "\2022";
+  color: #000000;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.skd-web .converter__list-item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.skd-web .converter .download-link {
+  font-weight: 600;
+  color: #214288;
+}
+
+/*# sourceMappingURL=converter.css.map */
