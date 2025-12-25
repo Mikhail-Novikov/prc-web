@@ -10,7 +10,8 @@
 }
 
 .migration .block-video-wrapper .youtube-video-container {
-  width: 50%;
+  width: 100%;
+  max-width: 37.5rem;
 }
 
 .migration .block-video-wrapper .video-description {
@@ -27,7 +28,7 @@
 .migration .block-video-wrapper .video-description ol li {
   position: relative;
   margin: 0 0 0 0;
-  padding: 0 0 1rem 0;
+  padding: 0 0 1.5rem 0;
 }
 
 .migration .block-video-wrapper .video-description ol li:before {

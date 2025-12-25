@@ -10,6 +10,9 @@
             flex-direction: column;
             max-width: 805px;
             margin-bottom: 20px;
+            border-color: $stroke-primary;
+            border-width: 1px 1px 0 1px;
+            border-style: solid;
 
             .comparision__table-head {
                 display: flex;
@@ -24,6 +27,9 @@
                         color: $primary;
                         background-color: $bg-gray;
                         border-bottom: 1px solid $stroke-primary;
+                        &:not(:last-child) {
+                            border-right: 1px solid $stroke-primary;
+                        }
                         &:first-child {
                             padding-left: 16px;
                         }
@@ -33,9 +39,11 @@
             .comparision__table-body {
                 display: flex;
                 flex-direction: column;
+                .comparision__table-row:not(.hidden) {
+                    border-bottom: 1px solid $stroke-primary;
+                }
                 .comparision__table-row {
                     display: flex;
-                    border-bottom: 1px solid $stroke-primary;
                     .comparision__table-cell {
                         flex: 1 1 0;
                         padding: 12px 8px;
@@ -43,12 +51,17 @@
                         color: $primary;
                         &:first-child {
                             padding-left: 16px;
+                            text-align: left;
                         }
+                        &:not(:last-child) {
+                            border-right: 1px solid $stroke-primary;
+                        }
+                        text-align: center;
                     }
-                    &.toggle-table-item.active {
+                    &.toggle-table-item {
                         overflow: hidden;
                         .comparision__table-cell {
-                            transition: max-height 0.5s;
+                            transition: max-height .15s;
                             max-height: 100px;
                             opacity: 1;
                         }

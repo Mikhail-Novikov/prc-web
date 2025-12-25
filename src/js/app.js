@@ -3,7 +3,7 @@
 $(document).ready(function() {
     $('.toggle-table').each(function() {
         var $wrapper = $(this);
-        var $rows = $wrapper.find('.toggle-table-item.active');
+        var $rows = $wrapper.find('.toggle-table-item');
         var $toggleButton = $wrapper.find('.toggle-table-btn');
         var opened = false;
 
