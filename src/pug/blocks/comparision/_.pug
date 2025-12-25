@@ -1,4 +1,4 @@
-div.comparision__wrapper
+div.comparision__wrapper.toggle-table
     .comparision__table
         table
             colgroup 
@@ -49,14 +49,14 @@ div.comparision__wrapper
                         | не требуется
                     td
                         | требуется
-                tr.comparision__table-item.active
+                tr.comparision__table-item.toggle-table-item.active
                     td
                         | Дополнительный функционал 
                     td
                         | +
                     td
                         | +
-                tr.comparision__table-item.active
+                tr.comparision__table-item.toggle-table-item.active
                     td
                         | Дополнительный функционал 2
                     td
@@ -64,4 +64,4 @@ div.comparision__wrapper
                     td
                         | +
 
-    div#toggleButton.btn-open-block(data-open='Развернуть таблицу' data-close='Свернуть таблицу') Развернуть таблицу
+    div.toggle-table-btn.btn-open-block(data-open='Развернуть таблицу' data-close='Свернуть таблицу') Развернуть таблицу
