@@ -2,21 +2,27 @@
 
 .skd-web {
     .comparision {
+        background: $bg-blue-gray;
         padding: 80px 100px;
 
         &__table {
             margin-bottom: 20px;
-            padding: 0 8px;
-            border: 1px solid $stroke-primary;
+            
             max-width: 805px;
 
             table {
                 width: 100%;
                 border-collapse: collapse;
-                
+                border: 1px solid $stroke-primary;
+
                 .comparision__table-head th, td {
+                    border-bottom: 1px solid $stroke-primary;
                     padding: 12px 8px;
                     text-align: left;
+                }
+
+                .comparision__table-head th {
+                    background-color: $bg-gray;
                 }
 
                 .comparision__table-head th, 
@@ -24,6 +30,11 @@
                     color: $primary;
                     font-size: 16px;
                     font-weight: 600;
+                }
+
+                td:nth-child(1), 
+                th:nth-child(1) {
+                    padding-left: 16px;
                 }
             }
 

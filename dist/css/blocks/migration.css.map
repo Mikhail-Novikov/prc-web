@@ -1,1 +1,1 @@
-{"version":3,"sources":["blocks/migration.scss"],"names":[],"mappings":"AAAA;EAEQ,oBAAmB;CACtB","file":"migration.css","sourcesContent":[".skd-web {\r\n    .migration {\r\n        padding: 80px 100px;\r\n    }\r\n}"]}
+{"version":3,"sources":["blocks/migration.scss"],"names":[],"mappings":"AAEA;EAEQ,oBAAmB;CACtB","file":"migration.css","sourcesContent":["@import '../lib/variables';\n\n.skd-web {\n    .migration {\n        padding: 80px 100px;\n    }\n}"]}
