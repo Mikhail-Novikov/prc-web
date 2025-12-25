@@ -1,67 +1,37 @@
 div.comparision__wrapper.toggle-table
     .comparision__table
-        table
-            colgroup 
-                col(style="width: 390px")
-                col
-                col
-            thead
-                tr.comparision__table-head
-                    th
-                        | Функционал
-                    th
-                        | PERCO-WEB
-                    th
-                        | S-20
-            tbody
-                tr.comparision__table-item
-                    td
-                        | Распределенные серверы
-                    td
-                        | +
-                    td
-                        | +
-                tr.comparision__table-item
-                    td
-                        | Удаленный доступ
-                    td
-                        | +
-                    td
-                        | +
-                tr.comparision__table-item
-                    td
-                        | Установка ПО на рабочие места
-                    td
-                        | не требуется
-                    td
-                        | требуется
-                tr.comparision__table-item
-                    td
-                        | Рабочие места пользователей
-                    td
-                        | не требуется
-                    td
-                        | требуется
-                tr.comparision__table-item
-                    td
-                        | Лицензии на комплекты и модули
-                    td
-                        | не требуется
-                    td
-                        | требуется
-                tr.comparision__table-item.toggle-table-item.active
-                    td
-                        | Дополнительный функционал 
-                    td
-                        | +
-                    td
-                        | +
-                tr.comparision__table-item.toggle-table-item.active
-                    td
-                        | Дополнительный функционал 2
-                    td
-                        | +
-                    td
-                        | +
-
+        .comparision__table-head
+            .comparision__table-row
+                .comparision__table-cell.comparision__table-th Функционал
+                .comparision__table-cell.comparision__table-th PERCO-WEB
+                .comparision__table-cell.comparision__table-th S-20
+        .comparision__table-body
+            .comparision__table-row
+                .comparision__table-cell Распределенные серверы
+                .comparision__table-cell +
+                .comparision__table-cell +
+            .comparision__table-row
+                .comparision__table-cell Удаленный доступ
+                .comparision__table-cell +
+                .comparision__table-cell +
+            .comparision__table-row
+                .comparision__table-cell Установка ПО на рабочие места
+                .comparision__table-cell не требуется
+                .comparision__table-cell требуется
+            .comparision__table-row
+                .comparision__table-cell Рабочие места пользователей
+                .comparision__table-cell не требуется
+                .comparision__table-cell требуется
+            .comparision__table-row
+                .comparision__table-cell Лицензии на комплекты и модули
+                .comparision__table-cell не требуется
+                .comparision__table-cell требуется
+            .comparision__table-row.comparision__table-item.toggle-table-item.active
+                .comparision__table-cell Дополнительный функционал
+                .comparision__table-cell +
+                .comparision__table-cell +
+            .comparision__table-row.comparision__table-item.toggle-table-item.active
+                .comparision__table-cell Дополнительный функционал 2
+                .comparision__table-cell +
+                .comparision__table-cell +
     div.toggle-table-btn.btn-open-block(data-open='Развернуть таблицу' data-close='Свернуть таблицу') Развернуть таблицу
