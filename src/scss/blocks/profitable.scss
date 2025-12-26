@@ -53,14 +53,12 @@
 
             p {
                 margin: 12px 0 16px 0;
+                max-width: 570px;
             }
         }
 
         &__item-desc-bottom {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 24px;
-            gap: 40px;
+            margin-top: 16px;
 
             p {
                 margin: 0;
@@ -71,28 +69,14 @@
         }
 
         &__item-desc--right figcaption {
-            flex-shrink: 0;
-        }
-
-        &__item-desc--right figcaption {
-            order: 1;
-        }
-
-        &__item-desc--right p {
-            order: 0;
-        }
-
-        &__item-desc--left p {
-            order: 1;
+            margin-left: 16px;
+            float: inline-end;
         }
 
         &__item-desc--left figcaption {
-            order: 0;
+            margin-right: 40px;
+            float: inline-start;
         } 
-
-        &__item-desc--left figcaption {
-            flex-shrink: 0;
-        }
 
         // start with-users
 
@@ -208,6 +192,22 @@
             &__item-desc-bottom {
                 margin-top: 16px;
                 gap: 16px;
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            &__item-card, &__users-item {
+                padding: 32px;
+            }
+            &__item-desc {
+                font-size: 16px;
+                
+                &--left figcaption {
+                    margin-right: 12px;
+                }
+
+                img {
+                    max-width: 172px;
+                }
             }
         }
         @media screen and (max-width: 742px) {

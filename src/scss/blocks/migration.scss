@@ -4,4 +4,10 @@
     .migration {
         padding: 100px 0;
     }
+
+    @media screen and (max-width: 1528px) {
+        .migration .block-video-wrapper {
+            gap: 40px;
+        }
+    }
 }

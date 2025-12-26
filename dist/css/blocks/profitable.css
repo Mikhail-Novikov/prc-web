@@ -57,15 +57,11 @@
 
 .skd-web .profitably__item-desc p {
   margin: 0.75rem 0 1rem 0;
+  max-width: 35.625rem;
 }
 
 .skd-web .profitably__item-desc-bottom {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-top: 1.5rem;
-  gap: 2.5rem;
+  margin-top: 1rem;
 }
 
 .skd-web .profitably__item-desc-bottom p {
@@ -78,33 +74,13 @@
 }
 
 .skd-web .profitably__item-desc--right figcaption {
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.skd-web .profitably__item-desc--right figcaption {
-  -ms-flex-order: 1;
-  order: 1;
-}
-
-.skd-web .profitably__item-desc--right p {
-  -ms-flex-order: 0;
-  order: 0;
-}
-
-.skd-web .profitably__item-desc--left p {
-  -ms-flex-order: 1;
-  order: 1;
+  margin-left: 1rem;
+  float: inline-end;
 }
 
 .skd-web .profitably__item-desc--left figcaption {
-  -ms-flex-order: 0;
-  order: 0;
-}
-
-.skd-web .profitably__item-desc--left figcaption {
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
+  margin-right: 2.5rem;
+  float: inline-start;
 }
 
 .skd-web .profitably__users {
@@ -222,6 +198,21 @@
   .skd-web .profitably__item-desc-bottom {
     margin-top: 1rem;
     gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 75rem) {
+  .skd-web .profitably__item-card, .skd-web .profitably__users-item {
+    padding: 2rem;
+  }
+  .skd-web .profitably__item-desc {
+    font-size: 1rem;
+  }
+  .skd-web .profitably__item-desc--left figcaption {
+    margin-right: 0.75rem;
+  }
+  .skd-web .profitably__item-desc img {
+    max-width: 10.75rem;
   }
 }
 

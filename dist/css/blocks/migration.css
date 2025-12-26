@@ -2,4 +2,10 @@
   padding: 6.25rem 0;
 }
 
+@media screen and (max-width: 95.5rem) {
+  .skd-web .migration .block-video-wrapper {
+    gap: 2.5rem;
+  }
+}
+
 /*# sourceMappingURL=migration.css.map */
