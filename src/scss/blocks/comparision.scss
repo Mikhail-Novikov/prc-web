@@ -9,7 +9,7 @@
             display: flex;
             flex-direction: column;
             max-width: 805px;
-            margin-bottom: 20px;
+            margin-bottom: 32px;
             border-color: $stroke-primary;
             border-width: 1px 1px 0 1px;
             border-style: solid;
@@ -32,14 +32,17 @@
                         }
                         &:first-child {
                             padding-left: 16px;
+                            text-align: left;
+                            min-width: 335px;
                         }
+                        text-align: center;
                     }
                 }
             }
             .comparision__table-body {
                 display: flex;
                 flex-direction: column;
-                .comparision__table-row:not(.hidden) {
+                .comparision__table-row:not(.active) {
                     border-bottom: 1px solid $stroke-primary;
                 }
                 .comparision__table-row {
@@ -52,25 +55,13 @@
                         &:first-child {
                             padding-left: 16px;
                             text-align: left;
+                            font-weight: 600;
+                            min-width: 335px;
                         }
                         &:not(:last-child) {
                             border-right: 1px solid $stroke-primary;
                         }
                         text-align: center;
-                    }
-                    &.toggle-table-item {
-                        overflow: hidden;
-                        .comparision__table-cell {
-                            transition: max-height .15s;
-                            max-height: 100px;
-                            opacity: 1;
-                        }
-                        &.hidden .comparision__table-cell {
-                            max-height: 0;
-                            opacity: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                        }
                     }
                 }
             }
@@ -78,8 +69,24 @@
     }
 }
 
-.toggle-table-btn.btn-open-block {
-    margin-top: 16px;
-    cursor: pointer;
-    user-select: none;
+.toggle-section {
+    .toggle-table-btn.btn-open-block {
+        margin-top: 16px;
+        cursor: pointer;
+        user-select: none;
+    }
+    .toggle-section-item {
+        overflow: hidden !important;
+        > * {
+            transition: max-height .15s !important;
+            max-height: 100px !important;
+            opacity: 1 !important;
+        }
+        &.active > * {
+            max-height: 0 !important;
+            opacity: 0 !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+    }
 }

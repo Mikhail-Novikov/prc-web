@@ -9,7 +9,7 @@
   -ms-flex-direction: column;
   flex-direction: column;
   max-width: 50.3125rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 2rem;
   border-color: #CBCBCB;
   border-width: 0.0625rem 0.0625rem 0 0.0625rem;
   border-style: solid;
@@ -36,6 +36,7 @@
   color: #2C2D2E;
   background-color: #F5F5F5;
   border-bottom: 0.0625rem solid #CBCBCB;
+  text-align: center;
 }
 
 .skd-web .comparision__table .comparision__table-head .comparision__table-row .comparision__table-cell:not(:last-child) {
@@ -44,6 +45,8 @@
 
 .skd-web .comparision__table .comparision__table-head .comparision__table-row .comparision__table-cell:first-child {
   padding-left: 1rem;
+  text-align: left;
+  min-width: 20.9375rem;
 }
 
 .skd-web .comparision__table .comparision__table-body {
@@ -53,7 +56,7 @@
   flex-direction: column;
 }
 
-.skd-web .comparision__table .comparision__table-body .comparision__table-row:not(.hidden) {
+.skd-web .comparision__table .comparision__table-body .comparision__table-row:not(.active) {
   border-bottom: 0.0625rem solid #CBCBCB;
 }
 
@@ -74,36 +77,38 @@
 .skd-web .comparision__table .comparision__table-body .comparision__table-row .comparision__table-cell:first-child {
   padding-left: 1rem;
   text-align: left;
+  font-weight: 600;
+  min-width: 20.9375rem;
 }
 
 .skd-web .comparision__table .comparision__table-body .comparision__table-row .comparision__table-cell:not(:last-child) {
   border-right: 0.0625rem solid #CBCBCB;
 }
 
-.skd-web .comparision__table .comparision__table-body .comparision__table-row.toggle-table-item {
-  overflow: hidden;
-}
-
-.skd-web .comparision__table .comparision__table-body .comparision__table-row.toggle-table-item .comparision__table-cell {
-  transition: max-height .15s;
-  max-height: 6.25rem;
-  opacity: 1;
-}
-
-.skd-web .comparision__table .comparision__table-body .comparision__table-row.toggle-table-item.hidden .comparision__table-cell {
-  max-height: 0;
-  opacity: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.toggle-table-btn.btn-open-block {
+.toggle-section .toggle-table-btn.btn-open-block {
   margin-top: 1rem;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.toggle-section .toggle-section-item {
+  overflow: hidden !important;
+}
+
+.toggle-section .toggle-section-item > * {
+  transition: max-height .15s !important;
+  max-height: 6.25rem !important;
+  opacity: 1 !important;
+}
+
+.toggle-section .toggle-section-item.active > * {
+  max-height: 0 !important;
+  opacity: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 /*# sourceMappingURL=comparision.css.map */

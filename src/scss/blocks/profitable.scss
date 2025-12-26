@@ -7,7 +7,7 @@
         padding-top: 80px;
         padding-bottom: 120px;
 
-        &__item {
+        &__item:not(:last-child) {
             margin-bottom: 60px;
         }
         
@@ -59,7 +59,7 @@
         &__item-desc-bottom {
             display: flex;
             justify-content: space-between;
-            margin-top: 16px;
+            margin-top: 24px;
             gap: 40px;
 
             p {
@@ -98,7 +98,7 @@
 
         &__users {
             display: flex;
-            gap: 28px;
+            gap: 20px;
         }
 
         &__users-item {
@@ -128,34 +128,24 @@
 
         &__users-list {
             margin-top: 28px;
-
-            li:not(:last-child) {
-                margin-bottom: 12px ;
-            }
-
-            p {
-                margin: 0;
-            }
-        }
-
-        ol {
             list-style-type: none; 
             counter-reset: num;
-            margin-left: 56px;
-            padding: 15px 0 5px 0;
+            margin-left: 54px;
+            padding: 8px 0 5px 0;
 
             > li {
                 position: relative;	
-                margin: 0 0 0 0;
+                margin: 0;
                 padding: 0 0 16px 0;
 
-                &:before {
+
+                &::before {
                     content: '0' counter(num); 
                     counter-increment: num;
                     display: inline-block;
                     position: absolute;
                     top: 0;
-                    left: -48px;
+                    left: -53px;
                     width: 38px;
                     text-align: center;
                     color: $gray-sub;
@@ -163,6 +153,27 @@
                     font-weight: 300;
                     line-height: 24px;
                 }
+
+                &:not(:last-child)::after {
+                    content: '';
+                    display: block;
+                    width: calc(100% + 48px);
+                    height: 1px;
+                    background-color: $stroke-primary;
+                    position: absolute;
+                    left: -48px;
+                    bottom: 0;
+                }
+            }
+
+            li:not(:last-child) {
+                margin-bottom: 12px ;
+            }
+
+            p {
+                margin: 0;
+                font-size: 16px;
+                line-height: 24px;
             }
         }
 

@@ -1,19 +1,19 @@
 'use strict';
 
 $(document).ready(function() {
-    $('.toggle-table').each(function() {
+    $('.toggle-section').each(function() {
         var $wrapper = $(this);
-        var $rows = $wrapper.find('.toggle-table-item');
-        var $toggleButton = $wrapper.find('.toggle-table-btn');
+        var $rows = $wrapper.find('.toggle-section-item');
+        var $toggleButton = $wrapper.find('.toggle-section-btn');
         var opened = false;
 
         $toggleButton.on('click', function() {
-            $rows.toggleClass('hidden');
+            $rows.toggleClass('active');
             opened = !opened;
             var openText = $toggleButton.data('open');
             var closeText = $toggleButton.data('close');
             $toggleButton.text(opened ? closeText : openText);
         });
-        $rows.addClass('hidden');
+        $rows.addClass('active');
     });
 });

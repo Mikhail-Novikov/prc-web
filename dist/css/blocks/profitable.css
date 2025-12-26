@@ -6,7 +6,7 @@
   /* Начиная с 10-го пункта убрали ведущий ноль */
 }
 
-.skd-web .profitably__item {
+.skd-web .profitably__item:not(:last-child) {
   margin-bottom: 3.75rem;
 }
 
@@ -64,7 +64,7 @@
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   gap: 2.5rem;
 }
 
@@ -110,7 +110,7 @@
 .skd-web .profitably__users {
   display: -ms-flexbox;
   display: flex;
-  gap: 1.75rem;
+  gap: 1.25rem;
 }
 
 .skd-web .profitably__users-item {
@@ -142,6 +142,42 @@
 
 .skd-web .profitably__users-list {
   margin-top: 1.75rem;
+  list-style-type: none;
+  counter-reset: num;
+  margin-left: 3.375rem;
+  padding: 0.5rem 0 0.3125rem 0;
+}
+
+.skd-web .profitably__users-list > li {
+  position: relative;
+  margin: 0;
+  padding: 0 0 1rem 0;
+}
+
+.skd-web .profitably__users-list > li::before {
+  content: "0" counter(num);
+  counter-increment: num;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -3.3125rem;
+  width: 2.375rem;
+  text-align: center;
+  color: #6D7885;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.skd-web .profitably__users-list > li:not(:last-child)::after {
+  content: '';
+  display: block;
+  width: calc(100% + 3rem);
+  height: 0.0625rem;
+  background-color: #CBCBCB;
+  position: absolute;
+  left: -3rem;
+  bottom: 0;
 }
 
 .skd-web .profitably__users-list li:not(:last-child) {
@@ -150,33 +186,7 @@
 
 .skd-web .profitably__users-list p {
   margin: 0;
-}
-
-.skd-web .profitably ol {
-  list-style-type: none;
-  counter-reset: num;
-  margin-left: 3.5rem;
-  padding: 0.9375rem 0 0.3125rem 0;
-}
-
-.skd-web .profitably ol > li {
-  position: relative;
-  margin: 0 0 0 0;
-  padding: 0 0 1rem 0;
-}
-
-.skd-web .profitably ol > li:before {
-  content: "0" counter(num);
-  counter-increment: num;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: -3rem;
-  width: 2.375rem;
-  text-align: center;
-  color: #6D7885;
   font-size: 1rem;
-  font-weight: 300;
   line-height: 1.5rem;
 }
 

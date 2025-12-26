@@ -1,1 +1,1 @@
-{"version":3,"sources":["blocks/supported.scss"],"names":[],"mappings":"AAEA;EAEQ,oBAAmB;CAEtB","file":"supported.css","sourcesContent":["@import '../lib/variables';\n\n.skd-web {\n    .supported {\n        padding: 80px 100px;\n\n    }\n}"]}
+{"version":3,"sources":["blocks/supported.scss"],"names":[],"mappings":"AAEA;EAEQ,oBAAmB;CAEtB","file":"supported.css","sourcesContent":["@import '../lib/variables';\r\n\r\n.skd-web {\r\n    .supported {\r\n        padding: 80px 100px;\r\n\r\n    }\r\n}"]}
