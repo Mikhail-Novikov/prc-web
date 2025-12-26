@@ -264,3 +264,103 @@ h3 {
     overflow: hidden;
     transition: all 0.5s ease;
 }
+
+/* pw-start */
+.section-wrapper.anchors {
+    gap: 0;
+}
+
+.section-wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0;
+}
+
+section.pw-start {
+    padding:0 0 60px 0; 
+}
+
+.pw-start h1 {
+    font-size: 40px;
+    margin:0 0 40px 0;
+    
+}
+
+.pw-start ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    @include flexbox;
+    @include flex-wrap(wrap);
+    max-width: 390px;
+}
+
+.pw-start ul li {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    color:$text-subhead;
+    list-style-image: initial;
+    padding: 10px 0;
+    position: relative;
+    max-width: 390px;
+    width: 100%;
+}
+
+.pw-start ul li::before {
+    content:'';
+    width: 8px;
+    height: 8px;
+    background: $main-blue;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 16px;
+    margin-bottom: 3px;
+}
+
+.pw-start ul li a {
+    color: $text-subhead;
+    text-decoration: none;
+}
+
+.pw-start ul li a:hover {
+    color: $main-blue;
+}
+
+/* end pw-start */
+
+/* breadcrumbs */
+section.breadcrumbs {
+  padding:20px 0 20px 0;
+}
+ul.breadcrumbs-wrapper {
+  list-style: outside none none;
+  padding:0!important;
+  width:100%;
+}
+ul.breadcrumbs-wrapper li {
+  color:$text-subhead;
+  line-height:145%;
+  font-size:14px;
+  margin:0!important;
+  padding:0!important;
+  list-style-image:none!important;
+  display:inline;
+}
+.breadcrumbs-wrapper li a {
+  color:$text-subhead;
+}
+
+.breadcrumbs-wrapper li img
+{
+  margin: auto 5px;
+  width: 8px;
+  height: 6px;
+}
+
+img {
+  font-size: 7px;
+}

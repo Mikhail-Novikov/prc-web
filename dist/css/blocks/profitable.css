@@ -214,6 +214,17 @@
   border-radius: 50%;
 }
 
+@media screen and (max-width: 95.5rem) {
+  .skd-web .profitably__item-card {
+    padding-left: 2.5rem;
+    padding-right: 2.125rem;
+  }
+  .skd-web .profitably__item-desc-bottom {
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+}
+
 @media screen and (max-width: 46.375rem) {
   .skd-web .profitably__item-wrap, .skd-web .profitably__item-desc-bottom {
     -ms-flex-direction: column;

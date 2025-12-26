@@ -3,6 +3,25 @@
 .skd-web {
     .supported {
         padding: 80px 100px;
+        &_wrapper {
+            max-width: 800px;
+        }
 
+        &__desc {
+            display: flex;
+            align-items: flex-start;
+            gap: 100px;
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                margin: 0 0 32px;
+                max-width: 490px;
+            }
+
+            a {
+                margin-top: 12px;
+            }
+        }
     }
 }

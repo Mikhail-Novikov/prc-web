@@ -8,18 +8,39 @@ div.supported__wrapper
         a.download-link(href="/download/documentation/rus/blank-reklamatsiy-1.docx")
             | Скачать программу
         
-    .supported__table
-        table
-            colgroup 
-                col(style="width: 390px")
-                col
-            tbody
-                tr.supported__table-item
-                    td
-                        | Не поддерживается в PERCo-WEb
-                    td
-                        | Поддерживаемый аналог
+    div.comparision__wrapper.toggle-section
+        .comparision__table
+            .comparision__table-head
+                .comparision__table-row
+                    .comparision__table-cell.comparision__table-th Не поддерживается в PERCo-WEb
+                    .comparision__table-cell.comparision__table-th 
+                        div.comparision__table-cell--check
+                            |Поддерживаемый аналог 
+                            img(src="https://www.perco.ru/images/2023/check2.svg", alt="")
+            .comparision__table-body
+                .comparision__table-row
+                    .comparision__table-cell
+                    .comparision__table-cell
+                .comparision__table-row
+                    .comparision__table-cell
+                    .comparision__table-cell
+                .comparision__table-row
+                    .comparision__table-cell
+                    .comparision__table-cell
+                .comparision__table-row
+                    .comparision__table-cell
+                    .comparision__table-cell
+                .comparision__table-row
+                    .comparision__table-cell
+                    .comparision__table-cell
+                .comparision__table-row.comparision__table-item.toggle-section-item
+                    .comparision__table-cell
+                    .comparision__table-cell
+                .comparision__table-row.comparision__table-item.toggle-section-item
+                    .comparision__table-cell
+                    .comparision__table-cell 
+                .comparision__table-row.comparision__table-item.toggle-section-item
+                    .comparision__table-cell
+                    .comparision__table-cell
 
-
-
-    div#toggleButton.btn-open-block(data-open='Развернуть таблицу' data-close='Свернуть таблицу') Развернуть таблицу
+        div.js-toggle-btn.toggle-section-btn(data-open='Развернуть таблицу' data-close='Свернуть таблицу') Развернуть таблицу

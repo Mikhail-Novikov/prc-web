@@ -6,6 +6,12 @@ include blocks/page
   include ./blocks/header/_
   main#container.Site-content.main(itemprop="mainContentOfPage")
     #skd-web.skd-web
+
+      include ./blocks/breadcrumbs/_
+
+      section.pw-start
+        include ./blocks/pw-start/_
+      
       section.profitably
         div.container
           h2 Почему стоит перейти на PERCo-Web?

@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/lib/_grid.css" />
     <link rel="stylesheet" href="css/lib/_variables.css" />
     <link rel="stylesheet" href="css/lib/manrope.css" />
+    <link rel="stylesheet" href="css/blocks/button.css" />
     <link rel="stylesheet" href="css/blocks/comparision.css" />
     <link rel="stylesheet" href="css/blocks/content-video.css" />
     <link rel="stylesheet" href="css/blocks/converter.css" />
@@ -38,6 +39,7 @@
     <link rel="stylesheet" href="css/blocks/migration.css" />
     <link rel="stylesheet" href="css/blocks/profitable.css" />
     <link rel="stylesheet" href="css/blocks/supported.css" />
+    <link rel="stylesheet" href="css/blocks/toggle-section.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/mobile.css" />
   </head>
@@ -243,6 +245,39 @@
       </header>
       <main class="Site-content main" id="container" itemprop="mainContentOfPage">
         <div class="skd-web" id="skd-web">
+          <section class="breadcrumbs add">
+            <div class="container">
+              <ul class="breadcrumbs-wrapper" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a class="navlink" href="/" title="Главная" itemprop="item"><span itemprop="name">Каталог</span>
+                    <meta itemprop="position" content="0" /></a></li>
+                <li><img alt="Стрелка" src="https://www.perco.ru/images/icons/arrow_mini.svg" width="2" height="4" /></li>
+                <li class="navlink" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a class="last-link" href="/products/parkovochnaya-sistema/" itemprop="item" onclick="return false;"><span itemprop="name">Система контродя доступа PERCo-Web</span>
+                    <meta itemprop="position" content="1" /></a></li>
+                <li><img alt="Стрелка" src="https://www.perco.ru/images/icons/arrow_mini.svg" width="2" height="4" /></li>
+                <li class="navlink" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a class="last-link" href="/products/parkovochnaya-sistema/" itemprop="item" onclick="return false;"><span itemprop="name">Переход с S-20 на PERCo-Web</span>
+                    <meta itemprop="position" content="1" /></a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="pw-start">
+            <div class="container">
+              <h1>Переход с системы S-20 на PERCo-Web</h1>
+              <div class="section-wrapper anchors">
+                <ul>
+                  <li><a class="anchor-target" href="#parking-po">Преимущества PERCo-Web</a></li>
+                  <li><a class="anchor-target" href="#opport">Возможности систем</a></li>
+                </ul>
+                <ul>
+                  <li><a class="anchor-target" href="#facilities">Поддерживаемое оборудование</a></li>
+                  <li><a class="anchor-target" href="#facilities">Сравнение и состав модулей</a></li>
+                </ul>
+                <ul>
+                  <li><a class="anchor-target" href="#facilities">Процедура миграции</a></li>
+                  <li><a class="anchor-target" href="#facilities">Конвертер базы данных</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
           <section class="profitably">
             <div class="container">
               <h2>Почему стоит перейти на PERCo-Web?</h2>
@@ -438,7 +473,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="toggle-section-btn btn-open-block" data-open="Развернуть таблицу" data-close="Свернуть таблицу">Развернуть таблицу</div>
+                <div class="js-toggle-btn toggle-section-btn" data-open="Развернуть таблицу" data-close="Свернуть таблицу">Развернуть таблицу</div>
+                <div class="wrapper-btn"><button class="blue-btn">Задать вопрос</button></div>
               </div>
             </div>
           </section>
@@ -449,21 +485,53 @@
                 <div class="supported__desc">
                   <p> Воспользуйтесь таблицей неподдерживаемого оборудования в PW с указанием поддерживаемого аналога или элемента под замену или воспользуейтесь программой для проверки совместимости оборудования</p><a class="download-link" href="/download/documentation/rus/blank-reklamatsiy-1.docx">Скачать программу</a>
                 </div>
-                <div class="supported__table">
-                  <table>
-                    <colgroup>
-                      <col style="width: 390px" />
-                      <col />
-                    </colgroup>
-                    <tbody>
-                      <tr class="supported__table-item">
-                        <td>Не поддерживается в PERCo-WEb</td>
-                        <td>Поддерживаемый аналог</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div class="comparision__wrapper toggle-section">
+                  <div class="comparision__table">
+                    <div class="comparision__table-head">
+                      <div class="comparision__table-row">
+                        <div class="comparision__table-cell comparision__table-th">Не поддерживается в PERCo-WEb</div>
+                        <div class="comparision__table-cell comparision__table-th">
+                          <div class="comparision__table-cell--check">Поддерживаемый аналог <img src="https://www.perco.ru/images/2023/check2.svg" alt="" /></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comparision__table-body">
+                      <div class="comparision__table-row">
+                        <div class="comparision__table-cell"></div>
+                        <div class="comparision__table-cell"></div>
+                      </div>
+                      <div class="comparision__table-row">
+                        <div class="comparision__table-cell"></div>
+                        <div class="comparision__table-cell"></div>
+                      </div>
+                      <div class="comparision__table-row">
+                        <div class="comparision__table-cell"></div>
+                        <div class="comparision__table-cell"></div>
+                      </div>
+                      <div class="comparision__table-row">
+                        <div class="comparision__table-cell"></div>
+                        <div class="comparision__table-cell"></div>
+                      </div>
+                      <div class="comparision__table-row">
+                        <div class="comparision__table-cell"></div>
+                        <div class="comparision__table-cell"></div>
+                      </div>
+                      <div class="comparision__table-row comparision__table-item toggle-section-item">
+                        <div class="comparision__table-cell"></div>
+                        <div class="comparision__table-cell"></div>
+                      </div>
+                      <div class="comparision__table-row comparision__table-item toggle-section-item">
+                        <div class="comparision__table-cell"></div>
+                        <div class="comparision__table-cell"> </div>
+                      </div>
+                      <div class="comparision__table-row comparision__table-item toggle-section-item">
+                        <div class="comparision__table-cell"></div>
+                        <div class="comparision__table-cell"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="js-toggle-btn toggle-section-btn" data-open="Развернуть таблицу" data-close="Свернуть таблицу">Развернуть таблицу</div>
                 </div>
-                <div class="btn-open-block" id="toggleButton" data-open="Развернуть таблицу" data-close="Свернуть таблицу">Развернуть таблицу</div>
               </div>
             </div>
           </section>
@@ -527,7 +595,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="toggle-section-btn btn-open-block" data-open="Развернуть таблицу" data-close="Свернуть таблицу">Развернуть таблицу</div>
+                <div class="js-toggle-btn toggle-section-btn" data-open="Развернуть таблицу" data-close="Свернуть таблицу">Развернуть таблицу</div>
+                <div class="wrapper-btn"><button class="blue-btn">Задать вопрос</button></div>
               </div>
             </div>
           </section>

@@ -200,11 +200,22 @@
             border-radius: 50%;
         }
 
+        @media screen and (max-width: 1528px) {
+            &__item-card {
+                padding-left: 40px;
+                padding-right: 34px;
+            }
+            &__item-desc-bottom {
+                margin-top: 16px;
+                gap: 16px;
+            }
+        }
         @media screen and (max-width: 742px) {
             &__item-wrap, 
             &__item-desc-bottom {
                 flex-direction: column;
             }
         }
+
     }
 }

@@ -1,0 +1,28 @@
+
+.toggle-section {
+    .toggle-section-btn {
+        margin-top: 16px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .toggle-section-item {
+        overflow: hidden;
+
+        > * {
+            transition: height .5s;
+            opacity: 1;
+        }
+
+        &.hidden {
+            min-height: 0 !important;
+            opacity: 0 !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            > * {
+                    padding: 0 !important;
+                    display: none;
+                }
+        }
+    }
+}

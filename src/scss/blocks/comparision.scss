@@ -11,7 +11,7 @@
             max-width: 805px;
             margin-bottom: 32px;
             border-color: $stroke-primary;
-            border-width: 1px 1px 0 1px;
+            border-width: 1px 0 0 0;
             border-style: solid;
 
             .comparision__table-head {
@@ -19,21 +19,23 @@
                 flex-direction: column;
                 .comparision__table-row {
                     display: flex;
+                    min-height: 44px;
                     .comparision__table-cell {
                         flex: 1 1 0;
+                        align-content: center;
                         padding: 12px 8px;
                         font-weight: 600;
                         font-size: 16px;
                         color: $primary;
                         background-color: $bg-gray;
-                        border-bottom: 1px solid $stroke-primary;
-                        &:not(:last-child) {
-                            border-right: 1px solid $stroke-primary;
-                        }
+                        border-color: $stroke-primary;
+                        border-width: 0 1px 1px 0;
+                        border-style: solid;
                         &:first-child {
                             padding-left: 16px;
                             text-align: left;
                             min-width: 335px;
+                            border-left-width: 1px;
                         }
                         text-align: center;
                     }
@@ -42,51 +44,39 @@
             .comparision__table-body {
                 display: flex;
                 flex-direction: column;
-                .comparision__table-row:not(.active) {
+                .comparision__table-row:not(.hidden) {
                     border-bottom: 1px solid $stroke-primary;
                 }
                 .comparision__table-row {
                     display: flex;
+                    min-height: 44px;
                     .comparision__table-cell {
                         flex: 1 1 0;
+                        align-content: center;
                         padding: 12px 8px;
                         font-size: 16px;
                         color: $primary;
+                        border-color: $stroke-primary;
+                        border-width: 0 1px 0 0;
+                        border-style: solid;
                         &:first-child {
                             padding-left: 16px;
                             text-align: left;
                             font-weight: 600;
                             min-width: 335px;
-                        }
-                        &:not(:last-child) {
-                            border-right: 1px solid $stroke-primary;
+                            border-left-width: 1px;
                         }
                         text-align: center;
                     }
                 }
             }
-        }
-    }
-}
 
-.toggle-section {
-    .toggle-table-btn.btn-open-block {
-        margin-top: 16px;
-        cursor: pointer;
-        user-select: none;
-    }
-    .toggle-section-item {
-        overflow: hidden !important;
-        > * {
-            transition: max-height .15s !important;
-            max-height: 100px !important;
-            opacity: 1 !important;
-        }
-        &.active > * {
-            max-height: 0 !important;
-            opacity: 0 !important;
-            padding-top: 0 !important;
-            padding-bottom: 0 !important;
+            &-cell--check {
+                display: flex;
+                gap: 16px;
+                align-items: center;
+                margin-left: 16px;
+            }
         }
     }
 }
