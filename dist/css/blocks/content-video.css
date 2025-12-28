@@ -1,5 +1,4 @@
 .migration {
-  padding: 100px 0;
   /* end youtube-video  */
 }
 
@@ -10,9 +9,25 @@
 }
 
 @media (max-width: 1528px) {
-  .migration .block-video-wrapper .video-description {
-    gap: 52px;
+  .migration .block-video-wrapper {
+    gap: 60px;
   }
+}
+
+@media (max-width: 900px) {
+  .migration .block-video-wrapper {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 468px) {
+  .migration .block-video-wrapper {
+    gap: 40px;
+  }
+}
+
+.migration .block-video-wrapper .video-description ol {
+  padding-left: 28px;
 }
 
 @media (max-width: 1200px) {
@@ -32,15 +47,13 @@
     max-width: 735px;
   }
   .migration .block-video-wrapper .video-description ol li {
-    padding-bottom: 16px;
+    padding: 8px 0;
   }
 }
 
 .migration .iframe {
   width: 50%;
   position: relative;
-  height: 0;
-  padding-bottom: 28.1%;
 }
 
 .migration iframe {
@@ -59,7 +72,6 @@
   position: relative;
   cursor: pointer;
   padding: 0;
-  height: 350px;
 }
 
 .migration .youtube-video-container img {

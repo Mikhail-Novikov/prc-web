@@ -1,5 +1,17 @@
 .skd-web .supported {
-  padding: 100px 0;
+  padding: 80px 0 100px;
+}
+
+@media (max-width: 900px) {
+  .skd-web .supported {
+    padding: 60px 0 80px;
+  }
+}
+
+@media (max-width: 468px) {
+  .skd-web .supported {
+    padding: 40px 0 60px;
+  }
 }
 
 .skd-web .supported_wrapper {
@@ -14,6 +26,14 @@
   gap: 100px;
 }
 
+@media (max-width: 900px) {
+  .skd-web .supported__desc {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
 .skd-web .supported__desc p {
   font-size: 16px;
   line-height: 24px;
@@ -21,8 +41,20 @@
   max-width: 490px;
 }
 
+@media (max-width: 900px) {
+  .skd-web .supported__desc p {
+    margin-bottom: 8px;
+  }
+}
+
 .skd-web .supported__desc a {
   margin-top: 12px;
+}
+
+@media (max-width: 900px) {
+  .skd-web .supported__desc a {
+    margin-bottom: 32px;
+  }
 }
 
 .skd-web .supported .comparision__wrapper {

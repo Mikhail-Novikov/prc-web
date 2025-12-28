@@ -27,6 +27,12 @@
             border-color: $stroke-primary;
             border-width: 1px 0 0 0;
             border-style: solid;
+            @include desktop-l {
+                margin-bottom: 20px;
+            }
+            @include mobile-m {
+                margin-bottom: 12px;
+            }
 
             .comparision__table-head {
                 display: flex;
@@ -57,7 +63,7 @@
                                 min-width: 300px;
                             }
                             @include breakpoint(540) {
-                                min-width: 220px;
+                                min-width: 210px;
                             }
                             @include breakpoint(440) {
                                 min-width: 180px;
@@ -69,7 +75,7 @@
                             }
                         }
                         @include breakpoint(410) {
-                            min-width: 100px;
+                            min-width: 105px;
                             flex-grow: 0;
                         }
                         text-align: center;
@@ -107,7 +113,7 @@
                                 min-width: 300px;
                             }
                             @include breakpoint(540) {
-                                min-width: 220px;
+                                min-width: 210px;
                             }
                             @include breakpoint(440) {
                                 min-width: 180px;
@@ -119,11 +125,17 @@
                             }
                         }
                         @include breakpoint(410) {
-                            min-width: 100px;
+                            min-width: 105px;
                             flex-grow: 0;
                         }
                         text-align: center;
                     }
+                }
+            }
+
+            @include mobile-m {
+                &-cell:has(.comparision__table-cell--check) {
+                    min-width: 190px !important;
                 }
             }
 
@@ -132,6 +144,12 @@
                 gap: 16px;
                 align-items: center;
                 margin-left: 16px;
+                @include mobile-m {
+                    margin-left: 0;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
             }
         }
     }

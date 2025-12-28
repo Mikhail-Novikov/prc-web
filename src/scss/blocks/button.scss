@@ -1,10 +1,10 @@
 @import '../helpers/media';
 
 .toggle-section-btn {
-    display: flex;
+    display: inline-flex;
     font-weight: 600;
     line-height: 120%;
-    margin-top: 20px;
+    padding: 10px 0;
     color: #214288;
     cursor: pointer;
 }
@@ -36,7 +36,14 @@
         justify-content: center;
     }
     .wrapper-btn {
-        margin-top: 44px;
+        margin-top: 32px;
+
+        @include desktop {
+            margin-top: 40px;
+        }
+        @include laptop {
+            margin-top: 24px;
+        }
 
         .blue-btn {
             width: 228px;

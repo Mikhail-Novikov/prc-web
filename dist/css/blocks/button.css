@@ -1,9 +1,9 @@
 .toggle-section-btn {
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   font-weight: 600;
   line-height: 120%;
-  margin-top: 20px;
+  padding: 10px 0;
   color: #214288;
   cursor: pointer;
 }
@@ -41,7 +41,19 @@
 }
 
 .skd-web .wrapper-btn {
-  margin-top: 44px;
+  margin-top: 32px;
+}
+
+@media (max-width: 1200px) {
+  .skd-web .wrapper-btn {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .skd-web .wrapper-btn {
+    margin-top: 24px;
+  }
 }
 
 .skd-web .wrapper-btn .blue-btn {
