@@ -1,9 +1,9 @@
 .skd-web .supported {
-  padding: 6.25rem 0;
+  padding: 100px 0;
 }
 
 .skd-web .supported_wrapper {
-  max-width: 50rem;
+  max-width: 800px;
 }
 
 .skd-web .supported__desc {
@@ -11,18 +11,22 @@
   display: flex;
   -ms-flex-align: start;
   align-items: flex-start;
-  gap: 6.25rem;
+  gap: 100px;
 }
 
 .skd-web .supported__desc p {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  margin: 0 0 2rem;
-  max-width: 30.625rem;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 32px;
+  max-width: 490px;
 }
 
 .skd-web .supported__desc a {
-  margin-top: 0.75rem;
+  margin-top: 12px;
+}
+
+.skd-web .supported .comparision__wrapper {
+  padding-top: 0;
 }
 
 /*# sourceMappingURL=supported.css.map */

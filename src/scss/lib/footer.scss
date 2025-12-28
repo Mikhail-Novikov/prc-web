@@ -1,6 +1,6 @@
-
 @import '../lib/flexbox.scss';
 @import '../lib/variables';
+@import '../helpers/media';
 
 .footer {
 	background: $main-blue;
@@ -21,6 +21,13 @@
 		color: #DCE1E6;
 		.footer-wrapper {
 		}
+	}
+	@include desktop-l {
+		padding: 60px 0 40px 0;
+	}
+	@include mobile-m {
+		padding: 40px 0 24px 0;
+		font-size: 12px;
 	}
 }
 .adress-wrapper {

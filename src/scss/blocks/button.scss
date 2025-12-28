@@ -1,3 +1,5 @@
+@import '../helpers/media';
+
 .toggle-section-btn {
     display: flex;
     font-weight: 600;
@@ -34,7 +36,7 @@
         justify-content: center;
     }
     .wrapper-btn {
-        margin-top: 52px;
+        margin-top: 44px;
 
         .blue-btn {
             width: 228px;

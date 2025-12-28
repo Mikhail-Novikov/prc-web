@@ -25,15 +25,6 @@ export default function css() {
     gp.autoprefixer({
       cascade: false
     }),
-    gp.pxtorem({
-      rootValue: 16,
-      unitPrecision: 5,
-      propList: ['*'],
-      selectorBlackList: [],
-      replace: true,
-      mediaQuery: true,
-      minPixelValue: 0
-    }),
     gp.if(development, gp.sourcemaps.write('.')),
     gp.debug({title: "Asset task 'css'"}),
     gulp.dest(paths.css.dest),

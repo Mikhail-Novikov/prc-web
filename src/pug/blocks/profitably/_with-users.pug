@@ -2,13 +2,13 @@ include _with-user-item
 
 div.profitably__item
   div.profitably__item-title
-    div.circle-with-number.rounded-60 3
+    div.profitably__item-circle-with-number 3
     h3 Удобно для разных пользователей
   div.profitably__users
     div.profitably__users-item
       h3.profitably__users-title
-        img(src="./img/icon-admin.svg")
-        p Администратору системы
+        img(src="./img/icon-admin.svg" alt="")
+        span Администратору системы
       ol.profitably__users-list
         +with-user-item('Соответствие стандартам', 'Программное обеспечение входит в реестр отечественного ПО и работает на ОС, входящих в этот реестр.')
         +with-user-item('Совместимость с  Linux', 'Установка сервера на Linux и работа с 1С на Linux системах.')
@@ -20,8 +20,8 @@ div.profitably__item
 
     div.profitably__users-item
       h3.profitably__users-title
-        img(src="./img/icon-beza.svg")
-        p Службе безопасности
+        img(src="./img/icon-beza.svg" alt="")
+        span Службе безопасности
       ol.profitably__users-list
         +with-user-item('Оперативный мониторинг', 'Организация рабочего места на базе планшета или смартфона.')
         +with-user-item('Гибкая система реакций на события', 'Сообщения можно получать через Telegram, СМС и e-mail, в том числе о возникновении нештатных ситуаций.')

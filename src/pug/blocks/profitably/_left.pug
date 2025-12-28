@@ -1,32 +1,30 @@
 div.profitably__item
   div.profitably__item-title
-    div.circle-with-number.rounded-60 2
+    div.profitably__item-circle-with-number 2
     h3 Простое решение для быстрого перехода
   div.profitably__item-wrap
-    figure.profitably__item-card.col-desk-6.col-mid-12
-      blockquote.profitably__item-subtitle
+    div.profitably__item-card.col-desk-6.col-mid-12
+      h4.profitably__item-subtitle
         | Специальный конвертер базы данных
-
       div.profitably__item-desc
         p Вся информация о настройках оборудования, сотрудниках и их доступе автоматически передается из системы S-20 с помощью специального конвертера базы данных.
-        div.profitably__item-desc-bottom.profitably__item-desc--left
+        figure.profitably__item-desc-bottom.profitably__item-desc--left
+          img(src="./img/illustration-women.svg" alt="Информация о настройках оборудования")
           figcaption
-            img(src="./img/illustration-women.svg")
-          p
             span Данные импортируются одним массивом, при этом в PERCo-Web автоматически активируется ознакомительный режим лицензий «Стандартный пакет ПО» и «Учет рабочего времени». 
             span Список импортируемых данных представлен в документации на Конвертер.
 
 
     div.flex.flex-column.col-desk-6.col-mid-12.gap-12
-      figure.profitably__item-card
-        blockquote.profitably__item-subtitle
+      div.profitably__item-card
+        h4.profitably__item-subtitle
           | Поддержка новых линеек оборудования PERCo
         div.profitably__item-desc
           p
-            | Программное обеспечение обеспечивает поддержку оборудования с улучшенными характеристиками.
+            span Программное обеспечение обеспечивает поддержку оборудования с улучшенными характеристиками.
 
-      figure.profitably__item-card
-        blockquote.profitably__item-subtitle
+      div.profitably__item-card
+        h4.profitably__item-subtitle
           | Множество вариантов идентификации
         div.profitably__item-desc
           p

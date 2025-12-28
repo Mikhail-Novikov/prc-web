@@ -1,23 +1,43 @@
 @import '../lib/flexbox.scss';
 @import '../lib/variables';
+@import '../helpers/media';
 
 .skd-web {
     .profitably {
         background: $bg-gray;
         padding-top: 80px;
         padding-bottom: 120px;
+        @include laptop {
+            padding-top: 60px;
+            padding-bottom: 80px;
+        }
+        @include mobile-m {
+            padding-top: 40px;
+            padding-bottom: 60px;
+        }
+
+        &__item {
+            padding-top: 8px;
+        }
 
         &__item:not(:last-child) {
-            margin-bottom: 60px;
+            margin-bottom: 52px;
+            @include mobile-m {
+                margin-bottom: 32px;
+            }
         }
-        
+
         &__item-title {
             display: flex;
-            align-items: center;
             gap: 20px;
             margin-bottom: 20px;
+            @include mobile-m {
+                gap: 16px;
+                margin-bottom: 16px;
+            }
 
             h3 {
+                align-content: center;
                 color: $primary;
                 font-size: 24px;
                 font-weight: 600;
@@ -26,9 +46,32 @@
             }
         }
 
+        &__item-circle-with-number {
+            border: 1.5px solid $stroke-primary;
+            display: flex;
+            flex-shrink: 0;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            @include mobile-m {
+                width: 44px;
+                height: 44px;
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+
         &__item-wrap {
             display: flex;
             gap: 12px;
+            @include laptop {
+                flex-direction: column;
+            }
         }
 
         &__item-card {
@@ -39,28 +82,78 @@
             border: 1.5px solid $stroke-primary;
             padding: 40px 40px 36px 48px;
             flex-grow: 1;
+            @include desktop-l {
+                padding-left: 40px;
+                padding-right: 34px;
+            }
+            @include desktop {
+                padding: 32px;
+            }
+            @include mobile-m {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
         }
 
         &__item-subtitle {
+            margin-top: 0;
             margin-bottom: 12px;
             font-weight: 600;
             font-size: 18px;
+            line-height: 24px;
         }
 
         &__item-desc {
             font-weight: 400;
             font-size: 18px;
-
             p {
                 margin: 12px 0 16px 0;
                 max-width: 570px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                @include laptop {
+                    margin-bottom: 0;
+                }
+            }
+            &--left img {
+                margin-right: 40px;
+                float: inline-start;
+                @include desktop-l {
+                    margin-right: 16px;
+                }
+                @include laptop {
+                    margin-right: 12px;
+                }
+                @include mobile-m {
+                    float: none;
+                }
+            }
+            img {
+                @include desktop {
+                    max-width: 172px;
+                }
             }
         }
 
         &__item-desc-bottom {
             margin-top: 16px;
-
-            p {
+            position: relative;
+            @include desktop-l {
+                margin-top: 16px;
+                gap: 16px;
+            }
+            @include mobile-m {
+                display: flex;
+                flex-direction: column;
+                figcaption {
+                    order: 1;
+                }
+                img {
+                    order: 2;
+                }   
+            }
+            figcaption, p {
                 margin: 0;
                 display: flex;
                 flex-direction: column;
@@ -68,34 +161,44 @@
             }
         }
 
-        &__item-desc--right figcaption {
+        &__item-desc--right img {
             margin-left: 16px;
             float: inline-end;
         }
 
-        &__item-desc--left figcaption {
-            margin-right: 40px;
-            float: inline-start;
-        } 
-
-        // start with-users
-
         &__users {
             display: flex;
             gap: 20px;
+            @include laptop {
+                flex-direction: column;
+            }
         }
 
         &__users-item {
             border: 1.5px solid $stroke-primary;
             padding: 40px;
             width: 50%;
+            @include desktop {
+                padding: 32px;
+            }
+            @include desktop-l {
+                width: 100%;
+            }
+            @include mobile-m {
+                padding: 20px 16px;
+            }
         }
 
         &__users-title {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 16px;
             margin: 0;
+            font-size: 20px;
+            line-height: 28px;
+            span {
+                padding-top: 8px;
+            }
 
             p {
                 margin: 0;
@@ -115,19 +218,24 @@
             list-style-type: none; 
             counter-reset: num;
             margin-left: 54px;
-            padding: 8px 0 5px 0;
-
+            padding: 0;
+            @include desktop-l {
+                margin-top: 24px;
+            }
+            @include desktop {
+                margin-top: 20px;
+            }
             > li {
-                position: relative;	
+                position: relative;    
                 margin: 0;
-                padding: 0 0 16px 0;
-
+                padding: 8px 0 16px 0;
 
                 &::before {
                     content: '0' counter(num); 
                     counter-increment: num;
                     display: inline-block;
                     position: absolute;
+                    margin-top: 8px;
                     top: 0;
                     left: -53px;
                     width: 38px;
@@ -167,55 +275,5 @@
         }
         // end with-users
         
-        
-        .circle-with-number {
-            border: 1.5px solid $stroke-primary;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 40px;
-        }
-
-        .rounded-60 {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-        }
-
-        @media screen and (max-width: 1528px) {
-            &__item-card {
-                padding-left: 40px;
-                padding-right: 34px;
-            }
-            &__item-desc-bottom {
-                margin-top: 16px;
-                gap: 16px;
-            }
-        }
-        @media screen and (max-width: 1200px) {
-            &__item-card, &__users-item {
-                padding: 32px;
-            }
-            &__item-desc {
-                font-size: 16px;
-                
-                &--left figcaption {
-                    margin-right: 12px;
-                }
-
-                img {
-                    max-width: 172px;
-                }
-            }
-        }
-        @media screen and (max-width: 742px) {
-            &__item-wrap, 
-            &__item-desc-bottom {
-                flex-direction: column;
-            }
-        }
-
     }
 }

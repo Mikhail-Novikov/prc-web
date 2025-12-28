@@ -1,5 +1,5 @@
 .header {
-  font-size: 0.875rem;
+  font-size: 14px;
   background: #214288;
   color: #FFFFFF;
   padding: 0;
@@ -17,7 +17,7 @@
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 6.25rem;
+  height: 100px;
 }
 
 .top-menu {
@@ -25,7 +25,7 @@
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0 1.25rem;
+  padding: 0 20px;
   height: 100%;
 }
 
@@ -35,7 +35,7 @@
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
-  padding: 0 1.25rem;
+  padding: 0 20px;
 }
 
 .top-menu .main-top a.main-link {
@@ -43,16 +43,16 @@
   line-height: initial;
   display: -ms-flexbox;
   display: flex;
-  padding: 0.3125rem 0;
+  padding: 5px 0;
   font-weight: 400;
-  text-underline-offset: 0.25rem;
-  text-decoration-thickness: 0.0625rem;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
 }
 
 .top-menu .main-top .submenu-container {
   display: -ms-flexbox;
   display: flex;
-  padding: 3.75rem 0;
+  padding: 60px 0;
   background: #FFFFFF;
   width: 100%;
   opacity: 0;
@@ -64,7 +64,7 @@
 }
 
 .top-menu .main-top .submenu-container.no-children {
-  padding: 2.5rem;
+  padding: 40px;
   width: auto;
 }
 
@@ -73,7 +73,7 @@
   display: flex;
   transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   visibility: visible;
-  box-shadow: 0 0.0625rem 0.3125rem 0.0625rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
 }
 
 .top-menu-wrapper {
@@ -86,12 +86,12 @@
 }
 
 .top-menu-icons li {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 24px;
+  height: 24px;
 }
 
 .top-menu-icons li:not(:last-child) {
-  margin-right: 1rem;
+  margin-right: 16px;
 }
 
 .top-menu-icons li#world {
@@ -120,18 +120,18 @@
 }
 
 .main-logo {
-  max-width: 6.1875rem;
+  max-width: 99px;
 }
 
 .lang-panel {
   background: #FFFFFF;
   color: #214288;
   visibility: hidden;
-  padding: 1.25rem;
+  padding: 20px;
   position: absolute;
-  left: -625rem;
+  left: -10000px;
   z-index: -1;
-  bottom: 62.5rem;
+  bottom: 1000px;
 }
 
 .lang-panel.active {
@@ -155,19 +155,19 @@
 }
 
 .lang-switch li:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
 
 .lang-switch li::before {
   content: '';
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 24px;
+  height: 24px;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   background: url("https://www.perco.ru/images/2023/icons/lang-icon.svg") no-repeat center center/contain;
-  margin-right: 0.75rem;
+  margin-right: 12px;
 }
 
 .lang-switch li.active::before {
@@ -175,7 +175,7 @@
 }
 
 .submenu-container.no-children .submenu-one li:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .submenu-container.no-children .submenu-one li a:hover {
@@ -188,7 +188,7 @@
 }
 
 .submenu-container.no-children .submenu-two:not(:last-child) {
-  margin-right: 5rem;
+  margin-right: 80px;
 }
 
 .submenu-container.no-children .submenu-two li {
@@ -202,7 +202,7 @@
 
 .submenu-one.full {
   width: 100%;
-  max-width: 79.375rem;
+  max-width: 1270px;
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
@@ -216,17 +216,17 @@
 }
 
 .submenu-one.full.products .main-width:not(:last-child) {
-  margin-right: 5rem;
+  margin-right: 80px;
 }
 
 .submenu-one.full.partners .main-width:not(:last-child) {
-  margin-right: 5rem;
+  margin-right: 80px;
 }
 
 .submenu-one.full li.has-children a {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 125%;
   color: #2C2D2E;
 }
@@ -238,13 +238,13 @@
 .submenu-one.full li.has-children .second-level {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 125%;
   color: #2C2D2E;
 }
 
 .submenu-one.full li.no-children {
-  padding-right: 0.3125rem;
+  padding-right: 5px;
 }
 
 .submenu-one.full li.no-children .submenu-two {
@@ -263,15 +263,15 @@
 
 .submenu-one.full li.no-children a.menu-btn.dso {
   display: block;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 100%;
   color: #FFFFFF;
   width: 100%;
-  max-width: 12.5rem;
-  padding: 0.625rem 0.625rem;
+  max-width: 200px;
+  padding: 10px 10px;
   text-align: center;
   background: #214288;
-  margin-top: 2.25rem;
+  margin-top: 36px;
   border-radius: 0;
   font-weight: 400;
 }
@@ -287,7 +287,7 @@
 .submenu-one li.has-children .submenu-two li a {
   font-weight: 500;
   text-transform: none;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 125%;
   color: #6D7885;
 }
@@ -307,7 +307,7 @@
 .submenu-one li.ext-menu ul li a span {
   display: block;
   font-weight: 400;
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 .submenu-one li.ext-menu ul li a:hover {
@@ -322,7 +322,7 @@
 
 .submenu-two-wrapper {
   width: 100%;
-  max-width: 79.375rem;
+  max-width: 1270px;
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
@@ -332,15 +332,15 @@
 
 .submenu-two {
   width: auto;
-  margin-top: 1rem;
+  margin-top: 16px;
 }
 
 .submenu-two:not(:last-child) {
-  margin-right: 1.25rem;
+  margin-right: 20px;
 }
 
 .submenu-two li:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .only-mob {
@@ -348,20 +348,20 @@
 }
 
 .menu-btn {
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 100%;
   color: #FFFFFF;
   width: 100%;
-  max-width: 12.5rem;
-  padding: 0.625rem 1rem;
+  max-width: 200px;
+  padding: 10px 16px;
   text-align: center;
   background: #214288;
-  margin-top: 2.25rem;
+  margin-top: 36px;
   border-radius: 0;
 }
 
 .menu-btn.dso {
-  padding: 0.625rem 0.625rem;
+  padding: 10px 10px;
 }
 
 /*# sourceMappingURL=header.css.map */

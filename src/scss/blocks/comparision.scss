@@ -1,9 +1,23 @@
 @import '../lib/variables';
+@import '../helpers/media';
 
 .skd-web {
     .comparision {
         background: $bg-blue-gray;
-        padding: 80px 100px;
+        padding: 80px 0 100px;
+        @include laptop {
+            padding: 60px 0 80px;
+        }
+        @include mobile-m {
+            padding: 40px 0 60px;
+        }
+
+        &__wrapper {
+            padding-top: 8px;
+            @include desktop {
+                padding-top: 0;
+            }
+        }
 
         &__table {
             display: flex;
@@ -26,6 +40,9 @@
                         padding: 12px 8px;
                         font-weight: 600;
                         font-size: 16px;
+                        @include laptop {
+                            font-size: 14px;
+                        }
                         color: $primary;
                         background-color: $bg-gray;
                         border-color: $stroke-primary;
@@ -36,6 +53,24 @@
                             text-align: left;
                             min-width: 335px;
                             border-left-width: 1px;
+                            @include laptop {
+                                min-width: 300px;
+                            }
+                            @include breakpoint(540) {
+                                min-width: 220px;
+                            }
+                            @include breakpoint(440) {
+                                min-width: 180px;
+                            }
+                            @include breakpoint(410) {
+                                min-width: 100px;
+                                padding-left: 8px;
+                                flex-grow: 1;
+                            }
+                        }
+                        @include breakpoint(410) {
+                            min-width: 100px;
+                            flex-grow: 0;
                         }
                         text-align: center;
                     }
@@ -49,12 +84,15 @@
                 }
                 .comparision__table-row {
                     display: flex;
-                    min-height: 44px;
+                    min-height: 42px;
                     .comparision__table-cell {
                         flex: 1 1 0;
                         align-content: center;
                         padding: 12px 8px;
                         font-size: 16px;
+                        @include laptop {
+                            font-size: 14px;
+                        }
                         color: $primary;
                         border-color: $stroke-primary;
                         border-width: 0 1px 0 0;
@@ -65,6 +103,24 @@
                             font-weight: 600;
                             min-width: 335px;
                             border-left-width: 1px;
+                            @include laptop {
+                                min-width: 300px;
+                            }
+                            @include breakpoint(540) {
+                                min-width: 220px;
+                            }
+                            @include breakpoint(440) {
+                                min-width: 180px;
+                            }
+                            @include breakpoint(410) {
+                                min-width: 100px;
+                                padding-left: 8px;
+                                flex-grow: 1;
+                            }
+                        }
+                        @include breakpoint(410) {
+                            min-width: 100px;
+                            flex-grow: 0;
                         }
                         text-align: center;
                     }

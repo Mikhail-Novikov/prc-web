@@ -1,10 +1,10 @@
 .skd-web .migration {
-  padding: 6.25rem 0;
+  padding: 100px 0;
 }
 
-@media screen and (max-width: 95.5rem) {
+@media (max-width: 1528px) {
   .skd-web .migration .block-video-wrapper {
-    gap: 2.5rem;
+    gap: 40px;
   }
 }
 

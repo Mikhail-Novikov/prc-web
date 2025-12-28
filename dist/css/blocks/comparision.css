@@ -1,6 +1,28 @@
 .skd-web .comparision {
   background: #EBEDF0;
-  padding: 5rem 6.25rem;
+  padding: 80px 0 100px;
+}
+
+@media (max-width: 900px) {
+  .skd-web .comparision {
+    padding: 60px 0 80px;
+  }
+}
+
+@media (max-width: 468px) {
+  .skd-web .comparision {
+    padding: 40px 0 60px;
+  }
+}
+
+.skd-web .comparision__wrapper {
+  padding-top: 8px;
+}
+
+@media (max-width: 1200px) {
+  .skd-web .comparision__wrapper {
+    padding-top: 0;
+  }
 }
 
 .skd-web .comparision__table {
@@ -8,10 +30,10 @@
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: 50.3125rem;
-  margin-bottom: 2rem;
+  max-width: 805px;
+  margin-bottom: 32px;
   border-color: #CBCBCB;
-  border-width: 0.0625rem 0 0 0;
+  border-width: 1px 0 0 0;
   border-style: solid;
 }
 
@@ -25,30 +47,71 @@
 .skd-web .comparision__table .comparision__table-head .comparision__table-row {
   display: -ms-flexbox;
   display: flex;
-  min-height: 2.75rem;
+  min-height: 44px;
 }
 
 .skd-web .comparision__table .comparision__table-head .comparision__table-row .comparision__table-cell {
-  -ms-flex: 1 1 0;
+  -ms-flex: 1 1 0px;
   flex: 1 1 0;
   -ms-flex-line-pack: center;
   align-content: center;
-  padding: 0.75rem 0.5rem;
+  padding: 12px 8px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 16px;
   color: #2C2D2E;
   background-color: #F5F5F5;
   border-color: #CBCBCB;
-  border-width: 0 0.0625rem 0.0625rem 0;
+  border-width: 0 1px 1px 0;
   border-style: solid;
   text-align: center;
 }
 
+@media (max-width: 900px) {
+  .skd-web .comparision__table .comparision__table-head .comparision__table-row .comparision__table-cell {
+    font-size: 14px;
+  }
+}
+
 .skd-web .comparision__table .comparision__table-head .comparision__table-row .comparision__table-cell:first-child {
-  padding-left: 1rem;
+  padding-left: 16px;
   text-align: left;
-  min-width: 20.9375rem;
-  border-left-width: 0.0625rem;
+  min-width: 335px;
+  border-left-width: 1px;
+}
+
+@media (max-width: 900px) {
+  .skd-web .comparision__table .comparision__table-head .comparision__table-row .comparision__table-cell:first-child {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 540px) {
+  .skd-web .comparision__table .comparision__table-head .comparision__table-row .comparision__table-cell:first-child {
+    min-width: 220px;
+  }
+}
+
+@media (max-width: 440px) {
+  .skd-web .comparision__table .comparision__table-head .comparision__table-row .comparision__table-cell:first-child {
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 410px) {
+  .skd-web .comparision__table .comparision__table-head .comparision__table-row .comparision__table-cell:first-child {
+    min-width: 100px;
+    padding-left: 8px;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 410px) {
+  .skd-web .comparision__table .comparision__table-head .comparision__table-row .comparision__table-cell {
+    min-width: 100px;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
 }
 
 .skd-web .comparision__table .comparision__table-body {
@@ -59,44 +122,85 @@
 }
 
 .skd-web .comparision__table .comparision__table-body .comparision__table-row:not(.hidden) {
-  border-bottom: 0.0625rem solid #CBCBCB;
+  border-bottom: 1px solid #CBCBCB;
 }
 
 .skd-web .comparision__table .comparision__table-body .comparision__table-row {
   display: -ms-flexbox;
   display: flex;
-  min-height: 2.75rem;
+  min-height: 42px;
 }
 
 .skd-web .comparision__table .comparision__table-body .comparision__table-row .comparision__table-cell {
-  -ms-flex: 1 1 0;
+  -ms-flex: 1 1 0px;
   flex: 1 1 0;
   -ms-flex-line-pack: center;
   align-content: center;
-  padding: 0.75rem 0.5rem;
-  font-size: 1rem;
+  padding: 12px 8px;
+  font-size: 16px;
   color: #2C2D2E;
   border-color: #CBCBCB;
-  border-width: 0 0.0625rem 0 0;
+  border-width: 0 1px 0 0;
   border-style: solid;
   text-align: center;
 }
 
+@media (max-width: 900px) {
+  .skd-web .comparision__table .comparision__table-body .comparision__table-row .comparision__table-cell {
+    font-size: 14px;
+  }
+}
+
 .skd-web .comparision__table .comparision__table-body .comparision__table-row .comparision__table-cell:first-child {
-  padding-left: 1rem;
+  padding-left: 16px;
   text-align: left;
   font-weight: 600;
-  min-width: 20.9375rem;
-  border-left-width: 0.0625rem;
+  min-width: 335px;
+  border-left-width: 1px;
+}
+
+@media (max-width: 900px) {
+  .skd-web .comparision__table .comparision__table-body .comparision__table-row .comparision__table-cell:first-child {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 540px) {
+  .skd-web .comparision__table .comparision__table-body .comparision__table-row .comparision__table-cell:first-child {
+    min-width: 220px;
+  }
+}
+
+@media (max-width: 440px) {
+  .skd-web .comparision__table .comparision__table-body .comparision__table-row .comparision__table-cell:first-child {
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 410px) {
+  .skd-web .comparision__table .comparision__table-body .comparision__table-row .comparision__table-cell:first-child {
+    min-width: 100px;
+    padding-left: 8px;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 410px) {
+  .skd-web .comparision__table .comparision__table-body .comparision__table-row .comparision__table-cell {
+    min-width: 100px;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
 }
 
 .skd-web .comparision__table-cell--check {
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
+  gap: 16px;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: 1rem;
+  margin-left: 16px;
 }
 
 /*# sourceMappingURL=comparision.css.map */

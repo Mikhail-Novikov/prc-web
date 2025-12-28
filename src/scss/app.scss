@@ -221,6 +221,7 @@ h3 {
 }
 
 .download-link {
+  color: $main-blue;
   font-weight:600;
   @include flexbox;
   @include align-items(center);

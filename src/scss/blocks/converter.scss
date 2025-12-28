@@ -1,9 +1,13 @@
 @import '../lib/variables';
+@import '../helpers/media';
 
 .skd-web {
     .converter {
         background: $bg-blue-gray;
         padding: 100px 0;
+        @media screen and (max-width: 1280px) {
+            padding-top: 80px;
+        }
 
         &__desc {
             color: $primary;
@@ -33,11 +37,6 @@
             &:not(:last-child) {
                 margin-bottom: 5px;
             }
-        }
-
-        .download-link {
-            font-weight: 600;
-            color: $main-blue;
-        }
+        }  
     }
 }

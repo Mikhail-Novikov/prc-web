@@ -1,4 +1,5 @@
 @import '../lib/variables';
+@import '../helpers/media';
 
 .skd-web {
     .supported {
@@ -22,6 +23,10 @@
             a {
                 margin-top: 12px;
             }
+        }
+
+        .comparision__wrapper {
+            padding-top: 0;
         }
     }
 }

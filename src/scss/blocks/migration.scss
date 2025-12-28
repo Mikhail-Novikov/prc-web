@@ -1,11 +1,12 @@
 @import '../lib/variables';
+@import '../helpers/media';
 
 .skd-web {
     .migration {
         padding: 100px 0;
     }
 
-    @media screen and (max-width: 1528px) {
+    @include desktop-l {
         .migration .block-video-wrapper {
             gap: 40px;
         }

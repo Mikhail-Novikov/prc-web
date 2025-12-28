@@ -2,8 +2,8 @@
   background: #214288;
   color: #FFFFFF;
   font-weight: 300;
-  font-size: 0.875rem;
-  padding: 5rem 0 3.75rem 0;
+  font-size: 14px;
+  padding: 80px 0 60px 0;
   line-height: 145%;
 }
 
@@ -13,7 +13,7 @@
 
 .footer .menu-title {
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   font-weight: 600;
 }
 
@@ -21,16 +21,29 @@
   color: #DCE1E6;
 }
 
+@media (max-width: 1528px) {
+  .footer {
+    padding: 60px 0 40px 0;
+  }
+}
+
+@media (max-width: 468px) {
+  .footer {
+    padding: 40px 0 24px 0;
+    font-size: 12px;
+  }
+}
+
 .adress-wrapper {
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .footer-adress p:not(:last-child) {
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .footer-phone p {
-  margin-bottom: 0.75rem;
+  margin-bottom: 12px;
 }
 
 .footer-phone.tab {
@@ -38,13 +51,13 @@
 }
 
 .footer-icons {
-  margin-top: 3.4375rem;
+  margin-top: 55px;
 }
 
 .footer-icons li {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 1.75rem;
+  width: 24px;
+  height: 24px;
+  margin-right: 28px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
@@ -82,38 +95,38 @@
 }
 
 .footer-menu li:not(:last-child) {
-  margin-bottom: 0.75rem;
+  margin-bottom: 12px;
 }
 
 .footer-logo {
   display: block;
-  max-width: 8.0625rem;
-  margin: 0 0 2rem 0;
+  max-width: 129px;
+  margin: 0 0 32px 0;
 }
 
 .footer-brand {
   width: 100%;
-  max-width: 14.25rem;
+  max-width: 228px;
 }
 
 .eng-contacts {
-  margin-bottom: 0.75rem;
+  margin-bottom: 12px;
 }
 
 .eng-contacts p {
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 1.25rem;
+  line-height: 20px;
   margin: 0;
 }
 
 .eng-contacts p:not(:last-child) {
-  margin: 0 0 0.25rem 0;
+  margin: 0 0 4px 0;
 }
 
 .eng-bottom-nav li {
-  padding: 0.5rem 0;
-  margin-right: 3.75rem;
+  padding: 8px 0;
+  margin-right: 60px;
   font-weight: 600;
   color: #FFFFFF;
 }
@@ -123,18 +136,18 @@
 }
 
 .in-touch {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 150%;
   font-weight: 600;
-  margin: 0 0 1rem 0;
+  margin: 0 0 16px 0;
 }
 
 .eng-address {
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 1.25rem;
-  max-width: 14.25rem;
-  margin: 0 0 2.5rem 0;
+  line-height: 20px;
+  max-width: 228px;
+  margin: 0 0 40px 0;
 }
 
 /*# sourceMappingURL=footer.css.map */

@@ -1,8 +1,15 @@
 @import '../lib/variables';
+@import '../helpers/media';
 
 .skd-web {
     .features {
         background: $bg-blue-gray;
-        padding: 100px 0;
+        padding: 80px 0 100px;
+        @include mobile-m {
+            padding: 60px 0 80px;
+        }
+        @include mobile-s {
+            padding: 40px 0 60px;
+        }
     }
 }

@@ -1,5 +1,6 @@
 @import '../lib/flexbox.scss';
 @import '../lib/variables';
+@import '../helpers/media';
 
 .migration {
     padding: 100px 0;
@@ -8,38 +9,29 @@
         display: flex;
         gap: 144px;
 
-        .youtube-video-container {
-           width: 100%; 
-           max-width: 600px;
+        @include desktop-l {
+            // 1548px
+            .video-description { 
+                gap: 52px;
+            }
         }
 
-        .video-description {
-            width: 50%;
+        @include desktop {
+            // 1280px
+            flex-direction: column;
+            .youtube-video-container {
+                width: 100%;
+                max-width: 710px;
+                order: 1; 
+            }
 
-            ol {
-                list-style-type: none; 
-                counter-reset: num;
-                margin-left: 36px;
-                padding: 15px 0 5px 0;
+            .video-description {
+                gap: 68px;
+                width: 100%;
+                max-width: 735px;
 
-                li {
-                    position: relative;	
-                    margin: 0 0 0 0;
-                    padding: 0 0 24px 0;
-
-                    &:before {
-                        content: counter(num); 
-                        counter-increment: num;
-                        display: inline-block;
-                        position: absolute;
-                        top: 0;
-                        left: -24px;
-                        text-align: center;
-                        color: $gray-sub;
-                        font-size: 18px;
-                        font-weight: 600;
-                        line-height: 18px;
-                    }
+                ol li {
+                    padding-bottom: 16px;
                 }
             }
         }
@@ -155,24 +147,4 @@
         
     }
     /* end youtube-video  */
-
-    @media screen and (max-width: 1548px) {
-        .video-description { 
-            gap: 52px;
-        }
-    }
-
-    @media screen and (max-width: 1280px) {
-        .block-video-wrapper {
-            flex-direction: column;
-            .youtube-video-container {
-                width: 100%;
-                order: 1; 
-            }
-
-            .video-description {
-                gap: 68px;
-            }
-        }
-    }
 }

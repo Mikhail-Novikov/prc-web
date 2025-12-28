@@ -27,27 +27,29 @@
     <link rel="stylesheet" href="css/lib/_flexbox.css" />
     <link rel="stylesheet" href="css/lib/_grid.css" />
     <link rel="stylesheet" href="css/lib/_variables.css" />
+    <link rel="stylesheet" href="css/lib/footer.css" />
+    <link rel="stylesheet" href="css/lib/grid.css" />
+    <link rel="stylesheet" href="css/lib/header.css" />
     <link rel="stylesheet" href="css/lib/manrope.css" />
     <link rel="stylesheet" href="css/blocks/button.css" />
     <link rel="stylesheet" href="css/blocks/comparision.css" />
     <link rel="stylesheet" href="css/blocks/content-video.css" />
     <link rel="stylesheet" href="css/blocks/converter.css" />
     <link rel="stylesheet" href="css/blocks/features.css" />
-    <link rel="stylesheet" href="css/blocks/footer.css" />
-    <link rel="stylesheet" href="css/blocks/grid.css" />
-    <link rel="stylesheet" href="css/blocks/header.css" />
     <link rel="stylesheet" href="css/blocks/main.css" />
     <link rel="stylesheet" href="css/blocks/migration.css" />
     <link rel="stylesheet" href="css/blocks/profitable.css" />
     <link rel="stylesheet" href="css/blocks/supported.css" />
     <link rel="stylesheet" href="css/blocks/toggle-section.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/helpers/_index.css" />
+    <link rel="stylesheet" href="css/helpers/media.css" />
     <link rel="stylesheet" href="css/mobile.css" />
   </head>
   <body class="rs-body">
     <main role="main">
       <header class="header">
-        <div class="container header-wrapper"><a href="/"><img class="main-logo" src="https://www.perco.ru/images/2023/logo.svg" /></a>
+        <div class="container header-wrapper"><a href="/"><img class="main-logo" src="https://www.perco.ru/images/2023/logo.svg" alt="perco logo" /></a>
           <div class="top-menu-wrapper">
             <ul class="top-menu">
               <li class="main-top has-children"><a class="main-link" href="/resheniya/">Решения</a>
@@ -237,7 +239,7 @@
             <li id="hamb"><button class="hamburger-btn" type="button"><span></span><span></span><span></span></button></li>
           </ul>
         </div>
-        <div class="lang-panel active" style="left: 1184.18px;">
+        <div class="lang-panel active">
           <ul class="lang-switch">
             <li class="active" data-lang="ru">&Rcy; &ucy; &scy; &scy; &kcy; &icy; &jcy;</li>
             <li data-lang="en">English</li>
@@ -284,78 +286,74 @@
               <h2>Почему стоит перейти на PERCo-Web?</h2>
               <div class="profitably__item">
                 <div class="profitably__item-title">
-                  <div class="circle-with-number rounded-60">1</div>
+                  <div class="profitably__item-circle-with-number">1</div>
                   <h3>Во-первых, это выгодно</h3>
                 </div>
                 <div class="profitably__item-wrap">
-                  <figure class="profitably__item-card col-desk-6 col-mid-12">
-                    <blockquote class="profitably__item-subtitle">Бесплатный базовый модуль и пробный доступ на 60 дней</blockquote>
+                  <div class="profitably__item-card col-desk-6 col-mid-12">
+                    <h4 class="profitably__item-subtitle">Бесплатный базовый модуль и пробный доступ на 60 дней</h4>
                     <div class="profitably__item-desc">
                       <p>Бесплатный модуль PERCo-Web «Базовый пакет ПО» позволяет организовать контроль доступа на предприятии со штатом до 100 сотрудников.</p>
-                      <div class="profitably__item-desc-bottom profitably__item-desc--right">
-                        <figcaption><img src="./img/illustration-men.svg" /></figcaption>
-                        <p><span>Пробный доступ на 60 дней дает возможность принять решение о необходимости перехода на функционал системы PERCo-Web.</span></p>
-                      </div>
+                      <figure class="profitably__item-desc-bottom profitably__item-desc--right"><img src="./img/illustration-men.svg" alt="Бесплатный модуль PERCo-Web, базовый пакет ПО" />
+                        <figcaption><span>Пробный доступ на 60 дней дает возможность принять решение о необходимости перехода на функционал системы PERCo-Web.</span></figcaption>
+                      </figure>
                     </div>
-                  </figure>
+                  </div>
                   <div class="flex flex-column col-desk-6 col-mid-12 gap-12">
-                    <figure class="profitably__item-card">
-                      <blockquote class="profitably__item-subtitle">Рабочие места без ограничений</blockquote>
+                    <div class="profitably__item-card">
+                      <h4 class="profitably__item-subtitle">Рабочие места без ограничений</h4>
                       <div class="profitably__item-desc">
                         <p><span>Безлимитное количество рабочих мест для операторов, подключаемых устройств и идентификаторов</span></p>
                       </div>
-                    </figure>
-                    <figure class="profitably__item-card">
-                      <blockquote class="profitably__item-subtitle">Бесплатное обучение сотрудников до 100 сотрудников</blockquote>
+                    </div>
+                    <div class="profitably__item-card">
+                      <h4 class="profitably__item-subtitle">Бесплатное обучение сотрудников до 100 сотрудников</h4>
                       <div class="profitably__item-desc">
                         <p><span>Мы проводим бесплатное обучение. Семинары PERCo (очные и онлайн) хранятся в открытом доступе.</span></p>
                       </div>
-                    </figure>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="profitably__item">
                 <div class="profitably__item-title">
-                  <div class="circle-with-number rounded-60">2</div>
+                  <div class="profitably__item-circle-with-number">2</div>
                   <h3>Простое решение для быстрого перехода</h3>
                 </div>
                 <div class="profitably__item-wrap">
-                  <figure class="profitably__item-card col-desk-6 col-mid-12">
-                    <blockquote class="profitably__item-subtitle">Специальный конвертер базы данных</blockquote>
+                  <div class="profitably__item-card col-desk-6 col-mid-12">
+                    <h4 class="profitably__item-subtitle">Специальный конвертер базы данных</h4>
                     <div class="profitably__item-desc">
                       <p>Вся информация о настройках оборудования, сотрудниках и их доступе автоматически передается из системы S-20 с помощью специального конвертера базы данных.</p>
-                      <div class="profitably__item-desc-bottom profitably__item-desc--left">
-                        <figcaption><img src="./img/illustration-women.svg" /></figcaption>
-                        <p><span>Данные импортируются одним массивом, при этом в PERCo-Web автоматически активируется ознакомительный режим лицензий «Стандартный пакет ПО» и «Учет рабочего времени». </span><span>Список импортируемых данных представлен в документации на Конвертер.</span></p>
+                      <figure class="profitably__item-desc-bottom profitably__item-desc--left"><img src="./img/illustration-women.svg" alt="Информация о настройках оборудования" />
+                        <figcaption><span>Данные импортируются одним массивом, при этом в PERCo-Web автоматически активируется ознакомительный режим лицензий «Стандартный пакет ПО» и «Учет рабочего времени». </span><span>Список импортируемых данных представлен в документации на Конвертер.</span></figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="flex flex-column col-desk-6 col-mid-12 gap-12">
+                    <div class="profitably__item-card">
+                      <h4 class="profitably__item-subtitle">Поддержка новых линеек оборудования PERCo</h4>
+                      <div class="profitably__item-desc">
+                        <p><span>Программное обеспечение обеспечивает поддержку оборудования с улучшенными характеристиками.</span></p>
                       </div>
                     </div>
-                  </figure>
-                  <div class="flex flex-column col-desk-6 col-mid-12 gap-12">
-                    <figure class="profitably__item-card">
-                      <blockquote class="profitably__item-subtitle">Поддержка новых линеек оборудования PERCo</blockquote>
-                      <div class="profitably__item-desc">
-                        <p>Программное обеспечение обеспечивает поддержку оборудования с улучшенными характеристиками.</p>
-                      </div>
-                    </figure>
-                    <figure class="profitably__item-card">
-                      <blockquote class="profitably__item-subtitle">Множество вариантов идентификации</blockquote>
+                    <div class="profitably__item-card">
+                      <h4 class="profitably__item-subtitle">Множество вариантов идентификации</h4>
                       <div class="profitably__item-desc">
                         <p><span>Различные способы идентификации (биометрические данные, карты доступа, штрихкоды, номера или сочетания ГРНЗ и др.)</span></p>
                       </div>
-                    </figure>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="profitably__item">
                 <div class="profitably__item-title">
-                  <div class="circle-with-number rounded-60">3</div>
+                  <div class="profitably__item-circle-with-number">3</div>
                   <h3>Удобно для разных пользователей</h3>
                 </div>
                 <div class="profitably__users">
                   <div class="profitably__users-item">
-                    <h3 class="profitably__users-title"><img src="./img/icon-admin.svg" />
-                      <p>Администратору системы</p>
-                    </h3>
+                    <h3 class="profitably__users-title"><img src="./img/icon-admin.svg" alt="" /><span>Администратору системы</span></h3>
                     <ol class="profitably__users-list">
                       <li>
                         <h5 class="profitably__users-subtitle">Соответствие стандартам</h5>
@@ -380,9 +378,7 @@
                     </ol>
                   </div>
                   <div class="profitably__users-item">
-                    <h3 class="profitably__users-title"><img src="./img/icon-beza.svg" />
-                      <p>Службе безопасности</p>
-                    </h3>
+                    <h3 class="profitably__users-title"><img src="./img/icon-beza.svg" alt="" /><span>Службе безопасности</span></h3>
                     <ol class="profitably__users-list">
                       <li>
                         <h5 class="profitably__users-subtitle">Оперативный мониторинг</h5>
@@ -604,8 +600,8 @@
           <section class="migration">
             <div class="container">
               <div class="block-video-wrapper">
-                <div class="iframe youtube-video-container" data-video="456239241" data-vk-video="456239241" data-thumb="https://sun9-60.userapi.com/impg/CoPi7s2tDU9d-qJP0ZgzXlPSswTElcQLOV-yMg/EBKwhynL87k.jpg?size=1280x720&amp;quality=95&amp;sign=89463f0459c538876649bf8f295cc6b2&amp;c_uniq_tag=r5by7K0GAlE7x9hSFXaLC0eAlzO5AROIfpzGPzbaQYs&amp;type=video_thumb" data-host="vk" style="height: 343.125px;"><img class="youtube-screenshot" src="./img/migration-preview.svg" />
-                  <div class="video-btn-container"><img class="youtube-btn" src="https://www.perco.ru/images/2023/youtube-btn.svg" /></div>
+                <div class="iframe youtube-video-container" data-video="456239241" data-vk-video="456239241" data-thumb="https://sun9-60.userapi.com/impg/CoPi7s2tDU9d-qJP0ZgzXlPSswTElcQLOV-yMg/EBKwhynL87k.jpg?size=1280x720&amp;quality=95&amp;sign=89463f0459c538876649bf8f295cc6b2&amp;c_uniq_tag=r5by7K0GAlE7x9hSFXaLC0eAlzO5AROIfpzGPzbaQYs&amp;type=video_thumb" data-host="vk" style="height: 343.125px;"><img class="youtube-screenshot" src="./img/migration-preview.svg" alt="preview video" />
+                  <div class="video-btn-container"><img class="youtube-btn" src="https://www.perco.ru/images/2023/youtube-btn.svg" alt="" /></div>
                 </div>
                 <div class="video-description">
                   <h2>Процедура миграции</h2>
