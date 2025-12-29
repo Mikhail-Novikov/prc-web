@@ -23,6 +23,7 @@
         }
 
         &__list-item {
+            display: flex;
             &::before {
                 content: "\2022";
                 color: $black;

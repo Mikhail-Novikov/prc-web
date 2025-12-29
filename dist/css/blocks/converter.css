@@ -18,6 +18,11 @@
   position: relative;
 }
 
+.skd-web .converter__list-item {
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .skd-web .converter__list-item::before {
   content: "\2022";
   color: #000000;
