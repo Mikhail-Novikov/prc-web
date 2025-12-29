@@ -21,13 +21,13 @@
   color: #DCE1E6;
 }
 
-@media (max-width: 1528px) {
+@media (max-width: 1548px) {
   .footer {
     padding: 60px 0 40px 0;
   }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 742px) {
   .footer {
     padding: 40px 0 24px 0;
     font-size: 12px;

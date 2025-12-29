@@ -5,13 +5,13 @@ include blocks/page
 +page(pagesList.index.title)
   include ./blocks/header/_
   main#container.Site-content.main(itemprop="mainContentOfPage")
-    #skd-web.skd-web
+    .skd-web
+      div.container
+        include ./blocks/breadcrumbs/_
 
-      include ./blocks/breadcrumbs/_
+        h1 Переход с системы S-20 на PERCo-Web
 
-      section.pw-start
-        div.container
-          include ./blocks/pw-start/_
+        include ./blocks/pw-start/_
       
       section.profitably
         div.container

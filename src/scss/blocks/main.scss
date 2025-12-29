@@ -6,16 +6,31 @@
         font-weight: 400 !important;
     }
 
+    .anchors-container {
+        padding-bottom: 28px;
+        @include desktop-l {
+            padding-bottom: 10px;
+        }
+    }
+
     @include desktop {
         .container {
             max-width: 956px;
         }
     }
+
     @include laptop {
         .container {
             max-width: 712px;
         }
     }
+
+    @include mobile-m {
+        .container {
+            max-width: 468px;
+        }
+    }
+
     @include breakpoint(508) {
         .container {
             padding-left: 16px;
@@ -32,6 +47,7 @@
         @include mobile-m {
             font-size: 28px;
             line-height: 32px;
+            margin-bottom: 16px;
         }
     }
     .pw-start {

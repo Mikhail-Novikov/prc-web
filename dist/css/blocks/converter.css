@@ -3,13 +3,13 @@
   padding: 80px 0 100px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1036px) {
   .skd-web .converter {
     padding: 60px 0 80px;
   }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 742px) {
   .skd-web .converter {
     padding: 40px 0 60px;
   }
@@ -24,13 +24,13 @@
   max-width: 670px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .skd-web .converter__desc {
     margin-top: 32px;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1036px) {
   .skd-web .converter__desc {
     margin-top: 16px;
   }
@@ -53,7 +53,7 @@
   margin-bottom: 5px;
 }
 
-@media (max-width: 468px) {
+@media (max-width: 742px) {
   .skd-web .converter__list-item:not(:last-child) {
     margin-bottom: 8px;
   }

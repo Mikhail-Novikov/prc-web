@@ -51,7 +51,9 @@
             }
 
             .video-description {
-
+                @include desktop {
+                    max-width: 712px;          
+                }
                 ol {
                     list-style-type: none; 
                     counter-reset: num;

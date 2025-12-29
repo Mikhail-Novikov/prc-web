@@ -2,15 +2,31 @@
   font-weight: 400 !important;
 }
 
-@media (max-width: 1200px) {
+.skd-web .anchors-container {
+  padding-bottom: 28px;
+}
+
+@media (max-width: 1548px) {
+  .skd-web .anchors-container {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 1280px) {
   .skd-web .container {
     max-width: 956px;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1036px) {
   .skd-web .container {
     max-width: 712px;
+  }
+}
+
+@media (max-width: 742px) {
+  .skd-web .container {
+    max-width: 468px;
   }
 }
 
@@ -26,16 +42,17 @@
   margin-bottom: 24px;
 }
 
-@media (max-width: 1528px) {
+@media (max-width: 1548px) {
   .skd-web h2 {
     margin-bottom: 24px;
   }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 742px) {
   .skd-web h2 {
     font-size: 28px;
     line-height: 32px;
+    margin-bottom: 16px;
   }
 }
 
