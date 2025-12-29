@@ -5,27 +5,14 @@
     .converter {
         background: $bg-blue-gray;
         padding: 80px 0 100px;
-        @include laptop {
-            padding: 60px 0 80px;
-        }
-        @include mobile-m {
-            padding: 40px 0 60px;
-        }
-
+        
         &__desc {
             color: $primary;
             font-size: 16px;
             font-weight: 400;
             line-height: 24px;
             margin-bottom: 24px;
-            @include desktop {
-               margin-top: 32px;
-            }
-            @include laptop {
-               margin-top: 16px;
-            }
-
-            // todo ?
+            
             max-width: 670px;
         }
 
@@ -45,10 +32,31 @@
 
             &:not(:last-child) {
                 margin-bottom: 5px;
-                @include mobile-m {
+            }
+        }
+
+        @include desktop {
+            &__desc {
+                margin-top: 32px;
+            }
+        }
+
+        @include laptop {
+            padding: 60px 0 80px;
+
+            &__desc {
+                margin-top: 16px;
+            }
+        }
+
+        @include mobile-m {
+            padding: 40px 0 60px;
+
+            &__list-item {
+                &:not(:last-child) {
                     margin-bottom: 8px;
                 }
             }
-        }  
+        } 
     }
 }

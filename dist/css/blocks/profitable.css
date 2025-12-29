@@ -366,6 +366,13 @@
   bottom: 0;
 }
 
+@media (max-width: 742px) {
+  .skd-web .profitably__users-list > li:not(:last-child)::after {
+    width: calc(100% + 32px);
+    left: -32px;
+  }
+}
+
 .skd-web .profitably__users-list li:not(:last-child) {
   margin-bottom: 4px;
 }

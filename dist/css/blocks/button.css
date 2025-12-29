@@ -44,6 +44,15 @@
   margin-top: 28px;
 }
 
+.skd-web .wrapper-btn .blue-btn {
+  width: 228px;
+}
+
+.skd-web .download-link {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
 @media (max-width: 1280px) {
   .skd-web .wrapper-btn {
     margin-top: 34px;
@@ -54,13 +63,4 @@
   .skd-web .wrapper-btn {
     margin-top: 24px;
   }
-}
-
-.skd-web .wrapper-btn .blue-btn {
-  width: 228px;
-}
-
-.skd-web .download-link {
-  padding-top: 14px;
-  padding-bottom: 14px;
 }

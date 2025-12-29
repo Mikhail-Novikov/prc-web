@@ -5,20 +5,11 @@
     .comparision {
         background: $bg-blue-gray;
         padding: 80px 0 100px;
-        @include laptop {
-            padding: 60px 0 80px;
-        }
-        @include mobile-m {
-            padding: 40px 0 60px;
-        }
-
+        
         &__wrapper {
             padding-top: 8px;
-            @include desktop {
-                padding-top: 0;
-            }
         }
-
+        
         &__table {
             display: flex;
             flex-direction: column;
@@ -27,129 +18,147 @@
             border-color: $stroke-primary;
             border-width: 1px 0 0 0;
             border-style: solid;
-            @include desktop-l {
-                margin-bottom: 20px;
+            
+            %common-table-cell-styles {
+                flex: 1 1 0;
+                align-content: center;
+                padding: 12px 8px;
+                font-size: 16px;
+                color: $primary;
+                border-color: $stroke-primary;
+                border-width: 0 1px 0 0;
+                border-style: solid;
             }
-            @include mobile-m {
-                margin-bottom: 12px;
-            }
-
-            .comparision__table-head {
+            
+            &-head,
+            &-body {
                 display: flex;
                 flex-direction: column;
+                
                 .comparision__table-row {
                     display: flex;
                     min-height: 44px;
+                    &:not(.hidden) {
+                        border-bottom: 1px solid $stroke-primary;
+                    }
+                    
                     .comparision__table-cell {
-                        flex: 1 1 0;
-                        align-content: center;
-                        padding: 12px 8px;
-                        font-weight: 600;
-                        font-size: 16px;
-                        @include laptop {
-                            font-size: 14px;
-                        }
-                        color: $primary;
-                        background-color: $bg-gray;
-                        border-color: $stroke-primary;
-                        border-width: 0 1px 1px 0;
-                        border-style: solid;
+                        @extend %common-table-cell-styles;
+                        
                         &:first-child {
                             padding-left: 16px;
                             text-align: left;
                             min-width: 335px;
                             border-left-width: 1px;
-                            @include laptop {
-                                min-width: 300px;
-                            }
-                            @include breakpoint(540) {
-                                min-width: 210px;
-                            }
-                            @include breakpoint(440) {
-                                min-width: 180px;
-                            }
-                            @include breakpoint(410) {
-                                min-width: 100px;
-                                padding-left: 8px;
-                                flex-grow: 1;
-                            }
                         }
-                        @include breakpoint(410) {
-                            min-width: 105px;
-                            flex-grow: 0;
-                        }
-                        text-align: center;
                     }
                 }
             }
-            .comparision__table-body {
-                display: flex;
-                flex-direction: column;
-                .comparision__table-row:not(.hidden) {
-                    border-bottom: 1px solid $stroke-primary;
-                }
+            
+            &-head {
                 .comparision__table-row {
-                    display: flex;
-                    min-height: 42px;
                     .comparision__table-cell {
-                        flex: 1 1 0;
-                        align-content: center;
-                        padding: 12px 8px;
-                        font-size: 16px;
-                        font-weight: inherit;
-                        @include laptop {
-                            font-size: 14px;
-                        }
-                        color: $primary;
-                        border-color: $stroke-primary;
-                        border-width: 0 1px 0 0;
-                        border-style: solid;
-                        &:first-child {
-                            padding-left: 16px;
-                            text-align: left;
-                            font-weight: 600;
-                            min-width: 335px;
-                            border-left-width: 1px;
-                            @include laptop {
-                                min-width: 300px;
-                            }
-                            @include breakpoint(540) {
-                                min-width: 210px;
-                            }
-                            @include breakpoint(440) {
-                                min-width: 180px;
-                            }
-                            @include breakpoint(410) {
-                                min-width: 100px;
-                                padding-left: 8px;
-                                flex-grow: 1;
-                            }
-                        }
-                        @include breakpoint(410) {
-                            min-width: 105px;
-                            flex-grow: 0;
-                        }
-                        text-align: center;
+                        font-weight: 600;
+                        background-color: $bg-gray;
+                        border-width: 0 1px 1px 0;
                     }
                 }
             }
-
-            @include mobile-m {
+            
+            &-body {
+                .comparision__table-row {
+                    min-height: 42px;
+                }
+            }
+            
+            &-cell--check {
+                margin-left: 16px;
+                img {
+                    vertical-align: middle;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+    
+    @include desktop {
+        .comparision {
+            padding: 60px 0 80px;
+            
+            &__wrapper {
+                padding-top: 0;
+            }
+            
+            &__table {
+                margin-bottom: 20px;
+                
+                .comparision__table-cell {
+                    font-size: 14px;
+                    
+                    &:first-child {
+                        min-width: 300px;
+                    }
+                }
+            }
+        }
+    }
+    
+    @include laptop {
+        .comparision {
+            padding: 40px 0 60px;
+            
+            &__table {
+                margin-bottom: 12px;
+                
+                .comparision__table-cell {
+                    font-size: 14px;
+                    
+                    &:first-child {
+                        min-width: 210px;
+                    }
+                }
+            }
+        }
+    }
+    
+    @include mobile-m {
+        .comparision {
+            padding: 40px 0 60px;
+            
+            &__table {
+                margin-bottom: 12px;
+                
                 &-cell:has(.comparision__table-cell--check) {
                     min-width: 190px !important;
                 }
-            }
 
-            &-cell--check {
-                display: flex;
-                gap: 16px;
-                align-items: center;
-                margin-left: 16px;
-                @include mobile-m {
-                    margin-left: 0;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                    white-space: nowrap;
+                &-cell {
+                    font-size: 14px;
+                    
+                    &:first-child {
+                        min-width: 180px !important;
+                    }
+                    
+                    @include breakpoint(410){
+                        min-width: 100px;
+                        padding-left: 8px;
+                        flex-grow: 1;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 410px) {
+        .comparision {
+            &__table {
+                .comparision__table-cell {
+                    min-width: 75px !important;
+                    flex-grow: 0;
+                    font-size: 14px !important;
+                    &:first-child {
+                        min-width: 145px !important;
+                    }
                 }
             }
         }

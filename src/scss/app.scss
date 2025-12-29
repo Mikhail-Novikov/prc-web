@@ -365,3 +365,39 @@ ul.breadcrumbs-wrapper li {
 img {
   font-size: 7px;
 }
+
+.btn-up.is-hidden
+ {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+
+.btn-up {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 68px;
+    height: 68px;
+    border: none;
+    border-radius: 100%;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1000;
+    transition: all 0.5s linear;
+}
+
+.btn-up:before {
+    content: '';
+    width: 22px;
+    height: 34px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: url(https://www.perco.ru/images/2023/arrow-up1.svg) no-repeat center center / contain;
+}

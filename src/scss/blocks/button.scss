@@ -38,13 +38,6 @@
     .wrapper-btn {
         margin-top: 28px;
 
-        @include desktop {
-            margin-top: 34px;
-        }
-        @include laptop {
-            margin-top: 24px;
-        }
-
         .blue-btn {
             width: 228px;
         }
@@ -53,5 +46,17 @@
     .download-link {
         padding-top: 14px;
         padding-bottom: 14px;
+    }
+
+    @include desktop {
+        .wrapper-btn {
+            margin-top: 34px;
+        }
+    }
+
+    @include laptop {
+        .wrapper-btn {
+            margin-top: 24px;
+        }
     }
 }

@@ -1,5 +1,3 @@
-'use strict';
-
 $(document).ready(function() {
     $('.toggle-section').each(function() {
         var $wrapper = $(this);
@@ -20,4 +18,30 @@ $(document).ready(function() {
 
         $rows.addClass('hidden')
     });
+
+    // scroll to anchors
+    const btn_anchors=document.querySelectorAll('.anchor-target');
+    btn_anchors.forEach(anc=>{
+        anc.addEventListener('click', (ev)=>{
+            ev.preventDefault();
+            header_height=document.querySelector('header').getBoundingClientRect().height;
+
+            let element=document.querySelector(anc.getAttribute('href'));
+            console.log(anc.getAttribute('href'));
+            console.log(element);
+            let elementPosition = element.getBoundingClientRect().top;
+            let offsetPosition = elementPosition + document.documentElement.scrollTop;
+            $("html, body").animate({
+                scrollTop: offsetPosition
+            }, 500);
+        });
+    });
+
+    // scroll to up
+    $('.btn-up').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 1000);
+    });
 });
+

@@ -265,6 +265,10 @@
                     position: absolute;
                     left: -48px;
                     bottom: 0;
+                    @include mobile-m {
+                        width: calc(100% + 32px);
+                        left: -32px;
+                    }
                 }
             }
 
