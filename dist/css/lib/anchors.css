@@ -3,9 +3,6 @@
 }
 
 .anchors-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(-webkit-min-content, 25%));
-  grid-template-columns: repeat(3, minmax(min-content, 25%));
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -23,8 +20,6 @@
 
 .anchor-item {
   width: calc((100% - 40px) / 3);
-  padding: 0px 10px;
-  margin-right: 20px;
   font-size: 18px;
   line-height: 155%;
   font-weight: 600;

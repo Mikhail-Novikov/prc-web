@@ -2,60 +2,6 @@
   /* end youtube-video  */
 }
 
-.migration .block-video-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  gap: 144px;
-}
-
-@media (max-width: 1528px) {
-  .migration .block-video-wrapper {
-    gap: 60px;
-  }
-}
-
-@media (max-width: 900px) {
-  .migration .block-video-wrapper {
-    gap: 48px;
-  }
-}
-
-@media (max-width: 468px) {
-  .migration .block-video-wrapper {
-    gap: 40px;
-  }
-}
-
-.migration .block-video-wrapper .video-description ol {
-  padding-left: 28px;
-}
-
-@media (max-width: 1200px) {
-  .migration .block-video-wrapper {
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .migration .block-video-wrapper .youtube-video-container {
-    width: 100%;
-    max-width: 710px;
-    -ms-flex-order: 1;
-    order: 1;
-  }
-  .migration .block-video-wrapper .video-description {
-    gap: 68px;
-    width: 100%;
-    max-width: 735px;
-  }
-  .migration .block-video-wrapper .video-description ol li {
-    padding: 8px 0;
-  }
-}
-
-.migration .iframe {
-  width: 50%;
-  position: relative;
-}
-
 .migration iframe {
   position: absolute;
   top: 0;
@@ -68,7 +14,6 @@
 }
 
 .migration .youtube-video-container {
-  width: 100%;
   position: relative;
   cursor: pointer;
   padding: 0;

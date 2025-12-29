@@ -4,7 +4,7 @@
     display: inline-flex;
     font-weight: 600;
     line-height: 120%;
-    padding: 10px 0;
+    padding: 16px 0;
     color: #214288;
     cursor: pointer;
 }
@@ -36,7 +36,7 @@
         justify-content: center;
     }
     .wrapper-btn {
-        margin-top: 32px;
+        margin-top: 28px;
 
         @include desktop {
             margin-top: 40px;
@@ -48,5 +48,10 @@
         .blue-btn {
             width: 228px;
         }
+    }
+
+    .download-link {
+        padding-top: 14px;
+        padding-bottom: 14px;
     }
 }

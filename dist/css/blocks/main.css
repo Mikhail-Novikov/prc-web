@@ -1,14 +1,21 @@
+.skd-web .text-normal {
+  font-weight: 400 !important;
+}
+
 @media (max-width: 1200px) {
   .skd-web .container {
     max-width: 956px;
-    padding-left: 32px;
-    padding-right: 32px;
   }
 }
 
 @media (max-width: 900px) {
   .skd-web .container {
     max-width: 712px;
+  }
+}
+
+@media (max-width: 508px) {
+  .skd-web .container {
     padding-left: 16px;
     padding-right: 16px;
   }

@@ -3,7 +3,7 @@
   display: inline-flex;
   font-weight: 600;
   line-height: 120%;
-  padding: 10px 0;
+  padding: 16px 0;
   color: #214288;
   cursor: pointer;
 }
@@ -41,7 +41,7 @@
 }
 
 .skd-web .wrapper-btn {
-  margin-top: 32px;
+  margin-top: 28px;
 }
 
 @media (max-width: 1200px) {
@@ -58,6 +58,11 @@
 
 .skd-web .wrapper-btn .blue-btn {
   width: 228px;
+}
+
+.skd-web .download-link {
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 /*# sourceMappingURL=button.css.map */

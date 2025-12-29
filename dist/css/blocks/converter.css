@@ -24,8 +24,20 @@
   max-width: 670px;
 }
 
+@media (max-width: 1200px) {
+  .skd-web .converter__desc {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 900px) {
+  .skd-web .converter__desc {
+    margin-top: 16px;
+  }
+}
+
 .skd-web .converter__list {
-  padding: 12px 0 24px 6px;
+  padding: 12px 0 12px 6px;
   list-style-type: none;
   position: relative;
 }
@@ -39,6 +51,12 @@
 
 .skd-web .converter__list-item:not(:last-child) {
   margin-bottom: 5px;
+}
+
+@media (max-width: 468px) {
+  .skd-web .converter__list-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
 
 /*# sourceMappingURL=converter.css.map */

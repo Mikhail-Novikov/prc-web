@@ -128,14 +128,7 @@ export default function html() {
       locals
     }),
     gp.prettify({indent_inner_html: true, indent_size: 2, unformatted: ['pre', 'code']}),
-    gp.typograf({
-      locale: ['ru', 'en-US'],
-      htmlEntity: {type: 'default'},
-      safeTags: [
-        ['<\\?php', '\\?>'],
-        ['<textarea>', '</textarea>']
-      ]
-    }),
+
     gp.debug({title: "Asset task 'html'"}),
     gulp.dest(paths.html.dest),
     bs.stream({once: true})

@@ -24,6 +24,7 @@
   -ms-flex-align: start;
   align-items: flex-start;
   gap: 100px;
+  margin-top: 32px;
 }
 
 @media (max-width: 900px) {
@@ -31,6 +32,12 @@
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 8px;
+  }
+}
+
+@media (max-width: 468px) {
+  .skd-web .supported__desc {
+    margin-top: 0;
   }
 }
 
@@ -47,6 +54,12 @@
   }
 }
 
+@media (max-width: 468px) {
+  .skd-web .supported__desc p {
+    margin-bottom: 0;
+  }
+}
+
 .skd-web .supported__desc a {
   margin-top: 12px;
 }
@@ -54,6 +67,12 @@
 @media (max-width: 900px) {
   .skd-web .supported__desc a {
     margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 468px) {
+  .skd-web .supported__desc a {
+    margin-top: 0;
   }
 }
 

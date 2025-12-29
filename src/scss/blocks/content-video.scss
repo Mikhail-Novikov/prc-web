@@ -3,51 +3,6 @@
 @import '../helpers/media';
 
 .migration {
-    .block-video-wrapper {
-        display: flex;
-        gap: 144px;
-
-        @include desktop-l {
-            gap: 60px;
-        }
-        @include laptop {
-            gap: 48px;
-        }
-        @include mobile-m {
-            gap: 40px;
-        }
-
-        .video-description {
-            ol {
-                padding-left: 28px;
-            }
-        }
-
-        @include desktop {
-            // 1280px
-            flex-direction: column;
-            .youtube-video-container {
-                width: 100%;
-                max-width: 710px;
-                order: 1; 
-            }
-
-            .video-description {
-                gap: 68px;
-                width: 100%;
-                max-width: 735px;
-
-                ol li {
-                    padding: 8px 0;
-                }
-            }
-        }
-    }
-
-    .iframe {
-        width: 50%;
-        position: relative;
-    }
 
     iframe {
         position: absolute;
@@ -61,11 +16,9 @@
     }
 
     .youtube-video-container {
-        width:100%;
         position:relative;
         cursor:pointer;
         padding:0;
-        
     }
 
     .youtube-video-container img {
