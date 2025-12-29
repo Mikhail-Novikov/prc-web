@@ -12,37 +12,70 @@ include blocks/page
         h1 Переход с системы S-20 на PERCo-Web
 
         include ./blocks/pw-start/_
-      
+
+      //
+      // start Advantages block
       section.profitably#anchor-1
         div.container
           h2 Почему стоит перейти на PERCo-Web?
-
+          //
+          // 1 
           include ./blocks/profitably/_right
+          //
+          // 2 
           include ./blocks/profitably/_left
+          //
+          // 3 
           include ./blocks/profitably/_with-users
+      // end Advantages block
+      //
 
+      // start System capabilities
+      // 
       section.features#anchor-4
         div.container
           h2 Возможности системы
           include ./blocks/features/_
+      // end System capabilities
+      // 
 
+      // 
+      // start Software block
       section.supported#anchor-2
         div.container
           h2 Поддерживаемое оборудование
           include ./blocks/supported/_
+      // end Software block
+      // 
 
+
+      // 
+      // start System capabilities
       section.comparision#anchor-5
         div.container
           h2 Сравнение модулей систем
           include ./blocks/comparision/_
+      // end System capabilities
+      //
 
+
+      // start
+      // Процедура миграции
       section.migration#anchor-3
         include ./blocks/content-video/_
+      // end
+      // Процедура миграции
 
+
+      //
+      // start
       section.converter#anchor-6
         div.container
           h2 Конвертер базы данных
           include ./blocks/converter/_
+      // end
+      //
+
   button.btn-up
 
   include ./blocks/footer/_

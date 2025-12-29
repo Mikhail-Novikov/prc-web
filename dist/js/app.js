@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+    // Скрипт раскрытия элементов по кнопке(to do - анимация?)
     $('.toggle-section').each(function() {
         var $wrapper = $(this);
         var $rows = $wrapper.find('.toggle-section-item');
