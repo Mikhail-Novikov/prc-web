@@ -7,14 +7,6 @@
         background: $bg-gray;
         padding-top: 80px;
         padding-bottom: 120px;
-        @include laptop {
-            padding-top: 60px;
-            padding-bottom: 80px;
-        }
-        @include mobile-m {
-            padding-top: 40px;
-            padding-bottom: 60px;
-        }
 
         &__item {
             padding-top: 8px;
@@ -22,19 +14,12 @@
 
         &__item:not(:last-child) {
             margin-bottom: 52px;
-            @include mobile-m {
-                margin-bottom: 32px;
-            }
         }
 
         &__item-title {
             display: flex;
             gap: 20px;
             margin-bottom: 20px;
-            @include mobile-m {
-                gap: 16px;
-                margin-bottom: 16px;
-            }
 
             h3 {
                 align-content: center;
@@ -58,20 +43,11 @@
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            @include mobile-m {
-                width: 44px;
-                height: 44px;
-                font-size: 24px;
-                line-height: 32px;
-            }
         }
 
         &__item-wrap {
             display: flex;
             gap: 12px;
-            @include laptop {
-                flex-direction: column;
-            }
         }
 
         &__item-card {
@@ -82,17 +58,6 @@
             border: 1.5px solid $stroke-primary;
             padding: 40px 40px 36px 48px;
             flex-grow: 1;
-            @include desktop-l {
-                padding-left: 40px;
-                padding-right: 34px;
-            }
-            @include desktop {
-                padding: 32px;
-            }
-            @include mobile-m {
-                padding-left: 16px;
-                padding-right: 16px;
-            }
         }
 
         &__item-subtitle {
@@ -106,54 +71,31 @@
         &__item-desc {
             font-weight: 400;
             font-size: 18px;
+
             p {
                 margin: 12px 0 16px 0;
                 max-width: 570px;
                 display: flex;
                 flex-direction: column;
                 gap: 8px;
-                @include laptop {
-                    margin-bottom: 0;
-                }
             }
+
             &--left img {
                 margin-right: 40px;
                 float: inline-start;
-                @include desktop-l {
-                    margin-right: 16px;
-                }
-                @include laptop {
-                    margin-right: 12px;
-                }
-                @include mobile-m {
-                    float: none;
-                }
             }
+
             img {
-                @include desktop {
-                    max-width: 172px;
-                }
+                max-width: 206px;
             }
         }
 
         &__item-desc-bottom {
             margin-top: 16px;
             position: relative;
-            @include desktop-l {
-                margin-top: 16px;
-                gap: 16px;
-            }
-            @include mobile-m {
-                display: flex;
-                flex-direction: column;
-                figcaption {
-                    order: 1;
-                }
-                img {
-                    order: 2;
-                }   
-            }
-            figcaption, p {
+
+            figcaption,
+            p {
                 margin: 0;
                 display: flex;
                 flex-direction: column;
@@ -169,24 +111,12 @@
         &__users {
             display: flex;
             gap: 20px;
-            @include laptop {
-                flex-direction: column;
-            }
         }
 
         &__users-item {
             border: 1.5px solid $stroke-primary;
             padding: 40px;
             width: 50%;
-            @include desktop {
-                padding: 32px;
-            }
-            @include desktop-l {
-                width: 100%;
-            }
-            @include mobile-m {
-                padding: 20px 16px;
-            }
         }
 
         &__users-title {
@@ -196,6 +126,7 @@
             margin: 0;
             font-size: 20px;
             line-height: 28px;
+
             span {
                 padding-top: 8px;
             }
@@ -215,27 +146,18 @@
 
         &__users-list {
             margin-top: 28px;
-            list-style-type: none; 
+            list-style-type: none;
             counter-reset: num;
             margin-left: 54px;
             padding: 0;
-            @include desktop-l {
-                margin-top: 24px;
-            }
-            @include desktop {
-                margin-top: 20px;
-                margin-left: 48px;
-            }
-            @include mobile-m {
-                margin-left: 34px;
-            }
+
             > li {
-                position: relative;    
+                position: relative;
                 margin: 0;
                 padding: 8px 0 16px 0;
 
                 &::before {
-                    content: '0' counter(num); 
+                    content: '0' counter(num);
                     counter-increment: num;
                     display: inline-block;
                     position: absolute;
@@ -248,12 +170,6 @@
                     font-size: 16px;
                     font-weight: 300;
                     line-height: 24px;
-                    @include desktop {
-                        left: -47px;
-                    }
-                    @include mobile-m {
-                        left: -38px;
-                    }
                 }
 
                 &:not(:last-child)::after {
@@ -265,15 +181,11 @@
                     position: absolute;
                     left: -48px;
                     bottom: 0;
-                    @include mobile-m {
-                        width: calc(100% + 34px);
-                        left: -34px;
-                    }
                 }
             }
 
             li:not(:last-child) {
-                margin-bottom: 4px ;
+                margin-bottom: 4px;
             }
 
             p {
@@ -287,6 +199,140 @@
         ol > li:nth-child(n+10)::before {
             content: counter(num);
         }
-        
+
+        @include desktop-l {
+            &__item-card {
+                padding-left: 40px;
+                padding-right: 34px;
+            }
+
+            &__users-item {
+                width: 100%;
+            }
+
+            &__item-desc-bottom {
+                margin-top: 16px;
+                gap: 16px;
+            }
+
+            &__users-list {
+                margin-top: 24px;
+            }
+        }
+
+        @include desktop {
+            &__item-card,
+            &__users-item {
+                padding: 32px;
+            }
+
+            &__item-desc {
+                font-size: 16px;
+            }
+
+            &__item-desc--left img {
+                margin-right: 16px;
+            }
+
+            &__users-list {
+                margin-top: 20px;
+                margin-left: 48px;
+            }
+
+            &__users-list > li::before {
+                left: -47px;
+            }
+
+            &__users-list > li:not(:last-child)::after {
+                width: calc(100% + 48px);
+                left: -48px;
+            }
+        }
+
+        @include laptop {
+            padding-top: 60px;
+            padding-bottom: 80px;
+
+            &__item-wrap {
+                flex-direction: column;
+            }
+
+            &__item-desc {
+                p {
+                    margin-bottom: 0;
+                }
+                img {
+                    max-width: 172px;
+                }
+            }
+
+            &__users {
+                flex-direction: column;
+            }
+
+            &__item-desc--left img {
+                margin-right: 12px;
+            }
+        }
+
+        @include mobile-m {
+            padding-top: 40px;
+            padding-bottom: 60px;
+
+            &__item:not(:last-child) {
+                margin-bottom: 32px;
+            }
+
+            &__item-title {
+                gap: 16px;
+                margin-bottom: 16px;
+            }
+
+            &__item-circle-with-number {
+                width: 44px;
+                height: 44px;
+                font-size: 24px;
+                line-height: 32px;
+            }
+
+            &__item-card {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            &__item-desc--left img {
+                float: none;
+            }
+
+            &__users-item {
+                padding: 20px 16px;
+            }
+
+            &__users-list {
+                margin-left: 34px;
+            }
+
+            &__item-desc-bottom {
+                display: flex;
+                flex-direction: column;
+
+                figcaption {
+                    order: 1;
+                }
+
+                img {
+                    order: 2;
+                }
+            }
+
+            &__users-list > li::before {
+                left: -38px;
+            }
+
+            &__users-list > li:not(:last-child)::after {
+                width: calc(100% + 34px);
+                left: -34px;
+            }
+        }
     }
 }
