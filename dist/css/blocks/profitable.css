@@ -368,8 +368,8 @@
 
 @media (max-width: 742px) {
   .skd-web .profitably__users-list > li:not(:last-child)::after {
-    width: calc(100% + 32px);
-    left: -32px;
+    width: calc(100% + 34px);
+    left: -34px;
   }
 }
 
@@ -386,3 +386,5 @@
 .skd-web .profitably ol > li:nth-child(n+10)::before {
   content: counter(num);
 }
+
+/*# sourceMappingURL=profitable.css.map */
