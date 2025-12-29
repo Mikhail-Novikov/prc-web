@@ -7,6 +7,12 @@ $(document).ready(function() {
         var $toggleButton = $wrapper.find('.js-toggle-btn');
         var opened = false;
 
+        var $borderElement = $rows.filter(':not(.hidden)').first().prev().addClass('visible-border');
+
+        function updateVisibleBorder() {
+            $borderElement.toggleClass('visible-border', $borderElement.next('.toggle-section-item.hidden').length > 0);
+        }
+
         $toggleButton.on('click', function() {
             var openText = $toggleButton.data('open');
             var closeText = $toggleButton.data('close');
@@ -16,9 +22,11 @@ $(document).ready(function() {
             $toggleButton
                 .text(opened ? closeText : openText)
                 .toggleClass('opened');
+            updateVisibleBorder();
         });
 
-        $rows.addClass('hidden')
+        $rows.addClass('hidden');
+        updateVisibleBorder();
     });
 
     // scroll to anchors

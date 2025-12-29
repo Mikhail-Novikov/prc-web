@@ -1,13 +1,13 @@
-.toggle-section .comparision__table-row:last-child {
-  box-shadow: 0 0 0 1px #CBCBCB inset;
-}
-
 .toggle-section .toggle-section-item {
   overflow: hidden;
 }
 
 .toggle-section .toggle-section-item.hidden {
   display: none;
+}
+
+.toggle-section .visible-border {
+  border-bottom: 2px solid #CBCBCB !important;
 }
 
 /*# sourceMappingURL=toggle-section.css.map */
