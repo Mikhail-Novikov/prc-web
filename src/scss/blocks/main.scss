@@ -2,17 +2,29 @@
 
 
 .skd-web {
-    .text-normal {
+    .font-weight-normal {
         font-weight: 400 !important;
     }
-    .text-semibold {
+
+    .font-weight-semibold {
         font-weight: 600 !important;
     }
 
     .anchors-container {
         padding-bottom: 28px;
-        @include desktop-l {
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    @include desktop-l {
+        .anchors-container {
             padding-bottom: 10px;
+        }
+        h2 {
+            margin-bottom: 24px;
         }
     }
 
@@ -32,6 +44,11 @@
         .container {
             max-width: 468px;
         }
+        h2 {
+            font-size: 28px;
+            line-height: 32px;
+            margin-bottom: 16px;
+        }
     }
 
     @include breakpoint(508) {
@@ -40,21 +57,5 @@
             padding-right: 16px;
         }
     }
-
-    h2 {
-        font-size: 32px;
-        margin-bottom: 24px;
-        @include desktop-l {
-            margin-bottom: 24px;
-        }
-        @include mobile-m {
-            font-size: 28px;
-            line-height: 32px;
-            margin-bottom: 16px;
-        }
-    }
-    .pw-start {
-        padding-bottom: 40px;
-    }  
 }
 

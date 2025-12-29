@@ -1,8 +1,8 @@
-.skd-web .text-normal {
+.skd-web .font-weight-normal {
   font-weight: 400 !important;
 }
 
-.skd-web .text-semibold {
+.skd-web .font-weight-semibold {
   font-weight: 600 !important;
 }
 
@@ -10,9 +10,17 @@
   padding-bottom: 28px;
 }
 
+.skd-web h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
 @media (max-width: 1548px) {
   .skd-web .anchors-container {
     padding-bottom: 10px;
+  }
+  .skd-web h2 {
+    margin-bottom: 24px;
   }
 }
 
@@ -32,27 +40,6 @@
   .skd-web .container {
     max-width: 468px;
   }
-}
-
-@media (max-width: 508px) {
-  .skd-web .container {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
-.skd-web h2 {
-  font-size: 32px;
-  margin-bottom: 24px;
-}
-
-@media (max-width: 1548px) {
-  .skd-web h2 {
-    margin-bottom: 24px;
-  }
-}
-
-@media (max-width: 742px) {
   .skd-web h2 {
     font-size: 28px;
     line-height: 32px;
@@ -60,8 +47,11 @@
   }
 }
 
-.skd-web .pw-start {
-  padding-bottom: 40px;
+@media (max-width: 508px) {
+  .skd-web .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
