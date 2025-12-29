@@ -1,28 +1,30 @@
 @import '../helpers/media';
 
-.toggle-section-btn {
-    display: inline-flex;
-    font-weight: 600;
-    line-height: 120%;
-    padding: 16px 0;
-    color: #214288;
-    cursor: pointer;
-}
-
-.toggle-section-btn:after {
-    content: '';
-    display: inline-flex;
-    width: 20px;
-    height: 20px;
-    background: url(https://www.perco.ru/images/2023/icons/swap-icon.svg) no-repeat center center / contain;
-    margin-left: 4px;
-}
-
-.toggle-section-btn.opened:after {
-    transform: rotate(180deg);
-}
-
 .skd-web {
+    .toggle-section-btn {
+        display: inline-flex;
+        font-weight: 600;
+        line-height: 120%;
+        padding: 16px 0;
+        color: #214288;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .toggle-section-btn:after {
+        content: '';
+        display: inline-flex;
+        width: 20px;
+        height: 20px;
+        background: url(https://www.perco.ru/images/2023/icons/swap-icon.svg) no-repeat center center / contain;
+        margin-left: 4px;
+    }
+
+    .toggle-section-btn.opened:after {
+        transform: rotate(180deg);
+    }
+
+
     .blue-btn {
         font-size: 16px;
         font-weight: 600;
@@ -35,6 +37,7 @@
         margin-top: auto;
         justify-content: center;
     }
+
     .wrapper-btn {
         margin-top: 28px;
 

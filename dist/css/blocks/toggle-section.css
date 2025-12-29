@@ -1,29 +1,12 @@
-.toggle-section .toggle-section-btn {
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.toggle-section .comparision__table-row:last-child {
+  box-shadow: 0 0 0 1px #CBCBCB inset;
 }
 
 .toggle-section .toggle-section-item {
   overflow: hidden;
 }
 
-.toggle-section .toggle-section-item > * {
-  transition: height .5s;
-  opacity: 1;
-}
-
 .toggle-section .toggle-section-item.hidden {
-  min-height: 0 !important;
-  opacity: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-.toggle-section .toggle-section-item.hidden > * {
-  padding: 0 !important;
   display: none;
 }
 

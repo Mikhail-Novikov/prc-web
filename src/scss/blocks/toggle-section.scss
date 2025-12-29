@@ -1,28 +1,15 @@
 @import '../helpers/media';
+@import '../lib/variables';
 
 .toggle-section {
-    .toggle-section-btn {
-        cursor: pointer;
-        user-select: none;
+    .comparision__table-row:last-child {
+        box-shadow: 0 0 0 1px $stroke-primary inset;   
     }
-
     .toggle-section-item {
         overflow: hidden;
 
-        > * {
-            transition: height .5s;
-            opacity: 1;
-        }
-
         &.hidden {
-            min-height: 0 !important;
-            opacity: 0 !important;
-            padding-top: 0 !important;
-            padding-bottom: 0 !important;
-            > * {
-                    padding: 0 !important;
-                    display: none;
-                }
+            display: none;
         }
     }
 }
