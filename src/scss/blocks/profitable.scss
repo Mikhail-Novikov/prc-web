@@ -281,9 +281,8 @@
 
         /* Начиная с 10-го пункта убрали ведущий ноль */
         ol > li:nth-child(n+10)::before {
-            content: counter(num); /* Без ведущего нуля */
+            content: counter(num);
         }
-        // end with-users
         
     }
 }
