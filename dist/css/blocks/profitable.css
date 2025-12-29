@@ -379,5 +379,3 @@
 .skd-web .profitably ol > li:nth-child(n+10)::before {
   content: counter(num);
 }
-
-/*# sourceMappingURL=profitable.css.map */
