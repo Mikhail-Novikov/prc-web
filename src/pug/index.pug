@@ -9,7 +9,12 @@ include blocks/page
       div.container
         include ./blocks/breadcrumbs/_
 
-        h1 Переход с системы S-20 на PERCo-Web
+        h1
+          | Переход с&nbsp;системы 
+          span.text-nowrap
+            | S-20 
+          span.text-nowrap
+            | на PERCo-Web
 
         include ./blocks/pw-start/_
 
@@ -17,7 +22,9 @@ include blocks/page
       // start Advantages block
       section.profitably#anchor-1
         div.container
-          h2 Почему стоит перейти на PERCo-Web?
+          h2
+            | Почему стоит перейти на&nbsp;
+            span.text-nowrap PERCo-Web?
           //
           // 1 
           include ./blocks/profitably/_right

@@ -6,6 +6,10 @@
   font-weight: 600 !important;
 }
 
+.skd-web .text-nowrap {
+  white-space: nowrap !important;
+}
+
 .skd-web .anchors-container {
   padding-bottom: 28px;
 }

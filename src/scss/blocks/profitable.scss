@@ -76,11 +76,11 @@
             font-size: 18px;
 
             p {
-                margin: 12px 0 16px 0;
-                max-width: 570px;
-                display: flex;
-                flex-direction: column;
-                gap: 8px;
+                margin: 0;
+            }
+
+            p:not(:last-child) {
+                margin-bottom: 8px;
             }
 
             &--left img {
@@ -96,14 +96,6 @@
         &__item-desc-bottom {
             margin-top: 16px;
             position: relative;
-
-            figcaption,
-            p {
-                margin: 0;
-                display: flex;
-                flex-direction: column;
-                gap: 8px;
-            }
         }
 
         &__item-desc--right img {
@@ -261,9 +253,6 @@
             }
 
             &__item-desc {
-                p {
-                    margin-bottom: 0;
-                }
                 img {
                     max-width: 172px;
                 }
