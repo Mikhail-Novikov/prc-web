@@ -66,34 +66,6 @@
   height: 100%;
 }
 
-.footer-icons li#dzen {
-  background: url("/images/2023/icon-yandex-zen.svg") no-repeat center center/contain;
-}
-
-.footer-icons li#youtube {
-  background: url("/images/2023/youtube.svg") no-repeat center center/contain;
-}
-
-.footer-icons li#vk {
-  background: url("/images/2023/icon-vk.svg") no-repeat center center/contain;
-}
-
-.footer-icons li#vk-video {
-  background: url("/images/2023/icon-vk-video.svg") no-repeat center center/contain;
-}
-
-.footer-icons li#telegram {
-  background: url("/images/2023/telegram.svg") no-repeat center center/contain;
-}
-
-.footer-icons li#fb {
-  background: url("/images/2023/eng/icons/fb.svg") no-repeat center center/contain;
-}
-
-.footer-icons li#linkedin {
-  background: url("/images/2023/eng/icons/linkedin.svg") no-repeat center center/contain;
-}
-
 .footer-menu li:not(:last-child) {
   margin-bottom: 12px;
 }
