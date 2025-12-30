@@ -1,15 +1,22 @@
 {
-  "name": "app-charts",
+  "name": "page",
   "version": "1.0.0",
-  "description": "Таблица с графиком",
-  "main": "index.js",
+  "description": "Тестовая страница",
+  "main": "index.html",
   "repository": "",
-  "author": "<profiservic2@yandex.ru>",
+  "homepage": "./",
+  "baseUrl": "",
+  "author": "novikov.mn.perco@gmail.com",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "dev": "gulp",
     "prod": "gulp prod"
   },
+  "assets": [
+    "Manrope-Bold.ttf",
+    "Manrope-Regular.ttf"
+  ],
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
