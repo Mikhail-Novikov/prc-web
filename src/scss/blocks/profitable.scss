@@ -17,6 +17,7 @@
         }
 
         &__item-title {
+            font-family: "Manrope";
             display: flex;
             align-items: center;
             gap: 20px;
@@ -64,6 +65,7 @@
         &__item-subtitle {
             margin-top: 0;
             margin-bottom: 12px;
+            font-family: "Manrope";
             font-weight: 600;
             font-size: 18px;
             line-height: 24px;

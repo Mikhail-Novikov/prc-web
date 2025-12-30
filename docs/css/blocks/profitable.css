@@ -15,6 +15,7 @@
 }
 
 .skd-web .profitably__item-title {
+  font-family: "Manrope";
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -71,6 +72,7 @@
 .skd-web .profitably__item-subtitle {
   margin-top: 0;
   margin-bottom: 12px;
+  font-family: "Manrope";
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;

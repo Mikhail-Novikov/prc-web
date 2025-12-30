@@ -1,27 +1,27 @@
 @font-face {
-  font-family: 'Manrope-Regular';
-  src: url("../fonts/Manrope/Manrope-Regular.woff2") format("truetype");
+  font-family: 'Manrope';
+  src: url("../fonts/Manrope/Manrope-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Manrope-Medium';
-  src: url("../fonts/Manrope/Manrope-Medium.woff2") format("truetype");
+  font-family: 'Manrope';
+  src: url("../fonts/Manrope/Manrope-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Manrope-SemiBold';
-  src: url("../fonts/Manrope/Manrope-Semibold.woff2") format("truetype");
+  font-family: 'Manrope';
+  src: url("../fonts/Manrope/Manrope-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Manrope-Bold';
-  src: url("../fonts/Manrope/Manrope-Bold.woff2") format("truetype");
+  font-family: 'Manrope';
+  src: url("../fonts/Manrope/Manrope-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -154,7 +154,7 @@ button {
 
 body {
   margin: 0 0 0 0;
-  font: 400 16px/130% 'Manrope-Regular', sans-serif;
+  font: 400 16px/130% 'Manrope', sans-serif;
   color: #2C2D2E;
   background: #FFFFFF;
   line-height: 120%;
@@ -167,7 +167,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Manrope-Regular';
+  font-family: 'Manrope';
   color: #2C2D2E;
 }
 
