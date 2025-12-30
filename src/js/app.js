@@ -7,7 +7,10 @@ $(document).ready(function() {
         var $toggleButton = $wrapper.find('.js-toggle-btn');
         var opened = false;
 
-        var $borderElement = $rows.filter(':not(.hidden)').first().prev().addClass('visible-border');
+        var $borderElement = $rows.filter(':not(.hidden)')
+                                  .first()
+                                  .prev()
+                                  .addClass('visible-border');
 
         function updateVisibleBorder() {
             $borderElement.toggleClass('visible-border', $borderElement.next('.toggle-section-item.hidden').length > 0);
