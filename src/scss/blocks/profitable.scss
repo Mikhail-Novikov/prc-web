@@ -85,7 +85,7 @@
 
             &--left img {
                 margin-right: 40px;
-                float: inline-start;
+                float: left;
             }
 
             img {
@@ -108,7 +108,7 @@
 
         &__item-desc--right img {
             margin-left: 16px;
-            float: inline-end;
+            float: right;
         }
 
         &__users {

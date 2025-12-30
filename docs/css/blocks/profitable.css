@@ -95,7 +95,7 @@
 
 .skd-web .profitably__item-desc--left img {
   margin-right: 40px;
-  float: inline-start;
+  float: left;
 }
 
 .skd-web .profitably__item-desc img {
@@ -119,7 +119,7 @@
 
 .skd-web .profitably__item-desc--right img {
   margin-left: 16px;
-  float: inline-end;
+  float: right;
 }
 
 .skd-web .profitably__users {

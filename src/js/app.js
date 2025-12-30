@@ -40,8 +40,7 @@ $(document).ready(function() {
             header_height=document.querySelector('header').getBoundingClientRect().height;
 
             let element=document.querySelector(anc.getAttribute('href'));
-            console.log(anc.getAttribute('href'));
-            console.log(element);
+
             let elementPosition = element.getBoundingClientRect().top;
             let offsetPosition = elementPosition + document.documentElement.scrollTop;
             $("html, body").animate({
