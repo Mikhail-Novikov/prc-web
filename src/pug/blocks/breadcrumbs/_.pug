@@ -1,22 +1,21 @@
 section.breadcrumbs.add
-  div.container
-    ul.breadcrumbs-wrapper(itemscope itemtype='http://schema.org/BreadcrumbList')
-      li(itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem')
-        a.navlink(href='/' title='Главная' itemprop='item')
-          span(itemprop='name')
-            | Каталог
-          meta(itemprop='position' content='0')
-      li
-        img(alt='Стрелка' src='https://www.perco.ru/images/icons/arrow_mini.svg' width='2' height='4')
-      li.navlink(itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem')
-        a.last-link(href='/products/parkovochnaya-sistema/' itemprop='item' onclick='return false;')
-          span(itemprop='name')
-            | Система контродя доступа  PERCo-Web
-          meta(itemprop='position' content='1')
-      li
-        img(alt='Стрелка' src='https://www.perco.ru/images/icons/arrow_mini.svg' width='2' height='4')
-      li.navlink(itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem')
-        a.last-link(href='/products/parkovochnaya-sistema/' itemprop='item' onclick='return false;')
-          span(itemprop='name')
-            | Переход с S-20 на PERCo-Web
-          meta(itemprop='position' content='1')
+  ul.breadcrumbs-wrapper(itemscope itemtype='http://schema.org/BreadcrumbList')
+    li(itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem')
+      a.navlink(href='/' title='Главная' itemprop='item')
+        span(itemprop='name')
+          | Каталог
+        meta(itemprop='position' content='0')
+    li
+      img(alt='Стрелка' src='https://www.perco.ru/images/icons/arrow_mini.svg' width='2' height='4')
+    li.navlink(itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem')
+      a.last-link(href='/products/parkovochnaya-sistema/' itemprop='item' onclick='return false;')
+        span(itemprop='name')
+          | Система контродя доступа  PERCo-Web
+        meta(itemprop='position' content='1')
+    li
+      img(alt='Стрелка' src='https://www.perco.ru/images/icons/arrow_mini.svg' width='2' height='4')
+    li.navlink(itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem')
+      a.last-link(href='/products/parkovochnaya-sistema/' itemprop='item' onclick='return false;')
+        span(itemprop='name')
+          | Переход с S-20 на PERCo-Web
+        meta(itemprop='position' content='1')
