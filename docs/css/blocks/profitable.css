@@ -168,8 +168,7 @@
   counter-increment: num;
   display: inline-block;
   position: absolute;
-  margin-top: 8px;
-  top: 0;
+  top: 6px;
   left: -53px;
   width: 38px;
   text-align: center;
@@ -318,3 +317,5 @@
     left: -34px;
   }
 }
+
+/*# sourceMappingURL=profitable.css.map */
