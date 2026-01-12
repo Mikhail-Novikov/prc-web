@@ -3,6 +3,7 @@
 import paths from "../paths";
 import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
+import rev from 'gulp-rev';
 import combiner from 'stream-combiner2';
 import * as emitty from 'emitty';
 import sassInlineSVG from 'sass-inline-svg-utf8';
@@ -25,9 +26,12 @@ export default function css() {
     gp.autoprefixer({
       cascade: false
     }),
+    rev(),
     gp.if(development, gp.sourcemaps.write('.')),
     gp.debug({title: "Asset task 'css'"}),
     gulp.dest(paths.css.dest),
+    rev.manifest('rev-manifest.json', { merge: true }),
+    gulp.dest(paths.dest),
     bs.stream()
   ]).on('error', gp.notify.onError(function (err) {
     return {
