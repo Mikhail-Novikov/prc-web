@@ -57,7 +57,11 @@
     "uglifyjs-webpack-plugin": "^2.1.2",
     "vinyl-named": "^1.1.0",
     "webpack": "^4.1.1",
-    "webpack-stream": "^4.0.0"
+    "webpack-stream": "^4.0.0",
+    "stylelint": "16.22.0",
+    "stylelint-config-htmlacademy": "4.2.3",
+    "stylelint-config-recess-order": "7.1.0",
+    "stylelint-order": "7.0.0"
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.3.5",

@@ -5,11 +5,11 @@
     .comparision {
         background: $bg-blue-gray;
         padding: 80px 0 100px;
-        
+
         &__wrapper {
             padding-top: 8px;
         }
-        
+
         &__table {
             display: flex;
             flex-direction: column;
@@ -18,7 +18,7 @@
             border-color: $stroke-primary;
             border-width: 1px 0 0 0;
             border-style: solid;
-            
+
             %common-table-cell-styles {
                 flex: 1 1 0;
                 align-content: center;
@@ -29,23 +29,25 @@
                 border-width: 0 1px 0 0;
                 border-style: solid;
             }
-            
+
             &-head,
             &-body {
                 display: flex;
                 flex-direction: column;
-                
+
                 .comparision__table-row {
                     display: flex;
                     min-height: 44px;
+
                     &:not(.hidden) {
                         border-bottom: 1px solid $stroke-primary;
                     }
-                    
+
                     .comparision__table-cell {
                         @extend %common-table-cell-styles;
-                        
+
                         text-align: center;
+
                         &:first-child {
                             padding-left: 16px;
                             text-align: left;
@@ -55,7 +57,7 @@
                     }
                 }
             }
-            
+
             &-head {
                 .comparision__table-row {
                     .comparision__table-cell {
@@ -63,75 +65,81 @@
                         border-width: 0 1px 1px 0;
                     }
                 }
+
                 .comparision__table-th {
                     background-color: $bg-gray;
                 }
             }
-            
+
             &-cell--check {
                 margin-left: 16px;
             }
         }
     }
-    
-    @include desktop {
+
+    @include desktop-l {
         .comparision {
-            
+
             &__wrapper {
                 padding-top: 0;
             }
-            
+
             &__table {
                 margin-bottom: 20px;
-                
-                .comparision__table-cell {
-                    font-size: 14px;
-                    
-                    &:first-child {
-                        min-width: 300px;
+
+                .comparision__table-row {
+
+                    .comparision__table-cell:first-child {
+                        min-width: 325px;
                     }
                 }
             }
         }
     }
-    
+
     @include laptop {
         .comparision {
             padding: 60px 0 80px;
-            
+
             &__table {
-                margin-bottom: 12px;
-                
-                .comparision__table-cell {
-                    font-size: 14px;
-                    
-                    &:first-child {
-                        min-width: 210px;
+
+                .comparision__table-row {
+
+                    .comparision__table-cell:first-child {
+                        min-width: 250px;
                     }
                 }
             }
         }
     }
-    
+
     @include mobile-m {
         .comparision {
             padding: 40px 0 60px;
-            
+
+            &__table-scroll {
+                overflow: auto;
+
+                > .comparision__table {
+                    min-width: 560px;
+                }
+            }
+
             &__table {
                 margin-bottom: 12px;
-                
+
                 &-cell:has(.comparision__table-cell--check) {
                     min-width: 190px !important;
                 }
 
                 &-cell {
-                    font-size: 14px;
-                    
+                    font-size: 12px !important;
+
                     &:first-child {
                         min-width: 180px !important;
                     }
-                    
-                    @include breakpoint(410){
+
+                    @include breakpoint(410) {
                         min-width: 100px;
                         padding-left: 8px;
                         flex-grow: 1;
@@ -140,7 +148,7 @@
             }
         }
     }
-    
+
     @media only screen and (max-width: 410px) {
         .comparision {
             &__table {
@@ -148,6 +156,7 @@
                     min-width: 75px !important;
                     flex-grow: 0;
                     font-size: 14px !important;
+
                     &:first-child {
                         min-width: 145px !important;
                     }

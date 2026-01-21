@@ -73,18 +73,15 @@
   margin-left: 16px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1548px) {
   .skd-web .comparision__wrapper {
     padding-top: 0;
   }
   .skd-web .comparision__table {
     margin-bottom: 20px;
   }
-  .skd-web .comparision__table .comparision__table-cell {
-    font-size: 14px;
-  }
-  .skd-web .comparision__table .comparision__table-cell:first-child {
-    min-width: 300px;
+  .skd-web .comparision__table .comparision__table-row .comparision__table-cell:first-child {
+    min-width: 325px;
   }
 }
 
@@ -92,20 +89,20 @@
   .skd-web .comparision {
     padding: 60px 0 80px;
   }
-  .skd-web .comparision__table {
-    margin-bottom: 12px;
-  }
-  .skd-web .comparision__table .comparision__table-cell {
-    font-size: 14px;
-  }
-  .skd-web .comparision__table .comparision__table-cell:first-child {
-    min-width: 210px;
+  .skd-web .comparision__table .comparision__table-row .comparision__table-cell:first-child {
+    min-width: 250px;
   }
 }
 
 @media (max-width: 742px) {
   .skd-web .comparision {
     padding: 40px 0 60px;
+  }
+  .skd-web .comparision__table-scroll {
+    overflow: auto;
+  }
+  .skd-web .comparision__table-scroll > .comparision__table {
+    min-width: 560px;
   }
   .skd-web .comparision__table {
     margin-bottom: 12px;
@@ -114,7 +111,7 @@
     min-width: 190px !important;
   }
   .skd-web .comparision__table-cell {
-    font-size: 14px;
+    font-size: 12px !important;
   }
   .skd-web .comparision__table-cell:first-child {
     min-width: 180px !important;
