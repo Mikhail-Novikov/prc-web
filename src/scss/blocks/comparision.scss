@@ -10,13 +10,20 @@
             padding-top: 8px;
         }
 
+        &__table:last-child {
+            margin-bottom: 20px;
+        }
+
+        &__table:first-child {
+            border-top-width: 1px;
+        }
+
         &__table {
             display: flex;
             flex-direction: column;
             max-width: 1025px;
-            margin-bottom: 18px;
             border-color: $stroke-primary;
-            border-width: 1px 0 0 0;
+            border-width: 0;
             border-style: solid;
 
             %common-table-cell-styles {
@@ -85,7 +92,6 @@
             }
 
             &__table {
-                margin-bottom: 20px;
 
                 .comparision__table-row {
 
@@ -125,8 +131,11 @@
                 }
             }
 
-            &__table {
+            &__table:last-child {
                 margin-bottom: 12px;
+            }
+
+            &__table {
 
                 &-cell:has(.comparision__table-cell--check) {
                     min-width: 190px !important;

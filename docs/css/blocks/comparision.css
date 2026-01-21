@@ -7,15 +7,22 @@
   padding-top: 8px;
 }
 
+.skd-web .comparision__table:last-child {
+  margin-bottom: 20px;
+}
+
+.skd-web .comparision__table:first-child {
+  border-top-width: 1px;
+}
+
 .skd-web .comparision__table {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
   max-width: 1025px;
-  margin-bottom: 18px;
   border-color: #CBCBCB;
-  border-width: 1px 0 0 0;
+  border-width: 0;
   border-style: solid;
 }
 
@@ -77,9 +84,6 @@
   .skd-web .comparision__wrapper {
     padding-top: 0;
   }
-  .skd-web .comparision__table {
-    margin-bottom: 20px;
-  }
   .skd-web .comparision__table .comparision__table-row .comparision__table-cell:first-child {
     min-width: 325px;
   }
@@ -104,7 +108,7 @@
   .skd-web .comparision__table-scroll > .comparision__table {
     min-width: 560px;
   }
-  .skd-web .comparision__table {
+  .skd-web .comparision__table:last-child {
     margin-bottom: 12px;
   }
   .skd-web .comparision__table-cell:has(.comparision__table-cell--check) {
