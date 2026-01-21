@@ -26,11 +26,11 @@ export default function css() {
     gp.autoprefixer({
       cascade: false
     }),
-    rev(),
+    // rev(),
     gp.if(development, gp.sourcemaps.write('.')),
     gp.debug({title: "Asset task 'css'"}),
     gulp.dest(paths.css.dest),
-    rev.manifest('rev-manifest.json', { merge: true }),
+    // rev.manifest('rev-manifest.json', { merge: true }),
     gulp.dest(paths.dest),
     bs.stream()
   ]).on('error', gp.notify.onError(function (err) {

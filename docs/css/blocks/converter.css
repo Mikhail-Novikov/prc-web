@@ -1,0 +1,61 @@
+.skd-web .converter {
+  background: #EBEDF0;
+  padding: 80px 0 100px;
+}
+
+.skd-web .converter__desc {
+  color: #2C2D2E;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
+  max-width: 690px;
+}
+
+.skd-web .converter__list {
+  padding: 12px 0 12px 6px;
+  list-style-type: none;
+  position: relative;
+}
+
+.skd-web .converter__list-item {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skd-web .converter__list-item::before {
+  content: "\2022";
+  color: #000000;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.skd-web .converter__list-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1280px) {
+  .skd-web .converter__desc {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 1036px) {
+  .skd-web .converter {
+    padding: 60px 0 80px;
+  }
+  .skd-web .converter__desc {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 742px) {
+  .skd-web .converter {
+    padding: 40px 0 60px;
+  }
+  .skd-web .converter__list-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+/*# sourceMappingURL=converter.css.map */

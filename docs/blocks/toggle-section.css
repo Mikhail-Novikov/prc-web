@@ -1,0 +1,13 @@
+.toggle-section .toggle-section-item {
+  overflow: hidden;
+}
+
+.toggle-section .toggle-section-item.hidden {
+  display: none;
+}
+
+.toggle-section .visible-border {
+  border-bottom: 2px solid #CBCBCB !important;
+}
+
+/*# sourceMappingURL=toggle-section.css.map */

@@ -1,0 +1,145 @@
+.skd-web .comparision {
+  background: #EBEDF0;
+  padding: 80px 0 100px;
+}
+
+.skd-web .comparision__wrapper {
+  padding-top: 8px;
+}
+
+.skd-web .comparision__table {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 1025px;
+  margin-bottom: 18px;
+  border-color: #CBCBCB;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+}
+
+.skd-web .comparision__table .comparision__table-head .comparision__table-row .comparision__table-cell, .skd-web .comparision__table-head .comparision__table-row .comparision__table .comparision__table-cell, .skd-web .comparision__table .comparision__table-body .comparision__table-row .comparision__table-cell, .skd-web .comparision__table-body .comparision__table-row .comparision__table .comparision__table-cell {
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  padding: 12px 8px;
+  font-size: 14px;
+  color: #2C2D2E;
+  border-color: #CBCBCB;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+}
+
+.skd-web .comparision__table-head, .skd-web .comparision__table-body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.skd-web .comparision__table-head .comparision__table-row, .skd-web .comparision__table-body .comparision__table-row {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 44px;
+}
+
+.skd-web .comparision__table-head .comparision__table-row:not(.hidden), .skd-web .comparision__table-body .comparision__table-row:not(.hidden) {
+  border-bottom: 1px solid #CBCBCB;
+}
+
+.skd-web .comparision__table-head .comparision__table-row .comparision__table-cell, .skd-web .comparision__table-body .comparision__table-row .comparision__table-cell {
+  text-align: center;
+}
+
+.skd-web .comparision__table-head .comparision__table-row .comparision__table-cell:first-child, .skd-web .comparision__table-body .comparision__table-row .comparision__table-cell:first-child {
+  padding-left: 16px;
+  text-align: left;
+  min-width: 335px;
+  border-left-width: 1px;
+}
+
+.skd-web .comparision__table-head .comparision__table-row .comparision__table-cell {
+  font-weight: 600;
+  border-width: 0 1px 1px 0;
+}
+
+.skd-web .comparision__table-head .comparision__table-th {
+  background-color: #F5F5F5;
+}
+
+.skd-web .comparision__table-cell--check {
+  margin-left: 16px;
+}
+
+@media (max-width: 1280px) {
+  .skd-web .comparision__wrapper {
+    padding-top: 0;
+  }
+  .skd-web .comparision__table {
+    margin-bottom: 20px;
+  }
+  .skd-web .comparision__table .comparision__table-cell {
+    font-size: 14px;
+  }
+  .skd-web .comparision__table .comparision__table-cell:first-child {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 1036px) {
+  .skd-web .comparision {
+    padding: 60px 0 80px;
+  }
+  .skd-web .comparision__table {
+    margin-bottom: 12px;
+  }
+  .skd-web .comparision__table .comparision__table-cell {
+    font-size: 14px;
+  }
+  .skd-web .comparision__table .comparision__table-cell:first-child {
+    min-width: 210px;
+  }
+}
+
+@media (max-width: 742px) {
+  .skd-web .comparision {
+    padding: 40px 0 60px;
+  }
+  .skd-web .comparision__table {
+    margin-bottom: 12px;
+  }
+  .skd-web .comparision__table-cell:has(.comparision__table-cell--check) {
+    min-width: 190px !important;
+  }
+  .skd-web .comparision__table-cell {
+    font-size: 14px;
+  }
+  .skd-web .comparision__table-cell:first-child {
+    min-width: 180px !important;
+  }
+}
+
+@media (max-width: 742px) and (max-width: 410px) {
+  .skd-web .comparision__table-cell {
+    min-width: 100px;
+    padding-left: 8px;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .skd-web .comparision__table .comparision__table-cell {
+    min-width: 75px !important;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    font-size: 14px !important;
+  }
+  .skd-web .comparision__table .comparision__table-cell:first-child {
+    min-width: 145px !important;
+  }
+}
+
+/*# sourceMappingURL=comparision.css.map */
