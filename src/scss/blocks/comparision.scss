@@ -127,7 +127,7 @@
                 overflow: auto;
 
                 > .comparision__table {
-                    min-width: 560px;
+                    min-width: 580px;
                 }
             }
 
@@ -164,7 +164,6 @@
                 .comparision__table-cell {
                     min-width: 75px !important;
                     flex-grow: 0;
-                    font-size: 14px !important;
 
                     &:first-child {
                         min-width: 145px !important;

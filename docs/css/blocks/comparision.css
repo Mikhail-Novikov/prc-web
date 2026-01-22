@@ -106,7 +106,7 @@
     overflow: auto;
   }
   .skd-web .comparision__table-scroll > .comparision__table {
-    min-width: 560px;
+    min-width: 580px;
   }
   .skd-web .comparision__table:last-child {
     margin-bottom: 12px;
@@ -136,7 +136,6 @@
     min-width: 75px !important;
     -ms-flex-positive: 0;
     flex-grow: 0;
-    font-size: 14px !important;
   }
   .skd-web .comparision__table .comparision__table-cell:first-child {
     min-width: 145px !important;
