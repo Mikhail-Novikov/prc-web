@@ -1,4 +1,34 @@
 $(document).ready(function () {
+
+  let isExpanded = true;
+  const rows = document.querySelectorAll('.collapsible-row');
+  const btn = document.querySelector('.toggle-btn');
+  const btnText = document.querySelector('.btn-text');
+
+  function toggleTable() {
+      isExpanded = !isExpanded;
+
+      rows.forEach(row => {
+          if (isExpanded) {
+              row.classList.remove('hidden');
+          } else {
+              row.classList.add('hidden');
+          }
+      });
+
+      if (isExpanded) {
+          btnText.textContent = 'Свернуть таблицу';
+          btn.classList.add('expanded');
+      } else {
+          btnText.textContent = 'Развернуть таблицу';
+          btn.classList.remove('expanded');
+      }
+  }
+
+  $("#expanded").click(function() {
+      toggleTable();
+  });
+
   // Скрипт раскрытия элементов по кнопке(to do - анимация?)
   if (!$(".toggle-section").length == 0 && $(".toggle-section").length > 0) {
     $(".toggle-section").each(function () {

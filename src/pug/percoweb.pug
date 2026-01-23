@@ -1,0 +1,39 @@
+include lib/variables
+include lib/mixins
+include blocks/page
+
++page(pagesList.index.title)
+  include ./blocks/header/_
+  main#container.Site-content.main(itemprop="mainContentOfPage")
+    .skd-web
+      div.container
+        include ./blocks/breadcrumbs/_
+
+        h1 Система контроля доступа 
+            span.text-nowrap PERCo-Web
+
+        include ./blocks/pw-start/_
+
+        // start percoweb
+        section#percoweb.pw-percoweb.bg-gray
+            div.container
+                h2 Переход с PERCo-S-20 на PERCo-Web
+                div.section-wrapper
+                    div.pw-controllers-block
+                        div.pw-controllers-info
+                            p
+                                | Для пользователей системы PERCo-S-20 реализован конвертер баз данных для удобного перехода к работе с системой PERCo-Web.
+                            p
+                                | Вся информация о настройках оборудования, сотрудниках, посетителях и их доступе, графиках работы и событиях системы за последние 12 месяцев автоматически переносится из системы PERCo-S-20 с помощью специального конвертера.
+                            p
+                                | Данные импортируются одним массивом, при этом в PERCo-Web автоматически активируется ознакомительный режим лицензий «Стандартный пакет ПО» и «Учет рабочего времени». Полный список импортируемых данных представлен в документации на конвертер.
+                        div.pw-btn
+                            a(href='/gde-kupit/perehod-s-perco-s-20-na-perco-web.php/')
+                                | Перейти к разделу
+                    div.pw-controllers-block.with-image
+                        img(src='<?=$skd__path__image__percoweb?>' alt='Переход с PERCo-S-20 на PERCo-Web')
+
+
+  button.btn-up
+
+  include ./blocks/footer/_

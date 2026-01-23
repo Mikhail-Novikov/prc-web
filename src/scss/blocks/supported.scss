@@ -4,6 +4,7 @@
 .skd-web {
     .supported {
         padding: 80px 0 100px;
+        background: $bg-gray;
 
         &__wrapper {
             max-width: 1025px;
@@ -21,6 +22,10 @@
                 line-height: 24px;
                 margin: 0 0 32px;
                 max-width: 490px;
+            }
+
+            &--remark-text {
+                font-size: 14px;
             }
         }
 
