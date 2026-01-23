@@ -549,9 +549,10 @@
                   <div class="js-toggle-btn toggle-section-btn" data-open="Развернуть таблицу" data-close="Свернуть таблицу">Развернуть таблицу</div>
                 </div>
               </div>
-              <table class="compare-table">
+              <table class="compare-table compare-table--with-analogs">
                 <colgroup>
                   <col style="width: 325px" />
+                  <col style="width: 261px" />
                   <col style="width: 261px" />
                   <col style="width: 261px" />
                 </colgroup>
@@ -560,9 +561,41 @@
                     <th class="compare-table__th">Функционал</th>
                     <th class="compare-table__th">PERCo-S-20</th>
                     <th class="compare-table__th">PERCo-Web</th>
+                    <th class="compare-table__th">Поддерживаемые аналоги</th>
                   </tr>
                 </thead>
-                <tbody></tbody>
+                <tbody>
+                  <tr class="compare-table__row">
+                    <td data-label="Функционал">Универсальные контроллеры CT/L04*, CT/L04.2*, CT/L14*, CT/L14.1</td>
+                    <td data-label="PERCo-S-20"><span class="compare-table__cell--check"></span></td>
+                    <td data-label="PERCo-Web"><span class="compare-table__cell--check"></span></td>
+                    <td data-label="Поддерживаемые аналоги"></td>
+                  </tr>
+                  <tr class="compare-table__row">
+                    <td data-label="Функционал">Контроллеры замка CL05*, CL05.2*, CL15.X</td>
+                    <td data-label="PERCo-S-20"><span class="compare-table__cell--check"></span></td>
+                    <td data-label="PERCo-Web"><span class="compare-table__cell--check"></span></td>
+                    <td data-label="Поддерживаемые аналоги"></td>
+                  </tr>
+                  <tr class="compare-table__row">
+                    <td data-label="Функционал">Контроллеры регистрации CR01*, CR01.2*, CR02.9, CR11*, CR11.1</td>
+                    <td data-label="PERCo-S-20">[object Object]</td>
+                    <td data-label="PERCo-Web"><span class="compare-table__cell--check"></span></td>
+                    <td data-label="Поддерживаемые аналоги"></td>
+                  </tr>
+                  <tr class="compare-table__row">
+                    <td data-label="Функционал">Контроллеры турникета CT01*, CT02*</td>
+                    <td data-label="PERCo-S-20"><span class="compare-table__cell--check"></span></td>
+                    <td data-label="PERCo-Web"><span class="compare-table__cell--check"></span></td>
+                    <td data-label="Поддерживаемые аналоги">Универсальный контроллер CT/L14.1</td>
+                  </tr>
+                  <tr class="compare-table__row compare-table__row--collapsible">
+                    <td data-label="Функционал">Контроллеры замка CL01*, CL02*, CL03*</td>
+                    <td data-label="PERCo-S-20">[object Object]</td>
+                    <td data-label="PERCo-Web"><span class="compare-table__cell--check"></span></td>
+                    <td data-label="Поддерживаемые аналоги">Контроллеры замка CL15.X</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </section><!-- end Software block-->

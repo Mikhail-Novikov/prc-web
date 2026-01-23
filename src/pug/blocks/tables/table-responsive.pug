@@ -1,6 +1,24 @@
 mixin tableResponsive(colWidths = ['325px', '261px', ''], data)
+  -
+    var tableData = [];
+    if (Array.isArray(data) && data.length && data[0] && data[0].feature) {
+      tableData = [{ section: null, rows: data }];
+    } else {
+      tableData = data || [];
+    }
+    var hasNotes = false;
+    for (var si = 0; si < tableData.length; si++) {
+      var sec = tableData[si];
+      if (sec && sec.rows) {
+        for (var ri = 0; ri < sec.rows.length; ri++) {
+          var r = sec.rows[ri];
+          if (r && r.notes) { hasNotes = true; break; }
+        }
+      }
+      if (hasNotes) { break; }
+    }
 
-  table.compare-table
+  table.compare-table(class= hasNotes ? 'compare-table--with-analogs' : '')
     colgroup
       each width in colWidths
         if width
@@ -12,33 +30,47 @@ mixin tableResponsive(colWidths = ['325px', '261px', ''], data)
         th.compare-table__th Функционал
         th.compare-table__th PERCo-S-20
         th.compare-table__th PERCo-Web
+        if hasNotes
+          th.compare-table__th Поддерживаемые аналоги
     tbody
-      each section in data
-        tr.compare-table__section
-          td(colspan="3")= section.section
-        each row in section.rows
+      each section in tableData
+        if section.section
+          tr.compare-table__section
+            td(colspan= hasNotes ? 4 : 3)= section.section
+        if section.rows
+          each row in section.rows
+            -
+              var rowClasses = ['compare-table__row'];
+              if (row.mods) { for(var i=0;i<row.mods.length;i++){ rowClasses.push('compare-table__row--' + row.mods[i]); }}
+              if (row.collapsible) { rowClasses.push('compare-table__row--collapsible'); }
 
-          -
-            var rowClasses = ['compare-table__row'];
-            if (row.mods) { for(var i=0;i<row.mods.length;i++){ rowClasses.push('compare-table__row--' + row.mods[i]); }}
-            if (row.collapsible) { rowClasses.push('compare-table__row--collapsible'); }
-
-          tr(class=rowClasses.join(' '))
-            td(data-label="Функционал")= row.feature
-            td(data-label="PERCo-S-20")
-              if row.percoS && row.percoS.check
-                span.compare-table__cell--check
-              else if row.percoS && Array.isArray(row.percoS)
-                each line in row.percoS
-                  | #{line}
-                  br
-              else if row.percoS
-                | #{row.percoS}
-            td(data-label="PERCo-Web")
-              if row.percoWeb && Array.isArray(row.percoWeb)
-                each line, idx in row.percoWeb
-                  | #{line}
-                  if idx != row.percoWeb.length-1
+            tr(class=rowClasses.join(' '))
+              td(data-label="Функционал")= row.feature
+              td(data-label="PERCo-S-20")
+                if row.percoS && row.percoS.check
+                  span.compare-table__cell--check
+                else if row.percoS && Array.isArray(row.percoS)
+                  each line in row.percoS
+                    | #{line}
                     br
-              else if row.percoWeb
-                | #{row.percoWeb}
+                else if row.percoS
+                  | #{row.percoS}
+              td(data-label="PERCo-Web")
+                if row.percoWeb && row.percoWeb.check
+                  span.compare-table__cell--check
+                else if row.percoWeb && Array.isArray(row.percoWeb)
+                  each line, idx in row.percoWeb
+                    | #{line}
+                    if idx != row.percoWeb.length-1
+                      br
+                else if row.percoWeb
+                  | #{row.percoWeb}
+              if hasNotes
+                td(data-label="Поддерживаемые аналоги")
+                  if row.notes && Array.isArray(row.notes)
+                    each n, ni in row.notes
+                      | #{n}
+                      if ni != row.notes.length-1
+                        br
+                  else if row.notes
+                    | #{row.notes}
