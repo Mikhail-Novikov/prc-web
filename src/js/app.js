@@ -1,9 +1,16 @@
 $(document).ready(function () {
 
-  let isExpanded = true;
+  let isExpanded = false;
   const rows = document.querySelectorAll('.compare-table__row--collapsible, .collapsible-row');
-  const btn = document.querySelector('.toggle-btn');
+  const btn = document.querySelector('.js-toggle-btn');
   const btnText = document.querySelector('.btn-text');
+  rows.forEach(row => {
+    if (isExpanded) {
+      row.classList.remove('is-hidden');
+    } else {
+      row.classList.add('is-hidden');
+    }
+  });
 
   function toggleTable() {
       isExpanded = !isExpanded;
@@ -25,7 +32,7 @@ $(document).ready(function () {
       }
   }
 
-  $("#expanded").click(function() {
+  $(".js-toggle-btn").click(function() {
       toggleTable();
   });
 

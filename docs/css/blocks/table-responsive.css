@@ -56,6 +56,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 24px 24px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   width: 24px;
   height: 24px;
 }
@@ -77,29 +79,39 @@
     display: none;
   }
   .compare-table tbody tr {
-    margin-bottom: 12px;
     border: 1px solid #CBCBCB;
-    padding: 8px;
   }
   .compare-table tbody tr td {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 10px 12px;
     border-right: none;
-    border-bottom: 1px solid #eee;
+    border-top: 1px solid #CBCBCB;
+    text-align: left;
   }
   .compare-table tbody tr td:before {
     content: attr(data-label);
     font-weight: 600;
     color: #666;
-    margin-right: 12px;
+    text-align: left;
+  }
+  .compare-table tbody tr td:not(:first-child):before {
     -ms-flex: 0 0 45%;
     flex: 0 0 45%;
   }
+  .compare-table__section {
+    padding: 0 !important;
+  }
   .compare-table__section td {
     display: block;
+    border: none;
+    font-size: 18px;
+    padding: 18px !important;
+  }
+  .compare-table__section:not(:first-child) {
+    margin-top: 24px;
   }
 }
 

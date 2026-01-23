@@ -16,15 +16,17 @@ mixin tableResponsive(colWidths = ['325px', '261px', ''])
       tr.compare-table__section
         td(colspan="3") «Базовое ПО»
       tr.compare-table__row.compare-table__row--first-section
-        td(data-label="Функционал") Конфигурация оборудования
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Конфигурация оборудования
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WB «Базовый пакет»
       tr.compare-table__row
-        td(data-label="Функционал") Управление устройствами
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Управление устройствами
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web")
       tr.compare-table__row.compare-table__row--last-visible
-        td(data-label="Функционал") Добавление сотрудников
+        td.font-weight-semibold Добавление сотрудников
         td(data-label="PERCo-S-20") не ограничено без фотографий
         td(data-label="PERCo-Web") WB «Базовый пакет»:
           br
@@ -34,78 +36,101 @@ mixin tableResponsive(colWidths = ['325px', '261px', ''])
           br
           | не ограничено с фотографиями
       tr(class='compare-table__row compare-table__row--collapsible')
-        td(data-label="Функционал") Выдача карт доступа
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Выдача карт доступа
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WB «Базовый пакет»
       tr(class='compare-table__row compare-table__row--collapsible')
-        td(data-label="Функционал") Добавление подразделений и должностей
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Добавление подразделений и должностей
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WB «Базовый пакет»
       tr(class='compare-table__row compare-table__row--collapsible')
-        td(data-label="Функционал") Создание операторов
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Создание операторов
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WB «Базовый пакет»
       tr(class='compare-table__row compare-table__row--collapsible')
-        td(data-label="Функционал") Управление уровнями доступа
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Управление уровнями доступа
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WB «Базовый пакет»
       tr(class='compare-table__row compare-table__row--collapsible')
-        td(data-label="Функционал") Журнал событий
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Журнал событий
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WB «Базовый пакет»
       tr(class='compare-table__row compare-table__row--collapsible')
-        td(data-label="Функционал") Резервное копирование данных
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Резервное копирование данных
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WS «Стандартный пакет»
       tr.compare-table__section
         td(colspan="3") SM01 «Администратор»
       tr.compare-table__row
-        td(data-label="Функционал") Реакция на события
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Реакция на события
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WB «Базовый пакет»
       tr.compare-table__row
-        td(data-label="Функционал") Планировщик заданий
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Планировщик заданий
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WB «Базовый пакет»
       tr.compare-table__row.compare-table__row--last-visible
-        td(data-label="Функционал") Добавление видеокамер
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Добавление видеокамер
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WB «Базовый пакет»
       tr(class='compare-table__row compare-table__row--collapsible sm01')
-        td(data-label="Функционал") Настройка уведомлений
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Настройка уведомлений
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WB «Базовый пакет»
       tr(class='compare-table__row compare-table__row--collapsible sm01')
-        td(data-label="Функционал") Интеграция с внешними системами
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Интеграция с внешними системами
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WS «Стандартный пакет»
       tr(class='compare-table__row compare-table__row--collapsible sm01')
-        td(data-label="Функционал") Создание отчетов
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Создание отчетов
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WB «Базовый пакет»
       tr.compare-table__section
         td(colspan="3") SM02 «Персонал»
       tr.compare-table__row
-        td(data-label="Функционал") Добавление фотографий сотрудников
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Добавление фотографий сотрудников
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WB «Базовый пакет»
       tr.compare-table__row
-        td(data-label="Функционал") Создание дополнительных полей
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Создание дополнительных полей
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WS «Стандартный пакет"
       tr.compare-table__row.compare-table__row--last-visible
-        td(data-label="Функционал") Рассылка по СМС
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Рассылка по СМС
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WB «Базовый пакет»
       tr(class='compare-table__row compare-table__row--collapsible sm02')
-        td(data-label="Функционал") Импорт/экспорт данных сотрудников
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Импорт/экспорт данных сотрудников
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WB «Базовый пакет"
       tr(class='compare-table__row compare-table__row--collapsible sm02')
-        td(data-label="Функционал") Учет рабочего времени
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Учет рабочего времени
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WS «Стандартный пакет"
       tr(class='compare-table__row compare-table__row--collapsible sm02')
-        td(data-label="Функционал") Управление временными пропусками
-        td(data-label="PERCo-S-20" class="compare-table__cell--check")
+        td.font-weight-semibold Управление временными пропусками
+        td(data-label="PERCo-S-20")
+          span.compare-table__cell--check
         td(data-label="PERCo-Web") WB «Базовый пакет»
+
+  p.supported__desc--remark-text *контроллер снят с&nbsp;производства
+  
+  div.js-toggle-btn.toggle-section-btn 
+   span.btn-text Развернуть таблицу

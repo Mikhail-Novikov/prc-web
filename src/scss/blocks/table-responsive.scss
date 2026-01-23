@@ -64,6 +64,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 24px 24px;
+    display: inline-flex;
     width: 24px;
     height: 24px;
   }
@@ -88,29 +89,41 @@
     }
 
     & tbody tr {
-      margin-bottom: 12px;
       border: 1px solid $stroke-primary;
-      padding: 8px;
     }
 
     & tbody tr td {
       display: flex;
-      justify-content: space-between;
+      align-items: center;
       padding: 10px 12px;
       border-right: none;
-      border-bottom: 1px solid #eee;
+      border-top: 1px solid $stroke-primary;
+      text-align: left;
     }
 
     & tbody tr td:before {
       content: attr(data-label);
       font-weight: 600;
       color: #666;
-      margin-right: 12px;
+      text-align: left;
+    }
+
+    & tbody tr td:not(:first-child):before {
       flex: 0 0 45%;
     }
 
-    &__section td {
-      display: block;
+    &__section {
+      padding: 0 !important;
+      td {
+        display: block;
+        border: none;
+        font-size: 18px;
+        padding: 18px !important;
+      }
+    }
+
+     &__section:not(:first-child) {
+      margin-top: 24px;
     }
   }
 }
