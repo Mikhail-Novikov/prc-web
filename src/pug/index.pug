@@ -1,6 +1,7 @@
 include lib/variables
 include lib/mixins
 include blocks/page
+include blocks/tables/table-responsive
 
 +page(pagesList.index.title)
   include ./blocks/header/_
@@ -52,7 +53,7 @@ include blocks/page
         div.container
           h2 Поддерживаемое оборудование
           include ./blocks/supported/_
-          include ./blocks/tables/table-responsive
+          +tableResponsive(['325px', '261px', '261px'])
       // end Software block
       // 
 

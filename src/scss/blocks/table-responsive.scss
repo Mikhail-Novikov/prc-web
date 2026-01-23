@@ -3,7 +3,6 @@ $color_2: #4CAF50;
 $color_3: #0066cc;
 $color_4: white;
 
-/* Responsive: stacked rows with labels */
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -36,6 +35,16 @@ $color_4: white;
 
         &:first-child {
           max-width: 325px;
+        }
+
+        .perco-icon-check {
+            background-image: url("/img/icons/check.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 24px 24px;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
         }
       }
     }

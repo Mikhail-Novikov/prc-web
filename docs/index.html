@@ -1,3 +1,4 @@
+<!-- mixin: tableResponsive - renders the comparison table-->
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
@@ -548,13 +549,12 @@
                   <p class="supported__desc--remark-text">*контроллер снят с производства</p>
                   <div class="js-toggle-btn toggle-section-btn" data-open="Развернуть таблицу" data-close="Свернуть таблицу">Развернуть таблицу</div>
                 </div>
-              </div><!-- mixin: tableResponsive - renders the comparison table-->
-              <!-- render table with default widths (you can pass widths when including the mixin)-->
+              </div>
               <table class="table">
                 <colgroup>
                   <col style="width: 325px" />
-                  <col />
-                  <col />
+                  <col style="width: 261px" />
+                  <col style="width: 261px" />
                 </colgroup>
                 <thead>
                   <tr class="table-header">
@@ -569,12 +569,12 @@
                   </tr>
                   <tr class="table-row first-section">
                     <td data-label="Функционал">Конфигурация оборудования</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WB «Базовый пакет»</td>
                   </tr>
                   <tr class="table-row">
                     <td data-label="Функционал">Управление устройствами</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web"></td>
                   </tr>
                   <tr class="table-row last-visible">
@@ -584,32 +584,32 @@
                   </tr>
                   <tr class="collapsible-row sn01">
                     <td data-label="Функционал">Выдача карт доступа</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WB «Базовый пакет»</td>
                   </tr>
                   <tr class="collapsible-row sn01">
                     <td data-label="Функционал">Добавление подразделений и должностей</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WB «Базовый пакет»</td>
                   </tr>
                   <tr class="collapsible-row sn01">
                     <td data-label="Функционал">Создание операторов</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WB «Базовый пакет»</td>
                   </tr>
                   <tr class="collapsible-row sn01">
                     <td data-label="Функционал">Управление уровнями доступа</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WB «Базовый пакет»</td>
                   </tr>
                   <tr class="collapsible-row sn01">
                     <td data-label="Функционал">Журнал событий</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WB «Базовый пакет»</td>
                   </tr>
                   <tr class="collapsible-row sn01">
                     <td data-label="Функционал">Резервное копирование данных</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WS «Стандартный пакет»</td>
                   </tr>
                   <tr class="section-header">
@@ -617,32 +617,32 @@
                   </tr>
                   <tr class="table-row">
                     <td data-label="Функционал">Реакция на события</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WB «Базовый пакет»</td>
                   </tr>
                   <tr class="table-row">
                     <td data-label="Функционал">Планировщик заданий</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WB «Базовый пакет»</td>
                   </tr>
                   <tr class="table-row last-visible">
                     <td data-label="Функционал">Добавление видеокамер</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WB «Базовый пакет»</td>
                   </tr>
                   <tr class="collapsible-row sm01">
                     <td data-label="Функционал">Настройка уведомлений</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WB «Базовый пакет»</td>
                   </tr>
                   <tr class="collapsible-row sm01">
                     <td data-label="Функционал">Интеграция с внешними системами</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WS «Стандартный пакет»</td>
                   </tr>
                   <tr class="collapsible-row sm01">
                     <td data-label="Функционал">Создание отчетов</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WB «Базовый пакет»</td>
                   </tr>
                   <tr class="section-header">
@@ -650,37 +650,36 @@
                   </tr>
                   <tr class="table-row">
                     <td data-label="Функционал">Добавление фотографий сотрудников</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WB «Базовый пакет»</td>
                   </tr>
                   <tr class="table-row">
                     <td data-label="Функционал">Создание дополнительных полей</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WS «Стандартный пакет»</td>
                   </tr>
                   <tr class="table-row last-visible">
                     <td data-label="Функционал">Рассылка по СМС</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WB «Базовый пакет»</td>
                   </tr>
                   <tr class="collapsible-row sm02">
                     <td data-label="Функционал">Импорт/экспорт данных сотрудников</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WB «Базовый пакет»</td>
                   </tr>
                   <tr class="collapsible-row sm02">
                     <td data-label="Функционал">Учет рабочего времени</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WS «Стандартный пакет»</td>
                   </tr>
                   <tr class="collapsible-row sm02">
                     <td data-label="Функционал">Управление временными пропусками</td>
-                    <td class="checkmark" data-label="PERCo-S-20">✓</td>
+                    <td class="checkmark" data-label="PERCo-S-20"> <span class="perco-icon-check"></span></td>
                     <td data-label="PERCo-Web">WB «Базовый пакет» </td>
                   </tr>
                 </tbody>
               </table>
-              <div class="btn-container"><button class="toggle-btn" id="expanded"><span class="btn-text">Свернуть таблицу</span><span class="arrow">▲</span></button></div>
             </div>
           </section><!-- end Software block-->
           <!-- -->
