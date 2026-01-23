@@ -1,37 +1,45 @@
-.table-header {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  background: #f8f8f8;
-  font-weight: 600;
-  color: #333;
-  border: 1px solid #ddd;
-}
+$color_1: #333;
+$color_2: #4CAF50;
+$color_3: #0066cc;
+$color_4: white;
 
-.table-header>div {
-  padding: 16px;
-  border-right: 1px solid #ddd;
-}
+/* Responsive: stacked rows with labels */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
 
-.table-header>div:last-child {
-  border-right: none;
-}
+  thead {
+    th {
+      background: #f8f8f8;
+      font-weight: 600;
+      color: $color_1;
+      border: 1px solid #ddd;
+      padding: 16px;
+      text-align: left;
+    }
+  }
 
-.table-row {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  border: 1px solid #ddd;
-  border-top: none;
-}
+  tbody {
+    tr {
+      border: 1px solid #ddd;
+      border-top: none;
 
-.table-row>div {
-  padding: 16px;
-  border-right: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-}
+      td {
+        padding: 16px;
+        border-right: 1px solid #ddd;
+        vertical-align: middle;
 
-.table-row>div:last-child {
-  border-right: none;
+        &:last-child {
+          border-right: none;
+        }
+
+        &:first-child {
+          max-width: 325px;
+        }
+      }
+    }
+  }
 }
 
 .table-row.last-visible {
@@ -39,12 +47,14 @@
 }
 
 .section-header {
-  background: #f0f0f0;
-  font-weight: 600;
-  color: #333;
-  padding: 16px;
-  border: 1px solid #ddd;
-  border-top: none;
+  td {
+    background: #f0f0f0;
+    font-weight: 600;
+    color: $color_1;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-top: none;
+  }
 }
 
 .table-row.first-section {
@@ -52,13 +62,9 @@
 }
 
 .checkmark {
-  justify-content: center;
-  color: #4CAF50;
+  text-align: center;
+  color: $color_2;
   font-size: 20px;
-}
-
-.collapsible-row {
-  display: grid;
 }
 
 .collapsible-row.hidden {
@@ -72,26 +78,28 @@
   padding: 12px 24px;
   background: white;
   border: 2px solid #0066cc;
-  color: #0066cc;
+  color: $color_3;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   border-radius: 6px;
   transition: all 0.3s ease;
+
+  &:hover {
+    background: #0066cc;
+    color: $color_4;
+  }
+
+  .arrow {
+    transition: transform 0.3s ease;
+    font-size: 14px;
+  }
 }
 
-.toggle-btn:hover {
-  background: #0066cc;
-  color: white;
-}
-
-.toggle-btn .arrow {
-  transition: transform 0.3s ease;
-  font-size: 14px;
-}
-
-.toggle-btn.expanded .arrow {
-  transform: rotate(180deg);
+.toggle-btn.expanded {
+  .arrow {
+    transform: rotate(180deg);
+  }
 }
 
 .btn-container {
