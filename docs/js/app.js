@@ -1,20 +1,20 @@
 $(document).ready(function () {
 
   let isExpanded = true;
-  const rows = document.querySelectorAll('.collapsible-row');
+  const rows = document.querySelectorAll('.compare-table__row--collapsible');
   const btn = document.querySelector('.toggle-btn');
   const btnText = document.querySelector('.btn-text');
 
   function toggleTable() {
       isExpanded = !isExpanded;
 
-      rows.forEach(row => {
+        rows.forEach(row => {
           if (isExpanded) {
-              row.classList.remove('hidden');
+            row.classList.remove('is-hidden');
           } else {
-              row.classList.add('hidden');
+            row.classList.add('is-hidden');
           }
-      });
+        });
 
       if (isExpanded) {
           btnText.textContent = 'Свернуть таблицу';
