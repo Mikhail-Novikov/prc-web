@@ -1,110 +1,66 @@
-.table {
+.compare-table {
   width: 100%;
   border-collapse: collapse;
   font-size: 15px;
+  text-align: center;
 }
 
-.table thead th {
-  background: #f8f8f8;
+.compare-table__head > .compare-table__th {
   font-weight: 600;
-  color: #333;
-  border: 1px solid #ddd;
+  border: 1px solid #CBCBCB;
   padding: 16px;
+}
+
+.compare-table__head > .compare-table__th:first-child {
   text-align: left;
 }
 
-.table tbody tr {
-  border: 1px solid #ddd;
+.compare-table tbody tr {
+  border: 1px solid #CBCBCB;
   border-top: none;
 }
 
-.table tbody tr td {
+.compare-table tbody tr td {
   padding: 16px;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #CBCBCB;
   vertical-align: middle;
 }
 
-.table tbody tr td:last-child {
+.compare-table tbody tr td:last-child {
   border-right: none;
 }
 
-.table tbody tr td:first-child {
-  max-width: 325px;
+.compare-table tbody tr td:first-child {
+  text-align: left;
 }
 
-.table tbody tr td .perco-icon-check {
+.compare-table__row--last-visible {
+  border-bottom: 2px solid #CBCBCB !important;
+}
+
+.compare-table__section td {
+  background-color: #F5F5F5;
+  font-weight: 600;
+  padding: 16px;
+  border: 1px solid #CBCBCB;
+  border-top: none;
+}
+
+.compare-table__row--first-section {
+  border-top: 1px solid #CBCBCB;
+}
+
+.compare-table__cell--check {
   background-image: url("/img/icons/check.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 24px 24px;
-  display: inline-block;
   width: 24px;
   height: 24px;
 }
 
-.table-row.last-visible {
-  border-bottom: 2px solid #ddd;
-}
-
-.section-header td {
-  background: #f0f0f0;
-  font-weight: 600;
-  color: #333;
-  padding: 16px;
-  border: 1px solid #ddd;
-  border-top: none;
-}
-
-.table-row.first-section {
-  border-top: 1px solid #ddd;
-}
-
-.checkmark {
-  text-align: center;
-  color: #4CAF50;
-  font-size: 20px;
-}
-
-.collapsible-row.hidden {
+.compare-table__row--collapsible.is-hidden {
   display: none;
-}
-
-.toggle-btn {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
-  background: white;
-  border: 2px solid #0066cc;
-  color: #0066cc;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-}
-
-.toggle-btn:hover {
-  background: #0066cc;
-  color: white;
-}
-
-.toggle-btn .arrow {
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  font-size: 14px;
-}
-
-.toggle-btn.expanded .arrow {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.btn-container {
-  margin-top: 20px;
 }
 
 /*# sourceMappingURL=table-responsive.css.map */

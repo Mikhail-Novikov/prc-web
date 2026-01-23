@@ -2,6 +2,8 @@ include lib/variables
 include lib/mixins
 include blocks/page
 include blocks/tables/table-responsive
+include data/compare-device
+include data/supported-device
 
 +page(pagesList.index.title)
   include ./blocks/header/_
@@ -53,17 +55,15 @@ include blocks/tables/table-responsive
         div.container
           h2 Поддерживаемое оборудование
           include ./blocks/supported/_
-          +tableResponsive(['325px', '261px', '261px'])
+          +tableResponsive(['325px', '261px', '261px'], supportedDevice)
       // end Software block
-      // 
 
 
-      // 
       // start System capabilities
       section.comparision#anchor-5
         div.container
           h2 Сравнение модулей систем
-          include ./blocks/comparision/_
+          +tableResponsive(['325px', '261px', '261px'], compareDevice)
       // end System capabilities
       //
 
