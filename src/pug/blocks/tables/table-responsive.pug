@@ -52,40 +52,38 @@ mixin tableResponsive(colWidths = ['325px', '261px', ''], data)
                   span.text-bold= row.feature.text || row.feature.label || row.feature.value || ''
                 else
                   = row.feature
-              td.compare-table__cell(data-label="PERCo-S-20")
-                if row.percoS && row.percoS.check
-                  span.compare-table__cell--check
-                else if row.percoS && Array.isArray(row.percoS)
+              td.compare-table__cell(class={ 'compare-table__cell--check': row.percoS && row.percoS.check }, data-label="PERCo-S-20")
+                if row.percoS && Array.isArray(row.percoS)
                   each line in row.percoS
                     if typeof line === 'object' && line.isBoldText
                       span.text-bold= line.text || line.label || line.value || ''
                     else
                       | #{line}
-                    br
-                else if row.percoS
+                    br 
+                else if row.percoS && !row.percoS.check
                   |&nbsp;
-              td.compare-table__cell(data-label="PERCo-Web")
-                if row.percoWeb && row.percoWeb.check
-                  span.compare-table__cell--check
-                else if row.percoWeb && Array.isArray(row.percoWeb)
-                  each line, idx in row.percoWeb
-                    if typeof line === 'object' && line.isBoldText
-                      span.text-bold= line.text || line.label || line.value || ''
-                    else
-                      | #{line}
-                    if idx != row.percoWeb.length-1
-                      br
-                else if row.percoWeb
+              td.compare-table__cell(class={ 'compare-table__cell--check': row.percoWeb && row.percoWeb.check }, data-label="PERCo-Web")
+                if row.percoWeb && Array.isArray(row.percoWeb)
+                  div
+                    each line, idx in row.percoWeb
+                      if typeof line === 'object' && line.isBoldText
+                        span.text-bold= line.text || line.label || line.value || ''
+                      else
+                        | #{line}
+                      if idx != row.percoWeb.length-1
+                        br
+                else if row.percoWeb && !row.percoWeb.check
                   | #{row.percoWeb}
               if hasNotes
                 td.compare-table__cell(data-label="Поддерживаемые аналоги")
-                  if row.notes && Array.isArray(row.notes)
-                    each n, ni in row.notes
-                      if typeof n === 'object' && n.isBoldText
-                        span.text-bold= n.text || n.label || n.value || ''
-                      else
-                        | #{n}
-                      if ni != row.notes.length-1
-                        br
-                  else if row.notes
-                    | #{row.notes}
+                  div
+                    if row.notes && Array.isArray(row.notes)
+                      each n, ni in row.notes
+                        if typeof n === 'object' && n.isBoldText
+                          span.text-bold= n.text || n.label || n.value || ''
+                        else
+                          | #{n}
+                        if ni != row.notes.length-1
+                          br
+                    else if row.notes
+                      | #{row.notes}

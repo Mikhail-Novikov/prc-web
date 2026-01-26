@@ -63,10 +63,6 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 24px 24px;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 24px;
-  height: 24px;
 }
 
 .compare-table__row--collapsible.is-hidden {
