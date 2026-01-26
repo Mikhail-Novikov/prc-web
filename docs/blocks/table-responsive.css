@@ -9,11 +9,14 @@
   font-weight: 600;
   border: 1px solid #CBCBCB;
   padding: 16px;
-  background-color: #F5F5F5;
 }
 
 .compare-table__head > .compare-table__th:first-child {
   text-align: left;
+}
+
+.compare-table__head {
+  background-color: #F5F5F5;
 }
 
 .compare-table tbody tr {

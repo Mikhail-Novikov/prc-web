@@ -10,78 +10,8 @@
             padding-top: 8px;
             max-width: 890px;
         }
-
-        &__table:last-child {
-            margin-bottom: 20px;
-        }
-
-        &__table:first-child {
-            border-top-width: 1px;
-        }
-
-        &__table {
-            display: flex;
-            flex-direction: column;
-            max-width: 1025px;
-            border-color: $stroke-primary;
-            border-width: 0;
-            border-style: solid;
-
-            %common-table-cell-styles {
-                flex: 1 1 0;
-                align-content: center;
-                padding: 12px 8px;
-                font-size: 14px;
-                color: $primary;
-                border-color: $stroke-primary;
-                border-width: 0 1px 0 0;
-                border-style: solid;
-            }
-
-            &-head,
-            &-body {
-                display: flex;
-                flex-direction: column;
-
-                .comparision__table-row {
-                    display: flex;
-                    min-height: 44px;
-
-                    &:not(.hidden) {
-                        border-bottom: 1px solid $stroke-primary;
-                    }
-
-                    .comparision__table-cell {
-                        @extend %common-table-cell-styles;
-
-                        text-align: center;
-
-                        &:first-child {
-                            padding-left: 16px;
-                            text-align: left;
-                            min-width: 335px;
-                            border-left-width: 1px;
-                        }
-                    }
-                }
-            }
-
-            &-head {
-                .comparision__table-row {
-                    .comparision__table-cell {
-                        font-weight: 600;
-                        border-width: 0 1px 1px 0;
-                    }
-                }
-
-                .comparision__table-th {
-                    background-color: $bg-gray;
-                }
-            }
-
-            &-cell--check {
-                margin-left: 16px;
-            }
+        .compare-table__head {
+            background-color: transparent
         }
     }
 
