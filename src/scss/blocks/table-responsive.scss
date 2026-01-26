@@ -28,11 +28,15 @@
       border: 1px solid $stroke-primary;
       border-top: none;
 
-      td {
+      .compare-table__cell {
         padding: 16px;
         border-right: 1px solid $stroke-primary;
         vertical-align: middle;
 
+        .text-bold {
+          font-weight: 600;
+        }
+ 
         &:last-child {
           border-right: none;
         }
@@ -49,7 +53,7 @@
   }
 
   &__section {
-    td {
+    .compare-table__cell {
       background-color: $bg-gray;
       font-weight: 600;
       padding: 16px;

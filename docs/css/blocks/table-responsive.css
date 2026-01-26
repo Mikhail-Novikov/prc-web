@@ -24,17 +24,21 @@
   border-top: none;
 }
 
-.compare-table tbody tr td {
+.compare-table tbody tr .compare-table__cell {
   padding: 16px;
   border-right: 1px solid #CBCBCB;
   vertical-align: middle;
 }
 
-.compare-table tbody tr td:last-child {
+.compare-table tbody tr .compare-table__cell .text-bold {
+  font-weight: 600;
+}
+
+.compare-table tbody tr .compare-table__cell:last-child {
   border-right: none;
 }
 
-.compare-table tbody tr td:first-child {
+.compare-table tbody tr .compare-table__cell:first-child {
   text-align: left;
 }
 
@@ -42,7 +46,7 @@
   border-bottom: 2px solid #CBCBCB !important;
 }
 
-.compare-table__section td {
+.compare-table__section .compare-table__cell {
   background-color: #F5F5F5;
   font-weight: 600;
   padding: 16px;
