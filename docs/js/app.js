@@ -1,32 +1,39 @@
 $(document).ready(function () {
 
-  let isExpanded = true;
-  const rows = document.querySelectorAll('.compare-table__row--collapsible, .collapsible-row');
-  const btn = document.querySelector('.js-toggle-btn');
-  const btnText = document.querySelector('.btn-text');
+  // Attach toggle handlers to each toggle button; scope rows to the same table/container
+  const toggleButtons = document.querySelectorAll('.js-toggle-btn');
 
-  function toggleTable() {
-      console.log('Toggle table');
+  toggleButtons.forEach(button => {
+    const btnText = button.querySelector('.btn-text');
+    const container = button.closest('table') || button.closest('.compare-table') || document;
+    const rows = container.querySelectorAll('.compare-table__row--collapsible, .collapsible-row');
+
+    // By default, keep rows closed
+    let isExpanded = false;
+    rows.forEach(row => row.classList.add('is-hidden'));
+    if (btnText) {
+      btnText.textContent = 'Развернуть таблицу';
+    }
+    button.classList.remove('expanded');
+
+    function toggleTable() {
       isExpanded = !isExpanded;
+      rows.forEach(row => {
+        if (isExpanded) {
+          row.classList.remove('is-hidden');
+        } else {
+          row.classList.add('is-hidden');
+        }
+      });
 
-        rows.forEach(row => {
-          if (isExpanded) {
-            row.classList.remove('is-hidden');
-          } else {
-            row.classList.add('is-hidden');
-          }
-        });
-
-      if (isExpanded) {
-          btnText.textContent = 'Свернуть таблицу';
-          btn.classList.add('expanded');
-      } else {
-          btnText.textContent = 'Развернуть таблицу';
-          btn.classList.remove('expanded');
+      if (btnText) {
+        btnText.textContent = isExpanded ? 'Свернуть таблицу' : 'Развернуть таблицу';
       }
-  }
+      button.classList.toggle('expanded', isExpanded);
+    }
 
-  btn.addEventListener('click', toggleTable);
+    button.addEventListener('click', toggleTable);
+  });
 
   // Скрипт раскрытия элементов по кнопке(to do - анимация?)
   if (!$(".toggle-section").length == 0 && $(".toggle-section").length > 0) {

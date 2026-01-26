@@ -4,6 +4,7 @@ include blocks/page
 include blocks/tables/table-responsive
 include data/compare-device
 include data/supported-device
+include data/features-device
 
 +page(pagesList.index.title)
   include ./blocks/header/_
@@ -62,7 +63,7 @@ include data/supported-device
       section.comparision#anchor-5
         div.container
           h2 Сравнение модулей систем
-          +tableResponsive(['325px', '261px', '261px'], compareDevice)
+          include ./blocks/comparision/_
       // end System capabilities
       //
 

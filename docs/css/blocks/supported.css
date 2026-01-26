@@ -1,10 +1,10 @@
 .skd-web .supported {
   padding: 80px 0 100px;
-  background: #F5F5F5;
+  background: #f9f9f9;
 }
 
 .skd-web .supported__wrapper {
-  max-width: 1025px;
+  max-width: 890px;
 }
 
 .skd-web .supported__desc {

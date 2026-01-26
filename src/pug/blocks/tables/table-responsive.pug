@@ -28,15 +28,17 @@ mixin tableResponsive(colWidths = ['325px', '261px', ''], data)
     thead
       tr.compare-table__head
         th.compare-table__th Функционал
-        th.compare-table__th PERCo-S-20
-        th.compare-table__th PERCo-Web
+        th.compare-table__th 
+          span.text-nowrap PERCo-S-20
+        th.compare-table__th 
+          span.text-nowrap PERCo-Web
         if hasNotes
           th.compare-table__th Поддерживаемые аналоги
     tbody
       each section in tableData
         if section.section
           tr.compare-table__section
-            td(colspan= hasNotes ? 4 : 3)= section.section
+            td.compare-table__cell(colspan= hasNotes ? 4 : 3)= section.section
         if section.rows
           each row in section.rows
             -
@@ -45,8 +47,8 @@ mixin tableResponsive(colWidths = ['325px', '261px', ''], data)
               if (row.collapsible) { rowClasses.push('compare-table__row--collapsible'); }
 
             tr(class=rowClasses.join(' '))
-              td(data-label="Функционал")= row.feature
-              td(data-label="PERCo-S-20")
+              td.compare-table__cell(data-label="Функционал")= row.feature
+              td.compare-table__cell(data-label="PERCo-S-20")
                 if row.percoS && row.percoS.check
                   span.compare-table__cell--check
                 else if row.percoS && Array.isArray(row.percoS)
@@ -55,7 +57,7 @@ mixin tableResponsive(colWidths = ['325px', '261px', ''], data)
                     br
                 else if row.percoS
                   |&nbsp;
-              td(data-label="PERCo-Web")
+              td.compare-table__cell(data-label="PERCo-Web")
                 if row.percoWeb && row.percoWeb.check
                   span.compare-table__cell--check
                 else if row.percoWeb && Array.isArray(row.percoWeb)
@@ -66,7 +68,7 @@ mixin tableResponsive(colWidths = ['325px', '261px', ''], data)
                 else if row.percoWeb
                   | #{row.percoWeb}
               if hasNotes
-                td(data-label="Поддерживаемые аналоги")
+                td.compare-table__cell(data-label="Поддерживаемые аналоги")
                   if row.notes && Array.isArray(row.notes)
                     each n, ni in row.notes
                       | #{n}

@@ -9,6 +9,7 @@
   font-weight: 600;
   border: 1px solid #CBCBCB;
   padding: 16px;
+  background-color: #F5F5F5;
 }
 
 .compare-table__head > .compare-table__th:first-child {
@@ -65,76 +66,52 @@
   display: none;
 }
 
-/* Responsive behavior for compare-table */
 @media (max-width: 720px) {
-  .compare-table {
-    text-align: left;
-    /* feature title */
-    /* default: show two product cells side-by-side for readability */
-    /* If table has an extra "analogs" column, stack product cells full-width */
+  .compare-table,
+  .compare-table thead,
+  .compare-table tbody,
+  .compare-table th,
+  .compare-table td,
+  .compare-table tr {
+    display: block;
   }
-  .compare-table thead {
+  .compare-table thead, .compare-table colgroup {
     display: none;
   }
-  .compare-table tbody tr {
-    display: block;
-    margin-bottom: 12px;
+  .compare-table tbody .compare-table__row {
     border: 1px solid #CBCBCB;
-    padding: 12px;
   }
-  .compare-table tbody tr td {
-    display: block;
-    padding: 8px 0;
+  .compare-table tbody tr .compare-table__cell {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
     border-right: none;
-    border-bottom: none;
+    border-top: 1px solid #CBCBCB;
+    text-align: left;
   }
-  .compare-table tbody tr td:first-child {
-    font-weight: 600;
-    padding-bottom: 10px;
-  }
-  .compare-table tbody tr td:nth-child(2),
-  .compare-table tbody tr td:nth-child(3) {
-    display: inline-block;
-    width: 49%;
-    box-sizing: border-box;
-    padding: 10px;
-    border: 1px solid #eee;
-    border-radius: 6px;
-    background: #fff;
-    margin-right: 2%;
-  }
-  .compare-table tbody tr td:nth-child(3) {
-    margin-right: 0;
-  }
-  .compare-table tbody tr td:nth-child(2):before,
-  .compare-table tbody tr td:nth-child(3):before {
+  .compare-table tbody tr .compare-table__cell:before {
     content: attr(data-label);
-    display: block;
     font-weight: 600;
-    color: #666;
-    margin-bottom: 6px;
+    text-align: left;
   }
-  .compare-table.compare-table--with-analogs tbody tr td:nth-child(2),
-  .compare-table.compare-table--with-analogs tbody tr td:nth-child(3),
-  .compare-table.compare-table--with-analogs tbody tr td:nth-child(4), .compare-table.compare-table--with-analogs tbody tbody tr td:nth-child(2),
-  .compare-table.compare-table--with-analogs tbody tbody tr td:nth-child(3),
-  .compare-table.compare-table--with-analogs tbody tbody tr td:nth-child(4) {
+  .compare-table tbody tr .compare-table__cell:not(:first-child):before {
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%;
+  }
+  .compare-table tbody tr .compare-table__cell:first-child::before {
+    display: none;
+  }
+  .compare-table__section {
+    padding: 0 !important;
+  }
+  .compare-table__section td {
     display: block;
-    width: 100%;
-    margin-right: 0;
-    padding: 8px 0;
     border: none;
+    font-size: 18px;
   }
-  .compare-table.compare-table--with-analogs tbody tr td:nth-child(2):before,
-  .compare-table.compare-table--with-analogs tbody tr td:nth-child(3):before,
-  .compare-table.compare-table--with-analogs tbody tr td:nth-child(4):before, .compare-table.compare-table--with-analogs tbody tbody tr td:nth-child(2):before,
-  .compare-table.compare-table--with-analogs tbody tbody tr td:nth-child(3):before,
-  .compare-table.compare-table--with-analogs tbody tbody tr td:nth-child(4):before {
-    content: attr(data-label);
-    display: block;
-    font-weight: 600;
-    color: #666;
-    margin-bottom: 6px;
+  .compare-table__section:not(:first-child) {
+    margin-top: 24px;
   }
 }
 
