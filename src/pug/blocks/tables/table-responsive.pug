@@ -47,7 +47,11 @@ mixin tableResponsive(colWidths = ['325px', '261px', ''], data)
               if (row.collapsible) { rowClasses.push('compare-table__row--collapsible'); }
 
             tr(class=rowClasses.join(' '))
-              td.compare-table__cell(data-label="Функционал")= row.feature
+              td.compare-table__cell(data-label="Функционал")
+                if typeof row.feature === 'object' && row.feature.isBoldText
+                  span.text-bold= row.feature.text || row.feature.label || row.feature.value || ''
+                else
+                  = row.feature
               td.compare-table__cell(data-label="PERCo-S-20")
                 if row.percoS && row.percoS.check
                   span.compare-table__cell--check
