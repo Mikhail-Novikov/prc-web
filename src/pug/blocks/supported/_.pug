@@ -7,67 +7,7 @@ div.supported__wrapper
             | Скачать программу
         
     div.comparision__wrapper.toggle-section
-        .comparision__table-scroll
-            .comparision__table
-                .comparision__table-head
-                    .comparision__table-row
-                        .comparision__table-cell.comparision__table-th 
-                            |Устройства
-                        .comparision__table-cell.comparision__table-th 
-                            |PERCo-S-20
-                        .comparision__table-cell.comparision__table-th 
-                            |PERCo-Web
-                        .comparision__table-cell.comparision__table-th 
-                            |Поддерживаемые аналоги
-
-                .comparision__table-body
-                    .comparision__table-row
-                        .comparision__table-cell Универсальные контроллеры CT/L04*, CT/L04.2*, CT/L14*, CT/L14.1
-                        .comparision__table-cell
-                            span.perco-icon-check
-                        .comparision__table-cell
-                            span.perco-icon-check
-                        .comparision__table-cell
-                    .comparision__table-row
-                        .comparision__table-cell Контроллеры замка CL05*, CL05.2*, CL15.X
-                        .comparision__table-cell
-                            span.perco-icon-check
-                        .comparision__table-cell
-                            span.perco-icon-check
-                        .comparision__table-cell
-                    .comparision__table-row
-                        .comparision__table-cell Контроллеры регистрации CR01*, CR01.2*,CR02.9, CR11*, CR11.1
-                        .comparision__table-cell
-                            span.perco-icon-check
-                        .comparision__table-cell
-                            span.perco-icon-check
-                        .comparision__table-cell
-                    .comparision__table-row
-                        .comparision__table-cell Контроллеры турникета CT01*, CT02*
-                        .comparision__table-cell
-                            span.perco-icon-check
-                        .comparision__table-cell
-                            span.perco-icon-check
-                        .comparision__table-cell Универсальный контроллер CT/L14.1
-                    .comparision__table-row
-                        .comparision__table-cell Контроллеры замка CL01*, CL02*, CL03*
-                        .comparision__table-cell
-                            span.perco-icon-check
-                        .comparision__table-cell
-                            span.perco-icon-check
-                        .comparision__table-cell Контроллеры замка CL15.X
-                    .comparision__table-row.comparision__table-item.toggle-section-item
-                        .comparision__table-cell Контроллеры
-                        .comparision__table-cell
-                            span.perco-icon-check
-                        .comparision__table-cell
-                        .comparision__table-cell
-                    .comparision__table-row.comparision__table-item.toggle-section-item
-                        .comparision__table-cell Контроллеры
-                        .comparision__table-cell
-                            span.perco-icon-check
-                        .comparision__table-cell
-                        .comparision__table-cell
+        +tableResponsive(['325px', '261px', '261px', '261px'], supportedDevice)
 
         p.supported__desc--remark-text *контроллер снят с&nbsp;производства
 

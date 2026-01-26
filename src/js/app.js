@@ -2,10 +2,11 @@ $(document).ready(function () {
 
   let isExpanded = true;
   const rows = document.querySelectorAll('.compare-table__row--collapsible, .collapsible-row');
-  const btn = document.querySelector('.toggle-btn');
+  const btn = document.querySelector('.js-toggle-btn');
   const btnText = document.querySelector('.btn-text');
 
   function toggleTable() {
+      console.log('Toggle table');
       isExpanded = !isExpanded;
 
         rows.forEach(row => {
@@ -25,9 +26,7 @@ $(document).ready(function () {
       }
   }
 
-  $("#expanded").click(function() {
-      toggleTable();
-  });
+  btn.addEventListener('click', toggleTable);
 
   // Скрипт раскрытия элементов по кнопке(to do - анимация?)
   if (!$(".toggle-section").length == 0 && $(".toggle-section").length > 0) {

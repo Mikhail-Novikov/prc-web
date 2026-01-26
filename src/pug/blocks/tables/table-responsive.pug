@@ -54,7 +54,7 @@ mixin tableResponsive(colWidths = ['325px', '261px', ''], data)
                     | #{line}
                     br
                 else if row.percoS
-                  | #{row.percoS}
+                  |&nbsp;
               td(data-label="PERCo-Web")
                 if row.percoWeb && row.percoWeb.check
                   span.compare-table__cell--check

@@ -51,10 +51,12 @@
 }
 
 .compare-table__cell--check {
-  background-image: url("/img/icons/check.svg");
+  background-image: url("/images/icons/check.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 24px 24px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   width: 24px;
   height: 24px;
 }

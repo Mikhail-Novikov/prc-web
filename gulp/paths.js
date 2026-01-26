@@ -22,12 +22,12 @@ export default {
     watch: `${src}/**/*.js`
   },
   img: {
-    src: `${src}/img/**/*.*`,
-    dest: `${dest}/img`,
-    srcSVGSymbolsIcons: `${src}/img/icons/**/*.svg`,
+    src: `${src}/images/**/*.*`,
+    dest: `${dest}/images`,
+    srcSVGSymbolsIcons: `${src}/images/icons/**/*.svg`,
     srcSVGSymbolsCSS: `${src}/vendors/svg-symbols/template-css`,
     destSVGSymbolsCSS: `${src}/vendors/svg-symbols`,
-    watch: `${src}/img/**/*.*`
+    watch: `${src}/images/**/*.*`
   },
   copy: {
     src: [`${src}/favicon/**/*.*`, `${src}/fonts/**/*.*`, `${src}/vendors/**/*.*`, `${src}/data/**/*.*`],
