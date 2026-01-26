@@ -100,8 +100,11 @@
       display: flex;
       align-items: center;
       border-right: none;
-      border-top: 1px solid $stroke-primary;
       text-align: left;
+    }
+
+    & tbody tr .compare-table__cell:not(:first-child) {
+      border-top: 1px solid $stroke-primary;
     }
 
     & tbody tr .compare-table__cell:before {

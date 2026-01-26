@@ -90,8 +90,10 @@
     -ms-flex-align: center;
     align-items: center;
     border-right: none;
-    border-top: 1px solid #CBCBCB;
     text-align: left;
+  }
+  .compare-table tbody tr .compare-table__cell:not(:first-child) {
+    border-top: 1px solid #CBCBCB;
   }
   .compare-table tbody tr .compare-table__cell:before {
     content: attr(data-label);
