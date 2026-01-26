@@ -10,7 +10,6 @@
   &__head {
     &>.compare-table__th {
       font-weight: 600;
-      border: 1px solid $stroke-primary;
       padding: 16px;
 
       &:first-child {
@@ -21,22 +20,27 @@
 
   &__head {
     background-color: $bg-gray;
+    border-style: solid;
+    border-color: $stroke-primary;
+    border-width: 1px 1px 0 1px;
+
+    .compare-table__th {
+      border-left: 1px solid $stroke-primary;
+    }
   }
 
   tbody {
     tr {
       border: 1px solid $stroke-primary;
-      border-top: none;
 
       .compare-table__cell {
         padding: 16px;
-        border-right: 1px solid $stroke-primary;
         vertical-align: middle;
 
         .text-bold {
           font-weight: 600;
         }
- 
+
         &:last-child {
           border-right: none;
         }
@@ -57,13 +61,7 @@
       background-color: $bg-gray;
       font-weight: 600;
       padding: 16px;
-      border: 1px solid $stroke-primary;
-      border-top: none;
     }
-  }
-
-  &__row--first-section {
-    border-top: 1px solid $stroke-primary;
   }
 
   &__cell--check {
@@ -88,12 +86,9 @@
       display: block;
     }
 
-    & thead, & colgroup {
+    & thead,
+    & colgroup {
       display: none;
-    }
-
-    & tbody .compare-table__row {
-      border: 1px solid $stroke-primary;
     }
 
     & tbody tr .compare-table__cell {
@@ -133,6 +128,13 @@
 
     &__section:not(:first-child) {
       margin-top: 24px;
+    }
+  }
+
+
+  @media (min-width: 720px) {
+    .compare-table__cell {
+      border-right: 1px solid $stroke-primary;
     }
   }
 }

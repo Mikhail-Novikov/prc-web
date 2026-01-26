@@ -7,7 +7,6 @@
 
 .compare-table__head > .compare-table__th {
   font-weight: 600;
-  border: 1px solid #CBCBCB;
   padding: 16px;
 }
 
@@ -17,16 +16,21 @@
 
 .compare-table__head {
   background-color: #F5F5F5;
+  border-style: solid;
+  border-color: #CBCBCB;
+  border-width: 1px 1px 0 1px;
+}
+
+.compare-table__head .compare-table__th {
+  border-left: 1px solid #CBCBCB;
 }
 
 .compare-table tbody tr {
   border: 1px solid #CBCBCB;
-  border-top: none;
 }
 
 .compare-table tbody tr .compare-table__cell {
   padding: 16px;
-  border-right: 1px solid #CBCBCB;
   vertical-align: middle;
 }
 
@@ -50,12 +54,6 @@
   background-color: #F5F5F5;
   font-weight: 600;
   padding: 16px;
-  border: 1px solid #CBCBCB;
-  border-top: none;
-}
-
-.compare-table__row--first-section {
-  border-top: 1px solid #CBCBCB;
 }
 
 .compare-table__cell--check {
@@ -78,11 +76,9 @@
   .compare-table tr {
     display: block;
   }
-  .compare-table thead, .compare-table colgroup {
+  .compare-table thead,
+  .compare-table colgroup {
     display: none;
-  }
-  .compare-table tbody .compare-table__row {
-    border: 1px solid #CBCBCB;
   }
   .compare-table tbody tr .compare-table__cell {
     display: -ms-flexbox;
@@ -117,6 +113,12 @@
   }
   .compare-table__section:not(:first-child) {
     margin-top: 24px;
+  }
+}
+
+@media (min-width: 720px) {
+  .compare-table .compare-table__cell {
+    border-right: 1px solid #CBCBCB;
   }
 }
 
