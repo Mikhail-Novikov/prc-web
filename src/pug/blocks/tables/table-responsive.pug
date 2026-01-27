@@ -37,7 +37,10 @@ mixin tableResponsive(colWidths = ['325px', '261px', ''], data)
     tbody
       each section in tableData
         if section.section
-          tr.compare-table__section
+          -
+            var sectionClasses = ['compare-table__section'];
+            if (section.collapsible) { sectionClasses.push('compare-table__section--collapsible'); }
+          tr(class=sectionClasses.join(' '))
             td.compare-table__cell(colspan= hasNotes ? 4 : 3)= section.section
         if section.rows
           each row in section.rows

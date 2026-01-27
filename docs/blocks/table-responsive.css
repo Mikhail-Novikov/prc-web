@@ -56,6 +56,12 @@
   padding: 16px;
 }
 
+.compare-table__section--collapsible.is-hidden {
+  opacity: 0;
+  max-height: 0;
+  visibility: hidden;
+}
+
 .compare-table__cell--check {
   background-image: url("../../images/icons/check.svg");
   background-repeat: no-repeat;
@@ -63,7 +69,7 @@
   background-size: 24px 24px;
 }
 
-.compare-table__row--collapsible.is-hidden {
+.compare-table__row--collapsible.is-hidden, .compare-table__section--collapsible.is-hidden {
   display: none;
 }
 

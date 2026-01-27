@@ -62,6 +62,12 @@
       font-weight: 600;
       padding: 16px;
     }
+
+    &--collapsible.is-hidden {
+      opacity: 0;
+      max-height: 0;
+      visibility: hidden;
+    }
   }
 
   &__cell--check {
@@ -71,7 +77,8 @@
     background-size: 24px 24px;
   }
 
-  &__row--collapsible.is-hidden {
+  &__row--collapsible.is-hidden, 
+  &__section--collapsible.is-hidden {
     display: none;
   }
 

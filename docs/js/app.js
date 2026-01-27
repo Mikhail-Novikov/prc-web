@@ -1,16 +1,18 @@
 $(document).ready(function () {
 
-  // Attach toggle handlers to each toggle button; scope rows to the same table/container
   const toggleButtons = document.querySelectorAll('.js-toggle-btn');
 
   toggleButtons.forEach(button => {
     const btnText = button.querySelector('.btn-text');
     const container = button.closest('table') || button.closest('.compare-table') || document;
-    const rows = container.querySelectorAll('.compare-table__row--collapsible, .collapsible-row');
+    
+    const rowsToToggle = [
+      ...container.querySelectorAll('.compare-table__row--collapsible, .collapsible-row'),
+      ...container.querySelectorAll('.compare-table__section--collapsible')
+    ];
 
-    // By default, keep rows closed
     let isExpanded = false;
-    rows.forEach(row => row.classList.add('is-hidden'));
+    rowsToToggle.forEach(row => row.classList.add('is-hidden'));
     if (btnText) {
       btnText.textContent = 'Развернуть таблицу';
     }
@@ -18,12 +20,8 @@ $(document).ready(function () {
 
     function toggleTable() {
       isExpanded = !isExpanded;
-      rows.forEach(row => {
-        if (isExpanded) {
-          row.classList.remove('is-hidden');
-        } else {
-          row.classList.add('is-hidden');
-        }
+      rowsToToggle.forEach(row => {
+        row.classList.toggle('is-hidden', !isExpanded);
       });
 
       if (btnText) {
