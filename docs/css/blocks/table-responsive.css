@@ -66,7 +66,10 @@
   background-image: url("../../images/icons/check.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 24px 24px;
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 100%;
+  height: 20px;
 }
 
 .compare-table__row--collapsible.is-hidden, .compare-table__section--collapsible.is-hidden {
@@ -93,6 +96,29 @@
     align-items: center;
     border-right: none;
     text-align: left;
+    padding: 0 8px;
+    min-height: 44px;
+    position: relative;
+  }
+  .compare-table tbody tr .compare-table__cell__separator::after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #CBCBCB;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .compare-table__cell--line {
+    padding: 4px 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    text-align: center;
   }
   .compare-table tbody tr .compare-table__cell:not(:first-child) {
     border-top: 1px solid #CBCBCB;
