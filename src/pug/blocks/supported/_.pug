@@ -7,7 +7,8 @@ div.supported__wrapper
             | Скачать программу
         
     div.comparision__wrapper.toggle-section
-        +tableResponsive(['325px', '261px', '261px', '261px'], supportedDevice)
+        .comparision__table-scroll
+            +tableResponsive(['313px', '128px', '128px', '313px'], supportedDevice, 'Устройства')
 
         p.supported__desc--remark-text *контроллер снят с&nbsp;производства
 

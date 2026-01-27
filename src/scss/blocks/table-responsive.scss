@@ -4,13 +4,15 @@
 .compare-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 15px;
+  font-size: 14px;
   text-align: center;
 
   &__head {
+    background-color: $bg-gray;
+    border: 1px solid $stroke-primary;
+
     &>.compare-table__th {
       font-weight: 600;
-      padding: 16px;
 
       &:first-child {
         text-align: left;
@@ -18,15 +20,12 @@
     }
   }
 
-  &__head {
-    background-color: $bg-gray;
-    border-style: solid;
-    border-color: $stroke-primary;
-    border-width: 1px 1px 0 1px;
-
-    .compare-table__th {
-      border-left: 1px solid $stroke-primary;
-    }
+  .compare-table__cell,
+  .compare-table__th {
+    padding: 4px 16px;
+    border-right: 1px solid $stroke-primary;
+    height: 46px;
+    min-height: 46px;
   }
 
   tbody {
@@ -34,7 +33,6 @@
       border: 1px solid $stroke-primary;
 
       .compare-table__cell {
-        padding: 16px;
         vertical-align: middle;
 
         .text-bold {
@@ -80,94 +78,18 @@
     height: 20px;
   }
 
-  &__row--collapsible.is-hidden, 
+  &__row--collapsible.is-hidden,
   &__section--collapsible.is-hidden {
     display: none;
   }
 
   @media (max-width: 720px) {
-
-    &,
-    & thead,
-    & tbody,
-    & th,
-    & td,
-    & tr {
-      display: block;
-    }
-
-    & thead,
-    & colgroup {
-      display: none;
-    }
-
-    & tbody tr .compare-table__cell {
-      display: flex;
-      align-items: center;
-      border-right: none;
-      text-align: left;
-      padding: 0 8px;
+  .compare-table__cell,
+  .compare-table__th {
+    font-size: 12px;
+      padding: 8px;
+      height: 44px;
       min-height: 44px;
-      position: relative;
-
-      &__separator::after {
-        content: '';
-        width: 1px;
-        height: 100%;
-        background-color: $stroke-primary;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-    }
-
-    &__cell--line {
-      padding: 4px 0;
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      width: 100%;
-      text-align: center;
-    }
-
-    & tbody tr .compare-table__cell:not(:first-child) {
-      border-top: 1px solid $stroke-primary;
-    }
-
-    & tbody tr .compare-table__cell:before {
-      content: attr(data-label);
-      font-weight: 600;
-      text-align: left;
-    }
-
-    & tbody tr .compare-table__cell:not(:first-child):before {
-      flex: 0 0 45%;
-    }
-
-    & tbody tr .compare-table__cell:first-child::before {
-      display: none;
-    }
-
-    &__section {
-      padding: 0 !important;
-
-      td {
-        display: block;
-        border: none;
-        font-size: 18px;
-      }
-    }
-
-    &__section:not(:first-child) {
-      margin-top: 24px;
-    }
-  }
-
-
-  @media (min-width: 720px) {
-    .compare-table__cell {
-      border-right: 1px solid $stroke-primary;
     }
   }
 }

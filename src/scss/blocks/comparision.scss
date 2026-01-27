@@ -37,16 +37,6 @@
     @include laptop {
         .comparision {
             padding: 60px 0 80px;
-
-            &__table {
-
-                .comparision__table-row {
-
-                    .comparision__table-cell:first-child {
-                        min-width: 250px;
-                    }
-                }
-            }
         }
     }
 

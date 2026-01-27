@@ -1,4 +1,4 @@
-mixin tableResponsive(colWidths = ['325px', '261px', ''], data)
+mixin tableResponsive(colWidths = ['325px', '261px', ''], data, firstHeader = 'Функционал')
   -
     var tableData = [];
     if (Array.isArray(data) && data.length && data[0] && data[0].feature) {
@@ -27,7 +27,7 @@ mixin tableResponsive(colWidths = ['325px', '261px', ''], data)
           col
     thead
       tr.compare-table__head
-        th.compare-table__th Функционал
+        th.compare-table__th= firstHeader
         th.compare-table__th 
           span.text-nowrap PERCo-S-20
         th.compare-table__th 
@@ -50,12 +50,12 @@ mixin tableResponsive(colWidths = ['325px', '261px', ''], data)
               if (row.collapsible) { rowClasses.push('compare-table__row--collapsible'); }
 
             tr(class=rowClasses.join(' '))
-              td.compare-table__cell(data-label="Функционал")
+              td.compare-table__cell
                 if typeof row.feature === 'object' && row.feature.isBoldText
                   span.text-bold= row.feature.text || row.feature.label || row.feature.value || ''
                 else
                   = row.feature
-              td.compare-table__cell(data-label="PERCo-S-20")
+              td.compare-table__cell
                 if row.percoS && row.percoS.check
                   span.compare-table__cell--check
                 else if row.percoS && Array.isArray(row.percoS)
@@ -67,7 +67,7 @@ mixin tableResponsive(colWidths = ['325px', '261px', ''], data)
                         | #{line}
                 else if row.percoS && !row.percoS.check
                   |&nbsp;
-              td.compare-table__cell(data-label="PERCo-Web")
+              td.compare-table__cell
                 if row.percoWeb && row.percoWeb.check
                   span.compare-table__cell--check
                 else if row.percoWeb && Array.isArray(row.percoWeb)
@@ -78,11 +78,11 @@ mixin tableResponsive(colWidths = ['325px', '261px', ''], data)
                       else
                         | #{line}
                       if idx != row.percoWeb.length-1
-                     
+                      br
                 else if row.percoWeb && !row.percoWeb.check
                   | #{row.percoWeb}
               if hasNotes
-                td.compare-table__cell(data-label="Поддерживаемые аналоги")
+                td.compare-table__cell
                   div.compare-table__cell--line
                     if row.notes && Array.isArray(row.notes)
                       each n, ni in row.notes

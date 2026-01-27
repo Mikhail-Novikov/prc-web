@@ -33,6 +33,10 @@
             padding-top: 0;
         }
 
+        .compare-table__th {
+            background-color: #fff;
+        }
+
         @include laptop {
             padding: 60px 0 80px;
 

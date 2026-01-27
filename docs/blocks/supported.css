@@ -33,6 +33,10 @@
   padding-top: 0;
 }
 
+.skd-web .supported .compare-table__th {
+  background-color: #fff;
+}
+
 @media (max-width: 1036px) {
   .skd-web .supported {
     padding: 60px 0 80px;

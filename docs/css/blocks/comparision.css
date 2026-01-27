@@ -25,9 +25,6 @@
   .skd-web .comparision {
     padding: 60px 0 80px;
   }
-  .skd-web .comparision__table .comparision__table-row .comparision__table-cell:first-child {
-    min-width: 250px;
-  }
 }
 
 @media (max-width: 742px) {
