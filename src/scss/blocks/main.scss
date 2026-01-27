@@ -14,6 +14,10 @@
         white-space: nowrap !important;
     }
 
+    .text-pretty {
+        text-wrap: pretty !important;
+    }
+
     .anchors-container {
         padding-bottom: 28px;
     }
@@ -37,6 +41,7 @@
         .anchors-container {
             padding-bottom: 10px;
         }
+
         h2 {
             margin-bottom: 24px;
         }
@@ -58,6 +63,7 @@
         .container {
             max-width: 468px;
         }
+
         h2 {
             font-size: 28px;
             line-height: 32px;
@@ -72,4 +78,3 @@
         }
     }
 }
-
